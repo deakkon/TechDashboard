@@ -1,3 +1,4 @@
+# encoding=utf8
 '''
 Created on 4 Sep 2015
 
@@ -124,7 +125,11 @@ class connectMySQL():
         try:
             #print self.__port
             self.__connection = MySQLdb.connect(user=self.__user, passwd=self.__pass, db=self.__db, host=self.__host, port=self.__port)
+            self.__connection.set_character_set('utf8')
             self.__cursor = self.__connection.cursor()
+            self.__cursor.execute('SET NAMES utf8;')
+            self.__cursor.execute('SET CHARACTER SET utf8;')
+            self.__cursor.execute('SET character_set_connection=utf8;')
         except MySQLdb.Error, e:
             print 'Error in connectDB:',e
             

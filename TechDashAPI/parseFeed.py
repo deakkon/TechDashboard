@@ -171,7 +171,7 @@ class parseNewsFeed(object):
                 
                 for item in feedEntry['entries']:
                     #===========================================================
-                    # CHECK IF IF 
+                    # CHECK IF ARTICLE ALREADY IN DATABASE
                     #===========================================================
                     self.__articleLinks.append(item['link'])
                     

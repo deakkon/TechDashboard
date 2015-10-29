@@ -41,24 +41,13 @@ class utilities(object):
                   
                 for xpathElement in xpathContentFile:
                     childrentext = ' '.join([child.text.strip() for child in xpathElement.getchildren() if child.text and child.tag not in self.__htmlElementsSkip])
-                    #===========================================================
-                    # print '1',childrentext
-                    #===========================================================
                     childrentext = ' '.join(childrentext.split())
-                    #===========================================================
-                    # print '2',childrentext
-                    #===========================================================
     
                     if childrentext.isspace() or len(childrentext) == 0:
                         childrenValues.append('empty')
                     else:
                         childrenValues.append(childrentext)
-                                
-            #===================================================================
-            # print '3',childrenValues
-            # raw_input('prompt')                    
-            #===================================================================
-            print path, childrenValues
+                        
             return list(set(childrenValues))
 
         except AttributeError as er:
@@ -82,18 +71,12 @@ class utilities(object):
                 for itemBack in nodeBackgroundKnowledge:
                     ratio.append(editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack)))
                 
-                #===============================================================
-                # print histogram2(ratio,2)
-                #===============================================================
                 ratioList.append(median(ratio))
                 
         
         else:
             ratioList.append(0)
 
-        #=======================================================================
-        # print ratioList, mean(ratioList), median(ratioList)
-        #=======================================================================
         return mean(ratioList)
     
     

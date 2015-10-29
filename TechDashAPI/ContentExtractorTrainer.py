@@ -210,7 +210,6 @@ class ContentExtractorTrainer(object):
             #===================================================================
             # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
             #===================================================================
-            print itemChildrenTextFile
             ratio = self.__utilitiesFunctions.calculateRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
 
             #===================================================================

@@ -1,0 +1,1238 @@
+http://feeds.reuters.com/~r/reuters/technologyNews/~3/5nOmNuWjRts/story01.htm
+Domain already in the database!
+Document has already been alanyzed and in the database!
+body/header id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/header/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/header/div/div id:   <type 'str'> class:  edition-container, group <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-label <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-selector <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition-arrow <type 'str'>
+----------------------
+body/header/div/div id:  search <type 'str'> class:  search <type 'str'>
+----------------------
+body/header/div/div id:  utilities <type 'str'> class:  utilities <type 'str'>
+----------------------
+body/nav id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/nav/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/section id:  breakingNewsContent <type 'str'> class:  info-banner <type 'str'>
+----------------------
+body/div id:  content <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/div/div id:  bannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div id:  leaderboard <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div id:  subBannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div id:  freqCap_poe <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  poeContainer <type 'str'> class:  poeContainer <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  poe <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div id:  articleContent <type 'str'> class:  section, main-content <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  article-header <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  article-section <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  divider <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  timestamp <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  related-topics <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  related-topics-title <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  article-info <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  location <type 'str'>
+----------------------
+body/div/div id:   <type 'str'> class:  section <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column1, grid8, grid-inside <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-sticky <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  articleImage <type 'str'> class:  related-photo, landscape <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  related-photo-container <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  captionContent <type 'str'> class:  related-photo-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  related-photo-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  related-photo-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  relatedInlineVideo <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:  articleText <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_start <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  focusParagraph <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_0 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_1 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_2 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_3 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_4 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_5 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  first-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_6 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_7 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_8 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  second-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_9 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_10 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_11 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  third-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_12 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_13 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_14 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_15 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_16 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  group, module-biz-dev-mid <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  taboola-bmc <type 'str'> class:  module-biz-dev-middle <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-below-main-column <type 'str'> class:  module-photo-links <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module-biz-dev <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column2, grid4 <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  specialFeature <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/span/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/span/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/span/div/div id:   <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/span/div/div/div id:   <type 'str'> class:  gallery, feature <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/span/div/div/div/div id:   <type 'str'> class:  photo <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:  specialFeature <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  ad-div-mpu <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  mpu <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  most-popular-parsely <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  columnLeft <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:  mostPopularRead <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:  parselyArticles <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:  parselyArticlesRemark <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  IPS_RR_head <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  orange <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  ips_rr <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  IPS_RR_body <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  RTVSyndicatedPlayer <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-right-rail-video <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  mpulow <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/footer id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-top, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-bottom, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-links <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-trnetwork, group <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  footer-trnetwork-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-disclaimer <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div id:   <type 'str'> class:  shr-overlay <type 'str'>
+----------------------
+body/div/div id:  weChatBox <type 'str'> class:  shr-box, shr-qr <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  shr-qr-top, group <type 'str'>
+----------------------
+body/div/div/div id:  shr-qrcode <type 'str'> class:  shr-qr-content <type 'str'>
+----------------------
+Error 'str' object has no attribute 'children'
+{'body': {'header': {'div': {'div': {'id2': 'search', 'id3': 'utilities', 'id1': '', 'div': {'class2': 'edition-selector', 'div': {'class2': 'edition-arrow', 'id1': '', 'id2': '', 'class1': 'edition'}, 'id1': '', 'id2': '', 'class1': 'edition-label'}, 'class2': 'search', 'class3': 'utilities', 'class1': 'edition-container, group'}, 'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'section': {'id1': 'breakingNewsContent', 'class1': 'info-banner'}, 'nav': {'div': {'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'div': {'class2': 'shr-overlay', 'div': {'id4': '', 'id5': 'weChatBox', 'id2': 'subBannerStrip', 'id3': 'articleContent', 'id1': 'bannerStrip', 'class3': 'section, main-content', 'class4': 'section', 'class5': 'shr-box, shr-qr', 'class2': 'section, bleeding', 'div': {'id6': 'shr-qrcode', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': 'shr-qr-content', 'class3': 'sectionContent', 'class4': 'sectionContent', 'class5': 'shr-qr-top, group', 'class2': 'sectionContent', 'div': {'span': {'class2': '', 'id1': '', 'id2': '', 'class1': ''}, 'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'group, wrap', 'class4': 'group, wrap', 'class2': 'group, wrap', 'div': {'span': {'span': {'class29': '', 'class28': '', 'class21': '', 'class20': '', 'class23': '', 'class22': '', 'class25': '', 'class24': 'third-article-divide', 'class27': '', 'class26': '', 'id8': 'midArticle_5', 'id9': 'midArticle_6', 'id6': 'midArticle_3', 'id7': 'midArticle_4', 'id4': 'midArticle_1', 'id5': 'midArticle_2', 'id2': 'midArticle_0', 'id3': '', 'id1': 'midArticle_start', 'id10': 'midArticle_7', 'id11': 'midArticle_8', 'id12': 'midArticle_9', 'id13': '', 'id14': 'midArticle_10', 'id15': 'midArticle_11', 'class8': '', 'class9': '', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': 'focusParagraph', 'id30': 'midArticle_8', 'class1': '', 'class32': '', 'id16': 'midArticle_12', 'class30': '', 'class31': '', 'id17': 'midArticle_13', 'id18': '', 'class18': 'second-article-divide', 'class19': '', 'id19': 'midArticle_14', 'class14': '', 'class15': '', 'class16': '', 'class17': '', 'class10': '', 'class11': '', 'class12': '', 'class13': 'first-article-divide', 'id22': 'midArticle_1', 'id32': 'midArticle_10', 'id29': 'midArticle_7', 'id28': 'midArticle_6', 'id21': 'midArticle_0', 'id20': 'midArticle_15', 'id23': 'midArticle_2', 'id31': 'midArticle_9', 'id25': 'midArticle_3', 'id24': '', 'id27': 'midArticle_5', 'id26': 'midArticle_4'}, 'id6': '', 'id4': 'articleText', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': '', 'class3': 'timestamp', 'div': {'class2': 'linebreak', 'id1': 'specialFeature', 'id2': '', 'class1': ''}, 'class5': '', 'class2': 'divider', 'class4': '', 'class1': 'article-section'}, 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': 'leaderboard', 'id3': 'freqCap_poe', 'id1': '', 'class3': '', 'class6': 'column1, grid8, grid-inside', 'class7': 'column2, grid4', 'class4': 'linebreak', 'class5': 'article-header', 'class2': 'ad', 'div': {'class29': 'module', 'class28': 'module', 'id16': '', 'div': {'id8': '', 'id9': 'taboola-bmc', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poe', 'id10': '', 'id11': 'mpu', 'id12': '', 'id13': '', 'id14': '', 'id15': 'IPS_RR_body', 'class8': '', 'class9': 'module-biz-dev-middle', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': '', 'class1': 'ad', 'class14': 'moduleHeader', 'class15': 'moduleBody', 'class10': '', 'class11': 'ad', 'class12': 'moduleHeader', 'class13': 'columnLeft', 'div': {'class3': 'module-meta, group', 'id8': 'mostPopularRead', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class8': '', 'class9': 'orange', 'class6': 'module-meta, group', 'class7': 'module-meta, group', 'class4': 'module-meta, group', 'class5': 'module-meta, group', 'class2': 'module-meta, group', 'div': {'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': 'parselyArticles', 'class8': 'module-slide-nav, module-slide-num', 'class9': 'module-slide-txt', 'class6': 'module-slide-nav, module-slide-num', 'class7': 'module-slide-txt', 'class4': 'module-slide-nav, module-slide-num', 'class5': 'module-slide-txt', 'class2': 'module-slide-nav, module-slide-num', 'class3': 'module-slide-txt', 'class1': 'module-slide-txt', 'class14': 'module-slide-nav, module-slide-num', 'class15': '', 'class10': 'module-slide-nav, module-slide-num', 'class11': 'module-slide-txt', 'class12': 'module-slide-nav, module-slide-num', 'class13': 'module-slide-txt', 'div': {'class29': 'module', 'class28': 'slider-right', 'class21': 'module-slide-caption', 'class20': 'slider-right', 'class23': 'slider-left', 'class22': 'module-slide-credit', 'class25': 'module-slide-caption', 'class24': 'slider-right', 'class27': 'slider-left', 'class26': 'module-slide-credit', 'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': '', 'class8': 'slider-right', 'class9': 'module-slide-caption', 'class6': 'module-slide-credit', 'class7': 'slider-left', 'class4': 'slider-right', 'class5': 'module-slide-caption', 'class2': 'module-slide-credit', 'class3': 'slider-left', 'class1': 'module-slide-caption', 'id23': '', 'id16': '', 'id17': '', 'id18': '', 'class18': 'module-slide-credit', 'class19': 'slider-left', 'id19': '', 'class14': 'module-slide-credit', 'class15': 'slider-left', 'class16': 'slider-right', 'class17': 'module-slide-caption', 'class10': 'module-slide-credit', 'class11': 'slider-left', 'class12': 'slider-right', 'class13': 'module-slide-caption', 'id29': '', 'id28': '', 'id21': '', 'id20': '', 'div': {'class2': '', 'id1': '', 'id2': 'parselyArticlesRemark', 'class1': 'moduleBody'}, 'id22': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}}, 'class1': 'module-meta, group'}}, 'class21': 'module', 'class20': '', 'class23': 'ips_rr', 'class22': 'linebreak', 'class25': 'RTVSyndicatedPlayer', 'class24': 'linebreak', 'class27': 'module', 'class26': 'linebreak', 'span': {'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'divider', 'class5': 'byline', 'class2': '', 'class3': 'location', 'class1': 'related-topics-title'}, 'id8': '', 'id9': '', 'id6': 'relatedInlineVideo', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poeContainer', 'id10': '', 'id11': '', 'id12': 'taboola-below-main-column', 'id13': '', 'id14': '', 'id15': 'specialFeature', 'class8': 'linebreak', 'class9': 'slider, slider-module', 'class6': '', 'class7': 'linebreak', 'class4': 'reuters-share, reuters-share-color', 'class5': 'reuters-share, reuters-share-sticky', 'class2': 'related-topics', 'class3': 'article-info', 'id30': 'bankrate', 'class1': 'poeContainer', 'class34': 'linebreak', 'class32': 'ad', 'class33': 'linebreak', 'class30': 'module', 'class31': 'module', 'id17': 'specialFeature', 'id18': '', 'class18': 'linebreak', 'class19': '', 'class11': 'group, module-biz-dev-mid', 'id19': 'ad-div-mpu', 'class14': 'linebreak', 'class15': 'focus', 'class16': 'linebreak', 'class17': 'focus', 'class10': 'reuters-share, reuters-share-color', 'id34': '', 'class12': 'module-photo-links', 'class13': 'module-biz-dev', 'id22': '', 'id32': 'mpulow', 'id33': '', 'id29': 'bankrate', 'id28': 'taboola-right-rail-video', 'id21': 'IPS_RR_head', 'id20': 'most-popular-parsely', 'id23': '', 'id31': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}, 'class1': 'linebreak'}, 'class1': 'group, wrap'}, 'class1': 'sectionContent'}, 'class1': 'section, bleeding'}, 'id1': 'content', 'id2': '', 'class1': 'container, group'}, 'footer': {'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'wrap, footer-trnetwork, group', 'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'grid2', 'class2': 'grid12, grid-inside', 'class3': 'grid10, grid-inside', 'class1': 'grid12, grid-inside'}, 'class2': 'grid2', 'class3': 'footer-trnetwork-inside', 'class1': 'grid10, grid-inside'}, 'class2': 'wrap, footer-links', 'class4': 'wrap, footer-disclaimer', 'class1': 'wrap'}, 'class2': 'footer-bottom, group', 'class3': 'linebreak', 'class1': 'footer-top, group'}, 'id1': '', 'class1': ''}}}
+http://feeds.reuters.com/~r/reuters/scienceNews/~3/3in1J-ABxg8/story01.htm
+Domain already in the database!
+Document has already been alanyzed and in the database!
+body/header id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/header/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/header/div/div id:   <type 'str'> class:  edition-container, group <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-label <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-selector <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition-arrow <type 'str'>
+----------------------
+body/header/div/div id:  search <type 'str'> class:  search <type 'str'>
+----------------------
+body/header/div/div id:  utilities <type 'str'> class:  utilities <type 'str'>
+----------------------
+body/nav id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/nav/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/section id:  breakingNewsContent <type 'str'> class:  info-banner <type 'str'>
+----------------------
+body/div id:  content <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/div/div id:  bannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div id:  leaderboard <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div id:  subBannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div id:  freqCap_poe <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  poeContainer <type 'str'> class:  poeContainer <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  poe <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div id:  articleContent <type 'str'> class:  section, main-content <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  article-header <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  article-section <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  divider <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  timestamp <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  related-topics <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  related-topics-title <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  article-info <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  location <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  divider <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  byline <type 'str'>
+----------------------
+body/div/div id:   <type 'str'> class:  section <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column1, grid8, grid-inside <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-sticky <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  articleImage <type 'str'> class:  related-photo, landscape <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  related-photo-container <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  captionContent <type 'str'> class:  related-photo-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  related-photo-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  related-photo-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  relatedInlineVideo <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:  articleText <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_start <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_0 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  focusParagraph <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_1 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_2 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_3 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_4 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_5 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  first-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_6 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_7 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  second-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_8 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_9 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_10 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  third-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_11 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_12 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_13 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_14 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  group, module-biz-dev-mid <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  taboola-bmc <type 'str'> class:  module-biz-dev-middle <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-below-main-column <type 'str'> class:  module-photo-links <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module-biz-dev <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column2, grid4 <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:  specialFeature <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  ad-div-mpu <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  mpu <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  most-popular-parsely <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  columnLeft <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:  mostPopularRead <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:  parselyArticles <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:  parselyArticlesRemark <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  IPS_RR_head <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  orange <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  ips_rr <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  IPS_RR_body <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  RTVSyndicatedPlayer <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-right-rail-video <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  mpulow <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/footer id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-top, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-bottom, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-links <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-trnetwork, group <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  footer-trnetwork-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-disclaimer <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div id:   <type 'str'> class:  shr-overlay <type 'str'>
+----------------------
+body/div/div id:  weChatBox <type 'str'> class:  shr-box, shr-qr <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  shr-qr-top, group <type 'str'>
+----------------------
+body/div/div/div id:  shr-qrcode <type 'str'> class:  shr-qr-content <type 'str'>
+----------------------
+Error 'str' object has no attribute 'children'
+{'body': {'header': {'div': {'div': {'id2': 'search', 'id3': 'utilities', 'id1': '', 'div': {'class2': 'edition-selector', 'div': {'class2': 'edition-arrow', 'id1': '', 'id2': '', 'class1': 'edition'}, 'id1': '', 'id2': '', 'class1': 'edition-label'}, 'class2': 'search', 'class3': 'utilities', 'class1': 'edition-container, group'}, 'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'section': {'id1': 'breakingNewsContent', 'class1': 'info-banner'}, 'nav': {'div': {'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'div': {'class2': 'shr-overlay', 'div': {'id4': '', 'id5': 'weChatBox', 'id2': 'subBannerStrip', 'id3': 'articleContent', 'id1': 'bannerStrip', 'class3': 'section, main-content', 'class4': 'section', 'class5': 'shr-box, shr-qr', 'class2': 'section, bleeding', 'div': {'id6': 'shr-qrcode', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': 'shr-qr-content', 'class3': 'sectionContent', 'class4': 'sectionContent', 'class5': 'shr-qr-top, group', 'class2': 'sectionContent', 'div': {'span': {'class2': '', 'id1': '', 'id2': '', 'class1': ''}, 'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'group, wrap', 'class4': 'group, wrap', 'class2': 'group, wrap', 'div': {'span': {'span': {'class29': '', 'class28': '', 'class21': '', 'class20': '', 'class23': '', 'class22': '', 'class25': '', 'class24': 'third-article-divide', 'class27': '', 'class26': '', 'id8': 'midArticle_5', 'id9': 'midArticle_6', 'id6': 'midArticle_3', 'id7': 'midArticle_4', 'id4': 'midArticle_1', 'id5': 'midArticle_2', 'id2': 'midArticle_0', 'id3': '', 'id1': 'midArticle_start', 'id10': 'midArticle_7', 'id11': 'midArticle_8', 'id12': 'midArticle_9', 'id13': '', 'id14': 'midArticle_10', 'id15': 'midArticle_11', 'class8': '', 'class9': '', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': 'focusParagraph', 'id30': 'midArticle_8', 'class1': '', 'class32': '', 'id16': 'midArticle_12', 'class30': '', 'class31': '', 'id17': 'midArticle_13', 'id18': '', 'class18': 'second-article-divide', 'class19': '', 'id19': 'midArticle_14', 'class14': '', 'class15': '', 'class16': '', 'class17': '', 'class10': '', 'class11': '', 'class12': '', 'class13': 'first-article-divide', 'id22': 'midArticle_1', 'id32': 'midArticle_10', 'id29': 'midArticle_7', 'id28': 'midArticle_6', 'id21': 'midArticle_0', 'id20': 'midArticle_15', 'id23': 'midArticle_2', 'id31': 'midArticle_9', 'id25': 'midArticle_3', 'id24': '', 'id27': 'midArticle_5', 'id26': 'midArticle_4'}, 'id6': '', 'id4': 'articleText', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': '', 'class3': 'timestamp', 'div': {'class2': 'linebreak', 'id1': 'specialFeature', 'id2': '', 'class1': ''}, 'class5': '', 'class2': 'divider', 'class4': '', 'class1': 'article-section'}, 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': 'leaderboard', 'id3': 'freqCap_poe', 'id1': '', 'class3': '', 'class6': 'column1, grid8, grid-inside', 'class7': 'column2, grid4', 'class4': 'linebreak', 'class5': 'article-header', 'class2': 'ad', 'div': {'class29': 'module', 'class28': 'module', 'id16': '', 'div': {'id8': '', 'id9': 'taboola-bmc', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poe', 'id10': '', 'id11': 'mpu', 'id12': '', 'id13': '', 'id14': '', 'id15': 'IPS_RR_body', 'class8': '', 'class9': 'module-biz-dev-middle', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': '', 'class1': 'ad', 'class14': 'moduleHeader', 'class15': 'moduleBody', 'class10': '', 'class11': 'ad', 'class12': 'moduleHeader', 'class13': 'columnLeft', 'div': {'class3': 'module-meta, group', 'id8': 'mostPopularRead', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class8': '', 'class9': 'orange', 'class6': 'module-meta, group', 'class7': 'module-meta, group', 'class4': 'module-meta, group', 'class5': 'module-meta, group', 'class2': 'module-meta, group', 'div': {'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': 'parselyArticles', 'class8': 'module-slide-nav, module-slide-num', 'class9': 'module-slide-txt', 'class6': 'module-slide-nav, module-slide-num', 'class7': 'module-slide-txt', 'class4': 'module-slide-nav, module-slide-num', 'class5': 'module-slide-txt', 'class2': 'module-slide-nav, module-slide-num', 'class3': 'module-slide-txt', 'class1': 'module-slide-txt', 'class14': 'module-slide-nav, module-slide-num', 'class15': '', 'class10': 'module-slide-nav, module-slide-num', 'class11': 'module-slide-txt', 'class12': 'module-slide-nav, module-slide-num', 'class13': 'module-slide-txt', 'div': {'class29': 'module', 'class28': 'slider-right', 'class21': 'module-slide-caption', 'class20': 'slider-right', 'class23': 'slider-left', 'class22': 'module-slide-credit', 'class25': 'module-slide-caption', 'class24': 'slider-right', 'class27': 'slider-left', 'class26': 'module-slide-credit', 'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': '', 'class8': 'slider-right', 'class9': 'module-slide-caption', 'class6': 'module-slide-credit', 'class7': 'slider-left', 'class4': 'slider-right', 'class5': 'module-slide-caption', 'class2': 'module-slide-credit', 'class3': 'slider-left', 'class1': 'module-slide-caption', 'id23': '', 'id16': '', 'id17': '', 'id18': '', 'class18': 'module-slide-credit', 'class19': 'slider-left', 'id19': '', 'class14': 'module-slide-credit', 'class15': 'slider-left', 'class16': 'slider-right', 'class17': 'module-slide-caption', 'class10': 'module-slide-credit', 'class11': 'slider-left', 'class12': 'slider-right', 'class13': 'module-slide-caption', 'id29': '', 'id28': '', 'id21': '', 'id20': '', 'div': {'class2': '', 'id1': '', 'id2': 'parselyArticlesRemark', 'class1': 'moduleBody'}, 'id22': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}}, 'class1': 'module-meta, group'}}, 'class21': 'module', 'class20': '', 'class23': 'ips_rr', 'class22': 'linebreak', 'class25': 'RTVSyndicatedPlayer', 'class24': 'linebreak', 'class27': 'module', 'class26': 'linebreak', 'span': {'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'divider', 'class5': 'byline', 'class2': '', 'class3': 'location', 'class1': 'related-topics-title'}, 'id8': '', 'id9': '', 'id6': 'relatedInlineVideo', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poeContainer', 'id10': '', 'id11': '', 'id12': 'taboola-below-main-column', 'id13': '', 'id14': '', 'id15': 'specialFeature', 'class8': 'linebreak', 'class9': 'slider, slider-module', 'class6': '', 'class7': 'linebreak', 'class4': 'reuters-share, reuters-share-color', 'class5': 'reuters-share, reuters-share-sticky', 'class2': 'related-topics', 'class3': 'article-info', 'id30': 'bankrate', 'class1': 'poeContainer', 'class34': 'linebreak', 'class32': 'ad', 'class33': 'linebreak', 'class30': 'module', 'class31': 'module', 'id17': 'specialFeature', 'id18': '', 'class18': 'linebreak', 'class19': '', 'class11': 'group, module-biz-dev-mid', 'id19': 'ad-div-mpu', 'class14': 'linebreak', 'class15': 'focus', 'class16': 'linebreak', 'class17': 'focus', 'class10': 'reuters-share, reuters-share-color', 'id34': '', 'class12': 'module-photo-links', 'class13': 'module-biz-dev', 'id22': '', 'id32': 'mpulow', 'id33': '', 'id29': 'bankrate', 'id28': 'taboola-right-rail-video', 'id21': 'IPS_RR_head', 'id20': 'most-popular-parsely', 'id23': '', 'id31': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}, 'class1': 'linebreak'}, 'class1': 'group, wrap'}, 'class1': 'sectionContent'}, 'class1': 'section, bleeding'}, 'id1': 'content', 'id2': '', 'class1': 'container, group'}, 'footer': {'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'wrap, footer-trnetwork, group', 'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'grid2', 'class2': 'grid12, grid-inside', 'class3': 'grid10, grid-inside', 'class1': 'grid12, grid-inside'}, 'class2': 'grid2', 'class3': 'footer-trnetwork-inside', 'class1': 'grid10, grid-inside'}, 'class2': 'wrap, footer-links', 'class4': 'wrap, footer-disclaimer', 'class1': 'wrap'}, 'class2': 'footer-bottom, group', 'class3': 'linebreak', 'class1': 'footer-top, group'}, 'id1': '', 'class1': ''}}}
+http://feeds.reuters.com/~r/reuters/scienceNews/~3/LrgqTPRaVPk/story01.htm
+Domain already in the database!
+Document has already been alanyzed and in the database!
+body/header id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/header/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/header/div/div id:   <type 'str'> class:  edition-container, group <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-label <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-selector <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition-arrow <type 'str'>
+----------------------
+body/header/div/div id:  search <type 'str'> class:  search <type 'str'>
+----------------------
+body/header/div/div id:  utilities <type 'str'> class:  utilities <type 'str'>
+----------------------
+body/nav id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/nav/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/section id:  breakingNewsContent <type 'str'> class:  info-banner <type 'str'>
+----------------------
+body/div id:  content <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/div/div id:  bannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div id:  leaderboard <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div id:  subBannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div id:  freqCap_poe <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  poeContainer <type 'str'> class:  poeContainer <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  poe <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div id:  articleContent <type 'str'> class:  section, main-content <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  article-header <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  article-section <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  divider <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  timestamp <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  related-topics <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  related-topics-title <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  article-info <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  location <type 'str'>
+----------------------
+body/div/div id:   <type 'str'> class:  section <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column1, grid8, grid-inside <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-sticky <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  relatedInlineVideo <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:  articleText <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_start <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  focusParagraph <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_0 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_1 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_2 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  first-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_3 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_4 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  second-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_5 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  third-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_6 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_7 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  group, module-biz-dev-mid <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  taboola-bmc <type 'str'> class:  module-biz-dev-middle <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-below-main-column <type 'str'> class:  module-photo-links <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module-biz-dev <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column2, grid4 <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:  specialFeature <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  ad-div-mpu <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  mpu <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  most-popular-parsely <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  columnLeft <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:  mostPopularRead <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:  parselyArticles <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:  parselyArticlesRemark <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  IPS_RR_head <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  orange <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  ips_rr <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  IPS_RR_body <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  RTVSyndicatedPlayer <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-right-rail-video <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  mpulow <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/footer id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-top, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-bottom, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-links <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-trnetwork, group <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  footer-trnetwork-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-disclaimer <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div id:   <type 'str'> class:  shr-overlay <type 'str'>
+----------------------
+body/div/div id:  weChatBox <type 'str'> class:  shr-box, shr-qr <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  shr-qr-top, group <type 'str'>
+----------------------
+body/div/div/div id:  shr-qrcode <type 'str'> class:  shr-qr-content <type 'str'>
+----------------------
+Error 'str' object has no attribute 'children'
+{'body': {'header': {'div': {'div': {'id2': 'search', 'id3': 'utilities', 'id1': '', 'div': {'class2': 'edition-selector', 'div': {'class2': 'edition-arrow', 'id1': '', 'id2': '', 'class1': 'edition'}, 'id1': '', 'id2': '', 'class1': 'edition-label'}, 'class2': 'search', 'class3': 'utilities', 'class1': 'edition-container, group'}, 'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'section': {'id1': 'breakingNewsContent', 'class1': 'info-banner'}, 'nav': {'div': {'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'div': {'class2': 'shr-overlay', 'div': {'id4': '', 'id5': 'weChatBox', 'id2': 'subBannerStrip', 'id3': 'articleContent', 'id1': 'bannerStrip', 'class3': 'section, main-content', 'class4': 'section', 'class5': 'shr-box, shr-qr', 'class2': 'section, bleeding', 'div': {'id6': 'shr-qrcode', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': 'shr-qr-content', 'class3': 'sectionContent', 'class4': 'sectionContent', 'class5': 'shr-qr-top, group', 'class2': 'sectionContent', 'div': {'span': {'class2': '', 'id1': '', 'id2': '', 'class1': ''}, 'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'group, wrap', 'class4': 'group, wrap', 'class2': 'group, wrap', 'div': {'span': {'span': {'class29': '', 'class28': '', 'class21': '', 'class20': '', 'class23': '', 'class22': '', 'class25': '', 'class24': 'third-article-divide', 'class27': '', 'class26': '', 'id8': 'midArticle_5', 'id9': 'midArticle_6', 'id6': 'midArticle_3', 'id7': 'midArticle_4', 'id4': 'midArticle_1', 'id5': 'midArticle_2', 'id2': 'midArticle_0', 'id3': '', 'id1': 'midArticle_start', 'id10': 'midArticle_7', 'id11': 'midArticle_8', 'id12': 'midArticle_9', 'id13': '', 'id14': 'midArticle_10', 'id15': 'midArticle_11', 'class8': '', 'class9': '', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': 'focusParagraph', 'id30': 'midArticle_8', 'class1': '', 'class32': '', 'id16': 'midArticle_12', 'class30': '', 'class31': '', 'id17': 'midArticle_13', 'id18': '', 'class18': 'second-article-divide', 'class19': '', 'id19': 'midArticle_14', 'class14': '', 'class15': '', 'class16': '', 'class17': '', 'class10': '', 'class11': '', 'class12': '', 'class13': 'first-article-divide', 'id22': 'midArticle_1', 'id32': 'midArticle_10', 'id29': 'midArticle_7', 'id28': 'midArticle_6', 'id21': 'midArticle_0', 'id20': 'midArticle_15', 'id23': 'midArticle_2', 'id31': 'midArticle_9', 'id25': 'midArticle_3', 'id24': '', 'id27': 'midArticle_5', 'id26': 'midArticle_4'}, 'id6': '', 'id4': 'articleText', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': '', 'class3': 'timestamp', 'div': {'class2': 'linebreak', 'id1': 'specialFeature', 'id2': '', 'class1': ''}, 'class5': '', 'class2': 'divider', 'class4': '', 'class1': 'article-section'}, 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': 'leaderboard', 'id3': 'freqCap_poe', 'id1': '', 'class3': '', 'class6': 'column1, grid8, grid-inside', 'class7': 'column2, grid4', 'class4': 'linebreak', 'class5': 'article-header', 'class2': 'ad', 'div': {'class29': 'module', 'class28': 'module', 'id16': '', 'div': {'id8': '', 'id9': 'taboola-bmc', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poe', 'id10': '', 'id11': 'mpu', 'id12': '', 'id13': '', 'id14': '', 'id15': 'IPS_RR_body', 'class8': '', 'class9': 'module-biz-dev-middle', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': '', 'class1': 'ad', 'class14': 'moduleHeader', 'class15': 'moduleBody', 'class10': '', 'class11': 'ad', 'class12': 'moduleHeader', 'class13': 'columnLeft', 'div': {'class3': 'module-meta, group', 'id8': 'mostPopularRead', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class8': '', 'class9': 'orange', 'class6': 'module-meta, group', 'class7': 'module-meta, group', 'class4': 'module-meta, group', 'class5': 'module-meta, group', 'class2': 'module-meta, group', 'div': {'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': 'parselyArticles', 'class8': 'module-slide-nav, module-slide-num', 'class9': 'module-slide-txt', 'class6': 'module-slide-nav, module-slide-num', 'class7': 'module-slide-txt', 'class4': 'module-slide-nav, module-slide-num', 'class5': 'module-slide-txt', 'class2': 'module-slide-nav, module-slide-num', 'class3': 'module-slide-txt', 'class1': 'module-slide-txt', 'class14': 'module-slide-nav, module-slide-num', 'class15': '', 'class10': 'module-slide-nav, module-slide-num', 'class11': 'module-slide-txt', 'class12': 'module-slide-nav, module-slide-num', 'class13': 'module-slide-txt', 'div': {'class29': 'module', 'class28': 'slider-right', 'class21': 'module-slide-caption', 'class20': 'slider-right', 'class23': 'slider-left', 'class22': 'module-slide-credit', 'class25': 'module-slide-caption', 'class24': 'slider-right', 'class27': 'slider-left', 'class26': 'module-slide-credit', 'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': '', 'class8': 'slider-right', 'class9': 'module-slide-caption', 'class6': 'module-slide-credit', 'class7': 'slider-left', 'class4': 'slider-right', 'class5': 'module-slide-caption', 'class2': 'module-slide-credit', 'class3': 'slider-left', 'class1': 'module-slide-caption', 'id23': '', 'id16': '', 'id17': '', 'id18': '', 'class18': 'module-slide-credit', 'class19': 'slider-left', 'id19': '', 'class14': 'module-slide-credit', 'class15': 'slider-left', 'class16': 'slider-right', 'class17': 'module-slide-caption', 'class10': 'module-slide-credit', 'class11': 'slider-left', 'class12': 'slider-right', 'class13': 'module-slide-caption', 'id29': '', 'id28': '', 'id21': '', 'id20': '', 'div': {'class2': '', 'id1': '', 'id2': 'parselyArticlesRemark', 'class1': 'moduleBody'}, 'id22': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}}, 'class1': 'module-meta, group'}}, 'class21': 'module', 'class20': '', 'class23': 'ips_rr', 'class22': 'linebreak', 'class25': 'RTVSyndicatedPlayer', 'class24': 'linebreak', 'class27': 'module', 'class26': 'linebreak', 'span': {'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'divider', 'class5': 'byline', 'class2': '', 'class3': 'location', 'class1': 'related-topics-title'}, 'id8': '', 'id9': '', 'id6': 'relatedInlineVideo', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poeContainer', 'id10': '', 'id11': '', 'id12': 'taboola-below-main-column', 'id13': '', 'id14': '', 'id15': 'specialFeature', 'class8': 'linebreak', 'class9': 'slider, slider-module', 'class6': '', 'class7': 'linebreak', 'class4': 'reuters-share, reuters-share-color', 'class5': 'reuters-share, reuters-share-sticky', 'class2': 'related-topics', 'class3': 'article-info', 'id30': 'bankrate', 'class1': 'poeContainer', 'class34': 'linebreak', 'class32': 'ad', 'class33': 'linebreak', 'class30': 'module', 'class31': 'module', 'id17': 'specialFeature', 'id18': '', 'class18': 'linebreak', 'class19': '', 'class11': 'group, module-biz-dev-mid', 'id19': 'ad-div-mpu', 'class14': 'linebreak', 'class15': 'focus', 'class16': 'linebreak', 'class17': 'focus', 'class10': 'reuters-share, reuters-share-color', 'id34': '', 'class12': 'module-photo-links', 'class13': 'module-biz-dev', 'id22': '', 'id32': 'mpulow', 'id33': '', 'id29': 'bankrate', 'id28': 'taboola-right-rail-video', 'id21': 'IPS_RR_head', 'id20': 'most-popular-parsely', 'id23': '', 'id31': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}, 'class1': 'linebreak'}, 'class1': 'group, wrap'}, 'class1': 'sectionContent'}, 'class1': 'section, bleeding'}, 'id1': 'content', 'id2': '', 'class1': 'container, group'}, 'footer': {'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'wrap, footer-trnetwork, group', 'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'grid2', 'class2': 'grid12, grid-inside', 'class3': 'grid10, grid-inside', 'class1': 'grid12, grid-inside'}, 'class2': 'grid2', 'class3': 'footer-trnetwork-inside', 'class1': 'grid10, grid-inside'}, 'class2': 'wrap, footer-links', 'class4': 'wrap, footer-disclaimer', 'class1': 'wrap'}, 'class2': 'footer-bottom, group', 'class3': 'linebreak', 'class1': 'footer-top, group'}, 'id1': '', 'class1': ''}}}
+http://feeds.reuters.com/~r/reuters/scienceNews/~3/vBmG3OcZuIg/story01.htm
+Domain already in the database!
+Document has already been alanyzed and in the database!
+body/header id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/header/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/header/div/div id:   <type 'str'> class:  edition-container, group <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-label <type 'str'>
+----------------------
+body/header/div/div/div id:   <type 'str'> class:  edition-selector <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition <type 'str'>
+----------------------
+body/header/div/div/div/div id:   <type 'str'> class:  edition-arrow <type 'str'>
+----------------------
+body/header/div/div id:  search <type 'str'> class:  search <type 'str'>
+----------------------
+body/header/div/div id:  utilities <type 'str'> class:  utilities <type 'str'>
+----------------------
+body/nav id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/nav/div id:   <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/section id:  breakingNewsContent <type 'str'> class:  info-banner <type 'str'>
+----------------------
+body/div id:  content <type 'str'> class:  container, group <type 'str'>
+----------------------
+body/div/div id:  bannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div id:  leaderboard <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div id:  subBannerStrip <type 'str'> class:  section, bleeding <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div id:  freqCap_poe <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  poeContainer <type 'str'> class:  poeContainer <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  poe <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div id:  articleContent <type 'str'> class:  section, main-content <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  article-header <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  article-section <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  divider <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:  timestamp <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  related-topics <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  related-topics-title <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  article-info <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  location <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  divider <type 'str'>
+----------------------
+body/div/div/div/div/div/div/span id:   <type 'str'> class:  byline <type 'str'>
+----------------------
+body/div/div id:   <type 'str'> class:  section <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  sectionContent <type 'str'>
+----------------------
+body/div/div/div/div id:   <type 'str'> class:  group, wrap <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column1, grid8, grid-inside <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-sticky <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  relatedInlineVideo <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:  articleText <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_start <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_0 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  focusParagraph <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_1 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_2 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_3 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_4 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_5 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_6 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_7 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_8 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_9 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  first-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_10 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_11 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_12 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_13 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  second-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_14 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_15 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_0 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_1 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_2 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:   <type 'str'> class:  third-article-divide <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_3 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_4 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_5 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_6 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_7 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_8 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_9 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/span id:  midArticle_10 <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  slider, slider-module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-meta, group <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-nav, module-slide-num <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-left <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-right <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-meta, group <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-nav, module-slide-num <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-left <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-right <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-meta, group <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-nav, module-slide-num <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-left <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-right <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-meta, group <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-nav, module-slide-num <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-left <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-right <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-meta, group <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-nav, module-slide-num <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-left <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-right <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-meta, group <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-nav, module-slide-num <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-left <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-right <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-meta, group <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-txt <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-caption <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-credit <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module-slide-nav, module-slide-num <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-left <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  slider-right <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  reuters-share, reuters-share-color <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  group, module-biz-dev-mid <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  taboola-bmc <type 'str'> class:  module-biz-dev-middle <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-below-main-column <type 'str'> class:  module-photo-links <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module-biz-dev <type 'str'>
+----------------------
+body/div/div/div/div/div id:   <type 'str'> class:  column2, grid4 <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  specialFeature <type 'str'> class:  focus <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:  specialFeature <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  ad-div-mpu <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  mpu <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  most-popular-parsely <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  columnLeft <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:  mostPopularRead <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div id:  parselyArticles <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div/div/div/div id:  parselyArticlesRemark <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  IPS_RR_head <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:   <type 'str'> class:  moduleHeader <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div/div id:   <type 'str'> class:  orange <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  ips_rr <type 'str'>
+----------------------
+body/div/div/div/div/div/div/div id:  IPS_RR_body <type 'str'> class:  moduleBody <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  RTVSyndicatedPlayer <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/span id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/div/div/div/div/div/span/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  taboola-right-rail-video <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  bankrate <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  module <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:  mpulow <type 'str'> class:  ad <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div/div/div/div/div/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/footer id:   <type 'str'> class:   <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-top, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  footer-bottom, group <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-links <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-trnetwork, group <type 'str'>
+----------------------
+body/footer/div/div/div id:   <type 'str'> class:  footer-trnetwork-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid12, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid10, grid-inside <type 'str'>
+----------------------
+body/footer/div/div/div/div id:   <type 'str'> class:  grid2 <type 'str'>
+----------------------
+body/footer/div/div id:   <type 'str'> class:  wrap, footer-disclaimer <type 'str'>
+----------------------
+body/footer/div id:   <type 'str'> class:  linebreak <type 'str'>
+----------------------
+body/div id:   <type 'str'> class:  shr-overlay <type 'str'>
+----------------------
+body/div/div id:  weChatBox <type 'str'> class:  shr-box, shr-qr <type 'str'>
+----------------------
+body/div/div/div id:   <type 'str'> class:  shr-qr-top, group <type 'str'>
+----------------------
+body/div/div/div id:  shr-qrcode <type 'str'> class:  shr-qr-content <type 'str'>
+----------------------
+Error 'str' object has no attribute 'children'
+{'body': {'header': {'div': {'div': {'id2': 'search', 'id3': 'utilities', 'id1': '', 'div': {'class2': 'edition-selector', 'div': {'class2': 'edition-arrow', 'id1': '', 'id2': '', 'class1': 'edition'}, 'id1': '', 'id2': '', 'class1': 'edition-label'}, 'class2': 'search', 'class3': 'utilities', 'class1': 'edition-container, group'}, 'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'section': {'id1': 'breakingNewsContent', 'class1': 'info-banner'}, 'nav': {'div': {'id1': '', 'class1': 'container, group'}, 'id1': '', 'class1': ''}, 'div': {'class2': 'shr-overlay', 'div': {'id4': '', 'id5': 'weChatBox', 'id2': 'subBannerStrip', 'id3': 'articleContent', 'id1': 'bannerStrip', 'class3': 'section, main-content', 'class4': 'section', 'class5': 'shr-box, shr-qr', 'class2': 'section, bleeding', 'div': {'id6': 'shr-qrcode', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': 'shr-qr-content', 'class3': 'sectionContent', 'class4': 'sectionContent', 'class5': 'shr-qr-top, group', 'class2': 'sectionContent', 'div': {'span': {'class2': '', 'id1': '', 'id2': '', 'class1': ''}, 'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'group, wrap', 'class4': 'group, wrap', 'class2': 'group, wrap', 'div': {'span': {'span': {'class29': '', 'class28': '', 'class21': '', 'class20': '', 'class23': '', 'class22': '', 'class25': '', 'class24': 'third-article-divide', 'class27': '', 'class26': '', 'id8': 'midArticle_5', 'id9': 'midArticle_6', 'id6': 'midArticle_3', 'id7': 'midArticle_4', 'id4': 'midArticle_1', 'id5': 'midArticle_2', 'id2': 'midArticle_0', 'id3': '', 'id1': 'midArticle_start', 'id10': 'midArticle_7', 'id11': 'midArticle_8', 'id12': 'midArticle_9', 'id13': '', 'id14': 'midArticle_10', 'id15': 'midArticle_11', 'class8': '', 'class9': '', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': 'focusParagraph', 'id30': 'midArticle_8', 'class1': '', 'class32': '', 'id16': 'midArticle_12', 'class30': '', 'class31': '', 'id17': 'midArticle_13', 'id18': '', 'class18': 'second-article-divide', 'class19': '', 'id19': 'midArticle_14', 'class14': '', 'class15': '', 'class16': '', 'class17': '', 'class10': '', 'class11': '', 'class12': '', 'class13': 'first-article-divide', 'id22': 'midArticle_1', 'id32': 'midArticle_10', 'id29': 'midArticle_7', 'id28': 'midArticle_6', 'id21': 'midArticle_0', 'id20': 'midArticle_15', 'id23': 'midArticle_2', 'id31': 'midArticle_9', 'id25': 'midArticle_3', 'id24': '', 'id27': 'midArticle_5', 'id26': 'midArticle_4'}, 'id6': '', 'id4': 'articleText', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class6': '', 'class3': 'timestamp', 'div': {'class2': 'linebreak', 'id1': 'specialFeature', 'id2': '', 'class1': ''}, 'class5': '', 'class2': 'divider', 'class4': '', 'class1': 'article-section'}, 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': 'leaderboard', 'id3': 'freqCap_poe', 'id1': '', 'class3': '', 'class6': 'column1, grid8, grid-inside', 'class7': 'column2, grid4', 'class4': 'linebreak', 'class5': 'article-header', 'class2': 'ad', 'div': {'class29': 'module', 'class28': 'module', 'id16': '', 'div': {'id8': '', 'id9': 'taboola-bmc', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poe', 'id10': '', 'id11': 'mpu', 'id12': '', 'id13': '', 'id14': '', 'id15': 'IPS_RR_body', 'class8': '', 'class9': 'module-biz-dev-middle', 'class6': '', 'class7': '', 'class4': '', 'class5': '', 'class2': '', 'class3': '', 'class1': 'ad', 'class14': 'moduleHeader', 'class15': 'moduleBody', 'class10': '', 'class11': 'ad', 'class12': 'moduleHeader', 'class13': 'columnLeft', 'div': {'class3': 'module-meta, group', 'id8': 'mostPopularRead', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class8': '', 'class9': 'orange', 'class6': 'module-meta, group', 'class7': 'module-meta, group', 'class4': 'module-meta, group', 'class5': 'module-meta, group', 'class2': 'module-meta, group', 'div': {'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': 'parselyArticles', 'class8': 'module-slide-nav, module-slide-num', 'class9': 'module-slide-txt', 'class6': 'module-slide-nav, module-slide-num', 'class7': 'module-slide-txt', 'class4': 'module-slide-nav, module-slide-num', 'class5': 'module-slide-txt', 'class2': 'module-slide-nav, module-slide-num', 'class3': 'module-slide-txt', 'class1': 'module-slide-txt', 'class14': 'module-slide-nav, module-slide-num', 'class15': '', 'class10': 'module-slide-nav, module-slide-num', 'class11': 'module-slide-txt', 'class12': 'module-slide-nav, module-slide-num', 'class13': 'module-slide-txt', 'div': {'class29': 'module', 'class28': 'slider-right', 'class21': 'module-slide-caption', 'class20': 'slider-right', 'class23': 'slider-left', 'class22': 'module-slide-credit', 'class25': 'module-slide-caption', 'class24': 'slider-right', 'class27': 'slider-left', 'class26': 'module-slide-credit', 'id8': '', 'id9': '', 'id6': '', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'id10': '', 'id11': '', 'id12': '', 'id13': '', 'id14': '', 'id15': '', 'class8': 'slider-right', 'class9': 'module-slide-caption', 'class6': 'module-slide-credit', 'class7': 'slider-left', 'class4': 'slider-right', 'class5': 'module-slide-caption', 'class2': 'module-slide-credit', 'class3': 'slider-left', 'class1': 'module-slide-caption', 'id23': '', 'id16': '', 'id17': '', 'id18': '', 'class18': 'module-slide-credit', 'class19': 'slider-left', 'id19': '', 'class14': 'module-slide-credit', 'class15': 'slider-left', 'class16': 'slider-right', 'class17': 'module-slide-caption', 'class10': 'module-slide-credit', 'class11': 'slider-left', 'class12': 'slider-right', 'class13': 'module-slide-caption', 'id29': '', 'id28': '', 'id21': '', 'id20': '', 'div': {'class2': '', 'id1': '', 'id2': 'parselyArticlesRemark', 'class1': 'moduleBody'}, 'id22': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}}, 'class1': 'module-meta, group'}}, 'class21': 'module', 'class20': '', 'class23': 'ips_rr', 'class22': 'linebreak', 'class25': 'RTVSyndicatedPlayer', 'class24': 'linebreak', 'class27': 'module', 'class26': 'linebreak', 'span': {'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'divider', 'class5': 'byline', 'class2': '', 'class3': 'location', 'class1': 'related-topics-title'}, 'id8': '', 'id9': '', 'id6': 'relatedInlineVideo', 'id7': '', 'id4': '', 'id5': '', 'id2': '', 'id3': '', 'id1': 'poeContainer', 'id10': '', 'id11': '', 'id12': 'taboola-below-main-column', 'id13': '', 'id14': '', 'id15': 'specialFeature', 'class8': 'linebreak', 'class9': 'slider, slider-module', 'class6': '', 'class7': 'linebreak', 'class4': 'reuters-share, reuters-share-color', 'class5': 'reuters-share, reuters-share-sticky', 'class2': 'related-topics', 'class3': 'article-info', 'id30': 'bankrate', 'class1': 'poeContainer', 'class34': 'linebreak', 'class32': 'ad', 'class33': 'linebreak', 'class30': 'module', 'class31': 'module', 'id17': 'specialFeature', 'id18': '', 'class18': 'linebreak', 'class19': '', 'class11': 'group, module-biz-dev-mid', 'id19': 'ad-div-mpu', 'class14': 'linebreak', 'class15': 'focus', 'class16': 'linebreak', 'class17': 'focus', 'class10': 'reuters-share, reuters-share-color', 'id34': '', 'class12': 'module-photo-links', 'class13': 'module-biz-dev', 'id22': '', 'id32': 'mpulow', 'id33': '', 'id29': 'bankrate', 'id28': 'taboola-right-rail-video', 'id21': 'IPS_RR_head', 'id20': 'most-popular-parsely', 'id23': '', 'id31': '', 'id25': '', 'id24': '', 'id27': '', 'id26': ''}, 'class1': 'linebreak'}, 'class1': 'group, wrap'}, 'class1': 'sectionContent'}, 'class1': 'section, bleeding'}, 'id1': 'content', 'id2': '', 'class1': 'container, group'}, 'footer': {'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class3': 'wrap, footer-trnetwork, group', 'div': {'id2': '', 'id3': '', 'id1': '', 'div': {'id4': '', 'id2': '', 'id3': '', 'id1': '', 'class4': 'grid2', 'class2': 'grid12, grid-inside', 'class3': 'grid10, grid-inside', 'class1': 'grid12, grid-inside'}, 'class2': 'grid2', 'class3': 'footer-trnetwork-inside', 'class1': 'grid10, grid-inside'}, 'class2': 'wrap, footer-links', 'class4': 'wrap, footer-disclaimer', 'class1': 'wrap'}, 'class2': 'footer-bottom, group', 'class3': 'linebreak', 'class1': 'footer-top, group'}, 'id1': '', 'class1': ''}}}

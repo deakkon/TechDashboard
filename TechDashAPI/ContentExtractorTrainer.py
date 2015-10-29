@@ -105,21 +105,33 @@ class ContentExtractorTrainer(object):
                                 for childElement in child:
                                     a = 0
                                     xPathValueTemp = ''
-                                    
+                                     
                                     for item in childElement:
                                         if a == 0:
                                             if item.text is not None:
                                                 xPathValueTemp += "[contains(@class, '%s')]" % (item.text)
-        
+         
                                         if a == 1:
                                             if item.text is not None:
                                                 xPathValueTemp += "[contains(@id, '%s')]" % (item.text)
-
+ 
                                         a += 1
-
+ 
                                     tempPaths.append('//*/'+parentElements.tag+xPathValueTemp)
-
-                    
+                                     
+                     
+                except (ValueError, TypeError) as ve:
+                    print ve
+                    traceback.print_exc()
+                    pass
+                                     
+        self.__xpathPaths = list(set(tempPaths))
+ 
+                     
+    def createXPathFromXMLFile_FullPath(self):
+        for element in self.__domainDoctionaryXML.getiterator():
+            if element.tag in self.__htmlElements:
+                try:
                     #===========================================================
                     # ALTERNATIVE VERSION
                     #===========================================================
@@ -128,51 +140,49 @@ class ContentExtractorTrainer(object):
                         xPathValue = '//*/' + '/'.join(parentNodes) + '/' + element.tag
                     else:
                         xPathValue = '//*/' + element.tag
-                        
+                         
                     childrenClassNodes = [(child.tag , child.text) for child in element.getchildren() if child.tag not in self.__htmlElements]
                     childrenIDNodes = [(child.tag , child.text) for child in element.getchildren() if child.tag not in self.__htmlElements]
                     childrenNodesInfo = [bla for bla in child.getchildren() for child in element.getchildren() if child.tag == 'values' and child.tag not in self.__htmlElements]
-
+ 
                     try:
                         for  child in childrenNodesInfo:
                             a = 0 
                             xPathValueTemp = xPathValue
                             xPathValueTempID = xPathValue
-                            
+                             
                             for bla in child.getchildren():
                                 if a == 0:
                                     if bla.text is not None:
                                         xPathValueTemp += "[contains(@class, '%s')]" % (bla.text)
-
+ 
                                 if a == 1:
                                     if bla.text is not None:
                                         xPathValueTemp += "[contains(@id, '%s')]" % (bla.text)
                                         xPathValueTempID += "[contains(@id, '%s')]" % (bla.text)
-                                        
+                                         
                                 a += 1
-                                
+                                 
                                 #=======================================================
                                 # ADD DIFFERENT XPATH VALUES FOR EVALUATION
                                 #=======================================================
                                 self.__xpathPathsID.append(xPathValueTempID)
                                 self.__xpathPaths.append(xPathValueTemp)
                                 self.__xpathPathsNoAttrib.append(xPathValue)
-                                
+                                 
                     except (IndexError, AttributeError, ValueError) as e:
                         print e
                         traceback.print_exc()
                         pass
-                    
+                     
                 except (ValueError, TypeError) as ve:
                     print ve
                     traceback.print_exc()
                     pass
-        
+         
         self.__xpathPaths = list(set(tempPaths))
-        #=======================================================================
-        # self.__xpathPathsID = list(set(self.__xpathPathsID))
-        # self.__xpathPathsNoAttrib = list(set(self.__xpathPathsNoAttrib))
-        #=======================================================================
+        self.__xpathPathsID = list(set(self.__xpathPathsID))
+        self.__xpathPathsNoAttrib = list(set(self.__xpathPathsNoAttrib))
 
     def evaluateXPathNodeContent(self):
         '''
@@ -200,6 +210,7 @@ class ContentExtractorTrainer(object):
             #===================================================================
             # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
             #===================================================================
+            print itemChildrenTextFile
             ratio = self.__utilitiesFunctions.calculateRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
 
             #===================================================================
@@ -217,7 +228,9 @@ class ContentExtractorTrainer(object):
             #     < numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) + numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])):
             #===================================================================
             nodeBackgroundKnowledge.extend(itemChildrenTextFile)
-            nodeBackgroundKnowledge = list(set(nodeBackgroundKnowledge))
+            #===================================================================
+            # nodeBackgroundKnowledge = list(set(nodeBackgroundKnowledge))
+            #===================================================================
             self.__htmlFileBackgroundKnowledge[path]['content'] = nodeBackgroundKnowledge
             
             with open(self.__dictionaryPath + self.__domain + '_xpathNodesRatio.csv', 'a') as file:
@@ -248,15 +261,16 @@ class ContentExtractorTrainer(object):
         #===================================================================
         pickle.dump(self.__htmlFileBackgroundKnowledge, open(self.__dictionaryPath + self.__domain + '_bckKnowledge.pickle', 'wb'))
         pickle.dump(self.__kMeansValues.cluster_centers_, open(self.__dictionaryPath + self.__domain + '_centroids.pickle', 'wb'))
-        #=======================================================================
-        # pickle.dump([self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '.pickle', 'wb'))
-        #=======================================================================
+        pickle.dump([self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '.pickle', 'wb'))
         
-        self.__htmlFileURL
-        print generatedClusters
-        print self.__kMeansValues.cluster_centers_
-        print paths2Extract
-        print '***************************'
+        #=======================================================================
+        # self.__htmlFileURL
+        # print generatedClusters
+        # print self.__kMeansValues.cluster_centers_
+        # print paths2Extract
+        # print '***************************'
+        # raw_input('prompt')
+        #=======================================================================
         
 #===============================================================================
 # 

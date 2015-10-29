@@ -1,0 +1,30 @@
+(lp0
+S'//*/div'
+p1
+aS"//*/span[contains(@class, 'author')]"
+p2
+aS"//*/div[contains(@class, 'row')]"
+p3
+aS"//*/div[contains(@class, 'menu double active')][contains(@id, 'newsMenu')]"
+p4
+aS"//*/div[contains(@class, 'meta')]"
+p5
+aS"//*/div[contains(@class, 'toggleComments')]"
+p6
+aS"//*/div[contains(@class, 'authorInfo article-byline')]"
+p7
+aS"//*/nav[contains(@class, 'tocNav')]"
+p8
+aS"//*/div[contains(@class, 'col-2')]"
+p9
+aS"//*/div[contains(@class, 'articleHead')]"
+p10
+aS"//*/div[contains(@class, 'col-8')]"
+p11
+aS'//*/nav'
+p12
+aS"//*/div[contains(@class, 'collapsible hidden')]"
+p13
+aS"//*/div[contains(@class, 'col-12')]"
+p14
+a.

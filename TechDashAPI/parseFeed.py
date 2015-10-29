@@ -11,6 +11,7 @@ from TechDashAPI.mysqlUtilities import connectMySQL
 from TechDashAPI.ContentExtractor import ContentExtractor
 from TechDashAPI.ContentExtractorTrainer import ContentExtractorTrainer
 from TechDashAPI.createDOM import createDom
+from TechDashAPI.util import utilities
 
 from pprint import pprint
 import os
@@ -69,6 +70,7 @@ class parseNewsFeed(object):
         self.__domainDBkey = None
         self.__db = connectMySQL(db='xpath', port=3366)
         self.__filesFolder = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'
+        self.__utilitiesFunctions = utilities()
             
     def getDomainKey(self, url):
         '''
@@ -148,6 +150,7 @@ class parseNewsFeed(object):
                 f.close()
                 
     def trainArticles(self, listOfURLs, domain):
+        
         for url in listOfURLs: 
             cet = ContentExtractorTrainer(domain,url)
             cet.createXPathFromXMLFile()
@@ -160,13 +163,16 @@ class parseNewsFeed(object):
     def printFeedItems(self, key=''):
         for key in self.__etags.keys():
             self.__articleLinks = []
-            self.getDomainKey(key)
+            self.getDomainKey(key) 
 
             if self.__etags[key]['changed']:
                 
                 feedEntry = self.__etags[key]['feed']
                 
                 for item in feedEntry['entries']:
+                    #===========================================================
+                    # CHECK IF IF 
+                    #===========================================================
                     self.__articleLinks.append(item['link'])
                     
                 if not os.path.exists(self.__filesFolder+str(self.__domainDBkey)+'.pickle'):

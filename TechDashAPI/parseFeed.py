@@ -173,13 +173,20 @@ class parseNewsFeed(object):
                     #===========================================================
                     # CHECK IF ARTICLE ALREADY IN DATABASE
                     #===========================================================
-                    self.__articleLinks.append(item['link'])
+                    if self.__utilitiesFunctions.checkProcessedArticle(item['link']):
+                        self.__articleLinks.append(item['link'])
+                    
+                #===============================================================
+                # TO DO 
+                # REMOVE IF NOT
+                # TRAIN UNTILL THERE IS ONLY A LIMITED AMOUNT OF XPATHS AVAILABLE (E.G. 1 WHICH WOULD BE OPTIMAL BUT LETS SAY 5 SO IF 1ST DOESNT GET ANY OCNTENT THEN GO TO THE SECOND ONE ETC.)
+                #===============================================================
                     
                 if not os.path.exists(self.__filesFolder+str(self.__domainDBkey)+'.pickle'):
                     print 'Start new thread and train on new domain'
-                    #===================================================================
-                    # thread.start_new_thread(processArticles(articles),'trainModel' )
-                    #===================================================================
+                #===============================================================
+                # if self.__articleLinks:
+                #===============================================================
                     self.processArticles(self.__articleLinks)
                     self.trainArticles(self.__articleLinks, self.__domainDBkey)
 

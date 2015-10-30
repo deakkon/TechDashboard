@@ -76,13 +76,19 @@ class ContentExtractor(object):
             
             for path in self.__XpathList:
 
+                path = path.replace('"',"'")
+                self.__utilitiesFunctions.getXpathStatistics(path, self.__domainDBkey)
+
                 itemChildrenText = self.__utilitiesFunctions.extractContent(path, self.__htmlFile)
                 for elementChildText in itemChildrenText:
-                    elementChildText = elementChildText.replace("'",'"')
-                    path = path.replace("'","\\'")
-            
-                    sqlQuery = "INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType) VALUES ('%s','%s','%s','%s')"%(path,elementChildText,self.__documentIDKey,'Attribs')
-            
+                    elementChildText = elementChildText.replace('"',"'")
+
+                    sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength) VALUES ("%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText))
+
+                    #===========================================================
+                    # print sqlQuery
+                    #===========================================================
+                    
                     self.__db.executeQuery(sqlQuery)
                     self.__db._connectMySQL__connection.commit()
             print 'Extracted content from %s to PROCESSED list' %(self.__fileURL)

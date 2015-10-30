@@ -1,29 +1,29 @@
 (lp0
-S"//*/div[contains(@class, 'section section-amazon-shop-link')][contains(@id, 'amazon-shop-link-1230531')]"
+S"//*/div[contains(@class, 'lc')]"
 p1
-aS"//*/div[contains(@class, 'lc')]"
-p2
 aS'//*/div'
-p3
-aS"//*/span[contains(@class, 'footer-section')]"
-p4
-aS"//*/div[contains(@class, 'amazon-button')][contains(@id, 'amazon-shop-link-1230531-button')]"
-p5
+p2
 aS"//*/div[contains(@class, 'gi')]"
-p6
+p3
+aS"//*/div[contains(@class, 'amazon-button')][contains(@id, 'amazon-shop-link-1230608-button')]"
+p4
 aS"//*/div[contains(@class, 'byline')]"
-p7
+p5
 aS"//*/div[contains(@class, 'section')]"
-p8
+p6
+aS"//*/div[contains(@class, 'section section-amazon-shop-link')][contains(@id, 'amazon-shop-link-1230608')]"
+p7
 aS"//*/div[contains(@class, 'l-sidebar')]"
-p9
+p8
 aS"//*/header[contains(@class, 'article-header page-title')]"
-p10
+p9
 aS"//*/div[contains(@class, 'l-main')]"
-p11
+p10
 aS"//*/div[contains(@class, 'tag-item')]"
-p12
+p11
 aS"//*/div[contains(@class, 'article-entry text')]"
+p12
+aS"//*/span[contains(@class, 'footer-section')]"
 p13
 aS"//*/div[contains(@class, 'collapse-body')]"
 p14

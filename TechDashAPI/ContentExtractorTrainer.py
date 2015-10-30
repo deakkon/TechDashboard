@@ -262,12 +262,12 @@ class ContentExtractorTrainer(object):
         pickle.dump(self.__kMeansValues.cluster_centers_, open(self.__dictionaryPath + self.__domain + '_centroids.pickle', 'wb'))
         pickle.dump([self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '.pickle', 'wb'))
         
+        self.__htmlFileURL
+        print generatedClusters
+        print self.__kMeansValues.cluster_centers_
+        print paths2Extract
+        print '***************************'
         #=======================================================================
-        # self.__htmlFileURL
-        # print generatedClusters
-        # print self.__kMeansValues.cluster_centers_
-        # print paths2Extract
-        # print '***************************'
         # raw_input('prompt')
         #=======================================================================
         

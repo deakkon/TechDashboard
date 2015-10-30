@@ -2,3 +2,5 @@ xpathModels/
 .settings/org.eclipse.core.resources.prefs
 
 *.pyc
+
+*.pyc

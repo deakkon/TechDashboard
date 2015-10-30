@@ -13,6 +13,7 @@ import traceback
 import editdistance
 from numpy import mean, median, amax, sum, array, append
 from scipy.stats import histogram, histogram2
+from TechDashAPI.mysqlUtilities import connectMySQL
 
 
 class utilities(object):
@@ -28,6 +29,7 @@ class utilities(object):
         self.__htmlElements = ['body', 'header', 'nav', 'footer', 'article', 'section', 'aside', 'div', 'span']
         self.__htmlAttributes = ['id', 'class']
         self.__htmlElementsSkip = ['script']
+        self.__db = connectMySQL(db='xpath', port=3366)
         
     def extractContent(self, path, htmlFile):
 
@@ -58,6 +60,9 @@ class utilities(object):
             return
     
     def calculateRatio(self, itemChildrenTextFile, path, htmlFileBackgroundKnowledge, nodeBackgroundKnowledge):
+        '''
+        Character based Levenshtein Distance 
+        '''
         
         ratioList = []
     
@@ -71,6 +76,11 @@ class utilities(object):
                 for itemBack in nodeBackgroundKnowledge:
                     ratio.append(editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack)))
                 
+                #===============================================================
+                # if extractCount > 0:
+                #     ratioList.append(median(ratio) * (extractCount / len(itemChildrenTextFile)))
+                # else:
+                #===============================================================
                 ratioList.append(median(ratio))
                 
         
@@ -78,7 +88,36 @@ class utilities(object):
             ratioList.append(0)
 
         return mean(ratioList)
+
+
+    def calculateRatioNGram(self, itemChildrenTextFile, path, htmlFileBackgroundKnowledge, nodeBackgroundKnowledge):
+        '''
+        
+        N-Gram distance measure - to be developed 
+        n-gram overlap
+        https://pythonhosted.org/ngram/index.html
+        http://odur.let.rug.nl/~vannoord/TextCat/textcat.pdf
+        
+        '''
+        ratioList = []
     
+        if len(itemChildrenTextFile) > 0:
+
+            sumBkn = sum( [ htmlFileBackgroundKnowledge[key]['extractCount'] for key in htmlFileBackgroundKnowledge.keys()])
+            extractCount = htmlFileBackgroundKnowledge[path]['extractCount']
+
+            for itemChild in itemChildrenTextFile:
+                ratio = []
+                for itemBack in nodeBackgroundKnowledge:
+                    ratio.append(editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack)))
+                
+                ratioList.append(median(ratio) / len(itemChildrenTextFile))
+                
+        
+        else:
+            ratioList.append(0)
+
+        return mean(ratioList)    
     
 #===============================================================================
 # CREATING XPATH PATHS
@@ -182,3 +221,48 @@ class utilities(object):
         xpathPathsNoAttrib = list(set(self.__xpathPathsNoAttrib))
         
         return(xpathPaths, xpathPathsID, xpathPathsNoAttrib)
+    
+    
+    def checkProcessedArticle(self, fileURL):
+        sqlQuery = 'select documentID from document where documentURL="%s"' %(fileURL)
+
+        self.__db.executeQuery(sqlQuery)
+        results = 
+
+        
+        if len(self.__db._connectMySQL__results) > 0:
+            documentIDKey = False
+        else:
+            documentIDKey = True
+            
+        #=======================================================================
+        # if len(self.__db._connectMySQL__results) > 0:
+        #     documentIDKey = False
+        # else:
+        #     documentIDKey = True
+        #=======================================================================
+            
+        return documentIDKey
+            
+    def getXpathStatistics(self, xpath, domain):
+        #=======================================================================
+        # PROBLEM NOT ALL ITEMS HAVE LENGTH
+        # 1) UPDATE CONTENT WITH LENGTH INFORMATION WHERE ITS MISSING
+        # 2) CALCULATE BASIC STATISTICS AND LIMIT NEW ENTRIES BASED ON 1 OR 2 STANDARD DEVIATION
+        #=======================================================================
+        sqlQuery = 'SELECT xpathValuesContent FROM xpathValuesXPath where xpathValuesXPath = "%s" and xpathValuesXPathContentLength != "" and xpathValuesdocumentID in (select documentID from document where documentDomainListID = "%s")' %(xpath, domain)
+        print sqlQuery
+        self.__db.executeQuery(sqlQuery)
+        
+        results = self.__db._connectMySQL__results
+        
+#===============================================================================
+#         for item in results:
+#             print item, '\n'
+# 
+#         print results
+#===============================================================================
+        
+        raw_input('prompt')
+        
+        

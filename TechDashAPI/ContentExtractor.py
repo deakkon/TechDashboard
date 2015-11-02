@@ -69,10 +69,14 @@ class ContentExtractor(object):
             self.__documentIDKey = self.__db._connectMySQL__cursor.lastrowid
         
     def extractContent(self):
+        '''
+        TO DO: ELIMINATE DUPLICATES FROM EXTRACTED CONTENT (E.G. ARTICLE GET EXTRACTED MORE THAN ONCE)
+        '''
 
         if self.__documentIDKey is not None:
    
             itemChildrenText = ''
+            extractedContent = []
             
             for path in self.__XpathList:
 
@@ -85,6 +89,7 @@ class ContentExtractor(object):
                     # if len(elementChildText) > pathStatistics[u'50%']:
                     #===========================================================
                     if len(elementChildText) > pathStatistics[u'50%']:
+                        extractedContent.append(elementChildText)
                         sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength) VALUES ("%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText))
                         print path, elementChildText, len(elementChildText), pathStatistics[u'50%']
                         self.__db.executeQuery(sqlQuery)

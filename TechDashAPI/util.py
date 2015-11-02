@@ -7,14 +7,11 @@ from __future__ import division
 from lxml import *
 import sys
 import traceback
-#===============================================================================
-# import Levenshtein
-#===============================================================================
 import editdistance
-from numpy import mean, median, amax, sum, array, append
-from scipy.stats import histogram, histogram2
+import numpy as np
+from numpy import mean, median, sum
 from TechDashAPI.mysqlUtilities import connectMySQL
-
+import pandas as pd
 
 class utilities(object):
     '''
@@ -227,42 +224,39 @@ class utilities(object):
         sqlQuery = 'select documentID from document where documentURL="%s"' %(fileURL)
 
         self.__db.executeQuery(sqlQuery)
-        results = 
-
         
         if len(self.__db._connectMySQL__results) > 0:
             documentIDKey = False
         else:
             documentIDKey = True
             
-        #=======================================================================
-        # if len(self.__db._connectMySQL__results) > 0:
-        #     documentIDKey = False
-        # else:
-        #     documentIDKey = True
-        #=======================================================================
-            
         return documentIDKey
             
     def getXpathStatistics(self, xpath, domain):
-        #=======================================================================
-        # PROBLEM NOT ALL ITEMS HAVE LENGTH
-        # 1) UPDATE CONTENT WITH LENGTH INFORMATION WHERE ITS MISSING
-        # 2) CALCULATE BASIC STATISTICS AND LIMIT NEW ENTRIES BASED ON 1 OR 2 STANDARD DEVIATION
-        #=======================================================================
-        sqlQuery = 'SELECT xpathValuesContent FROM xpathValuesXPath where xpathValuesXPath = "%s" and xpathValuesXPathContentLength != "" and xpathValuesdocumentID in (select documentID from document where documentDomainListID = "%s")' %(xpath, domain)
-        print sqlQuery
+        sqlQuery = 'SELECT xpathValuesXPathContentLength FROM xpathValuesXPath where xpathValuesXPath = "%s" and xpathValuesXPathContentLength is not Null and xpathValuesdocumentID in (select documentID from document where documentDomainListID = "%s")' %(xpath, domain)
+        self.__db.executeQuery(sqlQuery)
+        
+        results = self.__db._connectMySQL__results
+        pdResults = pd.Series(np.array([item[0] for item in results]))
+        statDescRes = pdResults.describe(percentiles=[.25,.35,.50, .75, .95])
+        return statDescRes
+        
+        
+        
+    def updateLengthInfo(self):
+        
+        sqlQuery = 'SELECT xpathValuesID, xpathValuesContent FROM xpathValuesXPath where xpathValuesXPathContentLength is Null'
         self.__db.executeQuery(sqlQuery)
         
         results = self.__db._connectMySQL__results
         
+        for item in results:
+            sqlUpdate = 'update xpathValuesXPath set xpathValuesXPathContentLength = "%s" where xpathValuesID = "%s"'%(len(item[1]),item[0])
+            print sqlUpdate
+            self.__db.executeQuery(sqlUpdate)
+            self.__db._connectMySQL__connection.commit()
+            
 #===============================================================================
-#         for item in results:
-#             print item, '\n'
-# 
-#         print results
+# ut = utilities()
+# ut.getXpathStatistics("//*/body/div/div/div/div[contains(@class, 'articleHead')]", 1)
 #===============================================================================
-        
-        raw_input('prompt')
-        
-        

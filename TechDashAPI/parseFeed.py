@@ -84,7 +84,9 @@ class parseNewsFeed(object):
         self.__db.executeQuery(sqlQuery)
         #print self.__db._connectMySQL__results
         if len(self.__db._connectMySQL__results) == 1:
-            print "Analyzing existing domain %s!"%(self.__domain)
+            #===================================================================
+            # print "Analyzing existing domain %s!"%(self.__domain)
+            #===================================================================
             results = self.__db._connectMySQL__results
             self.__domainDBkey = results[0][0]
         elif len(self.__db._connectMySQL__results) > 1:
@@ -175,6 +177,10 @@ class parseNewsFeed(object):
                     #===========================================================
                     if self.__utilitiesFunctions.checkProcessedArticle(item['link']):
                         self.__articleLinks.append(item['link'])
+                    #===========================================================
+                    # else:
+                    #     print '%s already processed' %(item['link'])
+                    #===========================================================
                     
                 #===============================================================
                 # TO DO 

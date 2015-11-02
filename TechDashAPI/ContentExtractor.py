@@ -77,21 +77,19 @@ class ContentExtractor(object):
             for path in self.__XpathList:
 
                 path = path.replace('"',"'")
-                self.__utilitiesFunctions.getXpathStatistics(path, self.__domainDBkey)
-
-                itemChildrenText = self.__utilitiesFunctions.extractContent(path, self.__htmlFile)
+                pathStatistics = self.__utilitiesFunctions.getXpathStatistics(path, self.__domainDBkey)
+                itemChildrenText = list(set(self.__utilitiesFunctions.extractContent(path, self.__htmlFile)))
                 for elementChildText in itemChildrenText:
                     elementChildText = elementChildText.replace('"',"'")
-
-                    sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength) VALUES ("%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText))
-
                     #===========================================================
-                    # print sqlQuery
+                    # if len(elementChildText) > pathStatistics[u'50%']:
                     #===========================================================
-                    
-                    self.__db.executeQuery(sqlQuery)
-                    self.__db._connectMySQL__connection.commit()
-            print 'Extracted content from %s to PROCESSED list' %(self.__fileURL)
+                    if len(elementChildText) > pathStatistics[u'50%']:
+                        sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength) VALUES ("%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText))
+                        print path, elementChildText, len(elementChildText), pathStatistics[u'50%']
+                        self.__db.executeQuery(sqlQuery)
+                        self.__db._connectMySQL__connection.commit()
+            print 'PROCESSED : Extracted content from %s \n =======================' %(self.__fileURL)
             
 
 

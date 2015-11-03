@@ -4,3 +4,7 @@ xpathModels/
 *.pyc
 
 *.pyc
+
+*.lda
+
+*.state

@@ -51,6 +51,7 @@ class techDashTopicModel(object):
         self.__stopwords = stopwords.words('english')# + string.punctuation
         self.__chars_to_remove = ['[', ']', '(', ')', '*', '%', '{', '}', '\n', '\n\n', '\t', ';','/','^','--','\\','+','-','.','?','&','#']
         self.__stopwords.extend(self.__chars_to_remove)
+        self.__stopwords.extend([item for item in string.punctuation])
 
         #=======================================================================
         # DATABASE
@@ -77,13 +78,15 @@ class techDashTopicModel(object):
             # print dox[0].decode('utf-8')
             #===================================================================
             dox = dox[0].decode('utf-8')
-            line = [i for i in word_tokenize(dox.lower()) if i not in self.__stopwords]
+            line = [i.strip() for i in word_tokenize(dox.lower()) if i not in self.__stopwords]
             #===================================================================
             # print line
             #===================================================================
             self.__cleanedCorpus.append(line)
             
+        print self.__cleanedCorpus
         print 'Cleaned extracted documents'
+        raw_input('prompt')
        
     def createCorpusFiles(self):
         

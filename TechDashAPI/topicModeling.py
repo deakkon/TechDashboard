@@ -347,6 +347,8 @@ class techDashTopicModel(object):
  
         print 'Finished normalizing.\n Finding overlaping terms.\n'
          
+         
+         
         write2File = self.__destination+modelName+"_results_normalized_%sTerms_SW.csv"%(numberOfTerms)
         resultsCSV = open(write2File, "wb")
           
@@ -400,8 +402,7 @@ class techDashTopicModel(object):
             modelName=self.__fileName
     
         if topNSimilar=='':
-            topNSimilar=5
-            
+            topNSimilar=5       
             
         write2file = self.__destination+modelName+"_results_LDA_similarTopics.csv"
         resultsCSV = open(write2file, "wb")
@@ -411,7 +412,8 @@ class techDashTopicModel(object):
         ldaModel = LdaModel.load(self.__destination+modelName+'.lda',  mmap=None)
         topics = ldaModel.show_topics(num_topics=ldaModel.num_topics, num_words=len(gensimDict),formatted=False)
         #=======================================================================
-        # num_topics=ldaModel.num_topics                             num_words=len(gensimDict)
+        # num_topics=ldaModel.num_topics                             
+        # num_words=len(gensimDict)
         #=======================================================================
         
         #=======================================================================
@@ -424,9 +426,7 @@ class techDashTopicModel(object):
         for topic in topicsSorted:
             vector = [item[0] for item in topic]
             vectors.append(vector)
-        
-        
-        
+
         #=======================================================================    
         # CALCULATE SIMILARITIES BETWEEN TOPICS
         #=======================================================================
@@ -442,18 +442,12 @@ class techDashTopicModel(object):
                 distances.append(dist)
             results.append(distances)
 
-
-
         #=======================================================================
         # EXPORT TOP N SIMILAR TOPICS NAD PRINT OUT QUERY TERMS
         #=======================================================================
         print 'Writing found similar topics to file\n'
         for resultItem in range(0,len(results)):
             similarLDATopics = np.argsort(results[resultItem])[::-1]
-            
-            #===================================================================
-            # print results[resultItem], resultItem, similarLDATopics, len(similarLDATopics)
-            #===================================================================
               
             for similarItem in similarLDATopics[:topNSimilar]:
                 #===============================================================
@@ -462,6 +456,8 @@ class techDashTopicModel(object):
                 resultsCSV.write(str(topicList[resultItem])+'; '+str(similarItem)+'; '+', '.join(x[1].lstrip().rstrip() for x in topics[similarItem][:100])+'\n\n')
             resultsCSV.write('*******************************************\n\n')
  
+
+
 lda = techDashTopicModel( destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA',
                                                                 fileName='initalModel')
 

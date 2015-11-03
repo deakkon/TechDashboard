@@ -425,7 +425,9 @@ class techDashTopicModel(object):
             vector = [item[0] for item in topic]
             vectors.append(vector)
         
-        #=======================================================================
+        
+        
+        #=======================================================================    
         # CALCULATE SIMILARITIES BETWEEN TOPICS
         #=======================================================================
         print 'Calculating distances between LDA topics\n'
@@ -439,6 +441,8 @@ class techDashTopicModel(object):
                 #===============================================================
                 distances.append(dist)
             results.append(distances)
+
+
 
         #=======================================================================
         # EXPORT TOP N SIMILAR TOPICS NAD PRINT OUT QUERY TERMS

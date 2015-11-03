@@ -8,3 +8,5 @@ xpathModels/
 *.lda
 
 *.state
+
+webApp/bower_components

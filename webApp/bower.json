@@ -1,0 +1,16 @@
+{
+  "name": "TechDashboard",
+  "homepage": "https://github.com/deakkon/TechDashboard",
+  "authors": [
+    "SemanticVIRT <seva.jurica@gmail.com>"
+  ],
+  "description": "bower file to install everything needed (angular, polymer etc)",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-material": "~0.11.4",
+    "polymer": "~1.2.1"
+  }
+}

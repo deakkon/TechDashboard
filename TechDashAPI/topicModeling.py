@@ -32,6 +32,8 @@ import re
 # from TechDashAPI.mysqlUtilities import connectMySQL
 #===============================================================================
 from mysqlUtilities import connectMySQL
+from webApp.flaskApp import modelName
+from boto.roboto.awsqueryrequest import Line
 
 
 class techDashTopicModel(object):
@@ -289,11 +291,11 @@ class techDashTopicModel(object):
         
         return model.show_topics(num_topics=model.num_topics,num_words=100, formatted=False)
     
-    def getTopicdetails(self,topicId):
+    def getTopicdetails(self,topicId, numOfwords=100):
         
         model = LdaModel.load(self.__destination+modelName+'.lda',  mmap=None)
     
-        return model.show_topic(topicId,100)
+        return model.show_topic(topicId,numOfwords)
     
     def updateModel_LDA(self, dictname, modelName):
         
@@ -314,21 +316,21 @@ class techDashTopicModel(object):
         #=======================================================================
         oldDict = corpora.Dictionary.load(self.__destination+dictname+'.dict')
         newCorpora = [oldDict.doc2bow(text) for text in self.__cleanedCorpus]
-#===============================================================================
-#         oldContent =  self.__destination+dictname+'.mm'
-#         print oldContent
-#         
-#         oldDict = corpora.Dictionary.load(self.__destination+dictname+'.dict')
-#         newDict = corpora.Dictionary(self.__cleanedCorpus)
-#         mergedDict = oldDict.merge_with(newDict)
-# 
-#         oldCorpora = corpora.MmCorpus(self.__destination+dictname+'.mm')
-#         newCorpora = [newDict.doc2bow(text) for text in self.__cleanedCorpus]
-#         mergedCorpus = itertools.chain(oldCorpora,mergedDict[newCorpora])
-#     
-#         mergedDict.save(self.__destination+dictname+'.dict')
-#         corpora.MmCorpus.serialize(self.__destination+dictname+'.mm', mergedCorpus)
-#===============================================================================
+ #==============================================================================
+ #        oldContent =  self.__destination+dictname+'.mm'
+ #        print oldContent
+ #         
+ #        oldDict = corpora.Dictionary.load(self.__destination+dictname+'.dict')
+ #        newDict = corpora.Dictionary(self.__cleanedCorpus)
+ #        mergedDict = oldDict.merge_with(newDict)
+ # 
+ #        oldCorpora = corpora.MmCorpus(self.__destination+dictname+'.mm')
+ #        newCorpora = [newDict.doc2bow(text) for text in self.__cleanedCorpus]
+ #        mergedCorpus = itertools.chain(oldCorpora,mergedDict[newCorpora])
+ #     
+ #        mergedDict.save(self.__destination+dictname+'.dict')
+ #        corpora.MmCorpus.serialize(self.__destination+dictname+'.mm', mergedCorpus)
+ #==============================================================================
 
         #=======================================================================
         # dict = corpora.Dictionary.load(self.__destination+modelName+'.dict')
@@ -336,6 +338,23 @@ class techDashTopicModel(object):
         #=======================================================================
         ldaModel = LdaModel.load(self.__destination+modelName+'.lda', mmap='r')
         ldaModel.update(newCorpora)
+        lda.save(self.__destination+modelName+'.lda')
+        
+        
+    def geteDocumentTopics(self, document, modelName,dictname):
+        document = document[0].decode('utf-8')
+        line = [re.sub(r'\W+', '', i.strip()) for i in word_tokenize(document.lower()) if i not in self.__stopwords]# and len(re.sub(r'\W+', '', i.strip())) > 0 and str.isalpha(re.sub(r'\W+', '', i.strip()))]
+        line = [item for item in line if len(item) > 0 and unicode.isalpha(item)]
+        
+        print Line
+        raw_input('prompt')
+        
+        ldaModel = LdaModel.load(self.__destination+modelName+'.lda', mmap='r') 
+        modelDict = corpora.Dictionary.load(self.__destination+dictname+'.dict')
+        documentBOW = modelDict.doc2bow(line)
+        document2Topic = ldaModel[documentBOW]
+        print document2Topic
+        return document2Topic
         
     def normalizeLDA(self, modelName='', numberOfTerms=''):
         

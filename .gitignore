@@ -1,12 +1,10 @@
 xpathModels/
 
-modelsLDA/*
-
 modelsLDA/
 
-.settings/org.eclipse.core.resources.prefs
+webApp/static/
 
-*.pyc
+.settings/org.eclipse.core.resources.prefs
 
 *.pyc
 
@@ -14,15 +12,11 @@ modelsLDA/
 
 *.state
 
-webApp/
 *.dict
 
 *.mm
 
 *.index
 
-*.index
+*.hdp
 
-*.mm
-
-*.dict

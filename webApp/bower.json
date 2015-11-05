@@ -1,16 +1,25 @@
 {
-  "name": "TechDashboard",
+  "name": "webApp",
   "homepage": "https://github.com/deakkon/TechDashboard",
   "authors": [
     "SemanticVIRT <seva.jurica@gmail.com>"
   ],
-  "description": "bower file to install everything needed (angular, polymer etc)",
+  "description": "",
   "main": "",
   "moduleType": [],
   "license": "MIT",
-  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
+    "angular-messages": "~1.4.7",
     "angular-material": "~0.11.4",
-    "polymer": "~1.2.1"
+    "angular-route": "~1.4.7",
+    "polymer": "~1.2.1",
+    "react": "~0.14.2"
   }
 }

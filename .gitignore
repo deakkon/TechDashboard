@@ -1,4 +1,9 @@
 xpathModels/
+
+modelsLDA/*
+
+modelsLDA/
+
 .settings/org.eclipse.core.resources.prefs
 
 *.pyc
@@ -9,4 +14,15 @@ xpathModels/
 
 *.state
 
-webApp/bower_components
+webApp/
+*.dict
+
+*.mm
+
+*.index
+
+*.index
+
+*.mm
+
+*.dict

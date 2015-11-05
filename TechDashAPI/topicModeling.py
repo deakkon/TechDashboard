@@ -24,6 +24,10 @@ from gensim.models import LdaModel, LdaMulticore, HdpModel
 import numpy as np
 from scipy.spatial.distance import euclidean
 
+import os.path, time
+import itertools
+import re
+
 #===============================================================================
 # from TechDashAPI.mysqlUtilities import connectMySQL
 #===============================================================================
@@ -49,7 +53,7 @@ class techDashTopicModel(object):
         # STOP WORDS AND CAHRACTERS
         #=======================================================================
         self.__stopwords = stopwords.words('english')# + string.punctuation
-        self.__chars_to_remove = ['[', ']', '(', ')', '*', '%', '{', '}', '\n', '\n\n', '\t', ';','/','^','--','\\','+','-','.','?','&','#']
+        self.__chars_to_remove = [u'[', u']', u'(', u')', u'*', u'%', u'{', u'}', u'\n', u'\n\n', u'\t', u';',u'/',u'^',u'--',u'\\',u'+',u'-',u'.',u'?',u'&',u'#',u'',u'']
         self.__stopwords.extend(self.__chars_to_remove)
         self.__stopwords.extend([item for item in string.punctuation])
 
@@ -60,11 +64,16 @@ class techDashTopicModel(object):
         self.__queryResults = None
         self.__cleanedCorpus = []
         
-    def getCorpusFromDB(self):
+    def getCorpusFromDB(self, dateSince=''):
         #=======================================================================
         # ADD PERIODICAL UPDATE BASED ON TIMESTAMPS
         #=======================================================================
-        sqlQuery = 'SELECT xpathValuesContent FROM xpathValuesXPath'
+        if dateSince == '':
+            sqlQuery = 'SELECT xpathValuesContent FROM xpathValuesXPath'
+            
+        else:
+            sqlQuery = 'SELECT xpathValuesContent FROM xpathValuesXPath where xpathValuesXPathDateTime >= "%s"' %(dateSince)
+            
         self.__db.executeQuery(sqlQuery)
         self.__queryResults = self.__db._connectMySQL__results
         print 'Extracted data from database'
@@ -74,19 +83,12 @@ class techDashTopicModel(object):
     def cleanPreparedCorpus(self):
     
         for dox in self.__queryResults:
-            #===================================================================
-            # print dox[0].decode('utf-8')
-            #===================================================================
             dox = dox[0].decode('utf-8')
-            line = [i.strip() for i in word_tokenize(dox.lower()) if i not in self.__stopwords]
-            #===================================================================
-            # print line
-            #===================================================================
+            line = [re.sub(r'\W+', '', i.strip()) for i in word_tokenize(dox.lower()) if i not in self.__stopwords]# and len(re.sub(r'\W+', '', i.strip())) > 0 and str.isalpha(re.sub(r'\W+', '', i.strip()))]
+            line = [item for item in line if len(item) > 0 and unicode.isalpha(item)]
             self.__cleanedCorpus.append(line)
-            
         print self.__cleanedCorpus
         print 'Cleaned extracted documents'
-        raw_input('prompt')
        
     def createCorpusFiles(self):
         
@@ -275,29 +277,65 @@ class techDashTopicModel(object):
         modelName -> name of model to read in to memory without the extension
         '''
         
+        returningData = {}
+        
         if modelName=='':
             modelName=self.__fileName
             
         if numberOfTerms=='':
             numberOfTerms=100
-    
-        write2file = self.__destination+modelName+"_results_AllTopics.csv"
-        resultsCSV = open(write2file, "wb")
-        
+            
         model = LdaModel.load(self.__destination+modelName+'.lda',  mmap=None)
         
-        #and another way, only prints top words 
-        for t in range(0, model.num_topics-1):
-            #===================================================================
-            # print 'topic {}: '.format(t) + ', '.join([v[1] for v in model.show_topic(t, numberOfTerms)])
-            #===================================================================
-            topic = 'topic {}: '.format(t)
-            topicSet = [v[1].lstrip().rstrip() for v in model.show_topic(t, numberOfTerms)]
-            print topic, topicSet
-            resultsCSV.write(topic + '\t' + ', '.join(topicSet)+'\n\n')
-            resultsCSV.write('***************************************\n')
-            
-        resultsCSV.close()
+        return model.show_topics(num_topics=model.num_topics,num_words=100, formatted=False)
+    
+    def getTopicdetails(self,topicId):
+        
+        model = LdaModel.load(self.__destination+modelName+'.lda',  mmap=None)
+    
+        return model.show_topic(topicId,100)
+    
+    def updateModel_LDA(self, dictname, modelName):
+        
+        #=======================================================================
+        # GET LAST MODIFIED DATE IN MYSQL FORMAT
+        #=======================================================================
+
+        
+        #=======================================================================
+        # GET NEW DOCUMENTS SINCE LAST MODIFIED DATE AND PREPARE THEM
+        #=======================================================================
+        modelModified = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(os.path.getmtime(self.__destination+modelName+'.lda') ))
+        self.getCorpusFromDB(modelModified)
+        self.cleanPreparedCorpus()
+        
+        #=======================================================================
+        # UPDATE DICT, CORPUT AND LDA MODEL WITH NEW DOCUMENTS
+        #=======================================================================
+        oldDict = corpora.Dictionary.load(self.__destination+dictname+'.dict')
+        newCorpora = [oldDict.doc2bow(text) for text in self.__cleanedCorpus]
+#===============================================================================
+#         oldContent =  self.__destination+dictname+'.mm'
+#         print oldContent
+#         
+#         oldDict = corpora.Dictionary.load(self.__destination+dictname+'.dict')
+#         newDict = corpora.Dictionary(self.__cleanedCorpus)
+#         mergedDict = oldDict.merge_with(newDict)
+# 
+#         oldCorpora = corpora.MmCorpus(self.__destination+dictname+'.mm')
+#         newCorpora = [newDict.doc2bow(text) for text in self.__cleanedCorpus]
+#         mergedCorpus = itertools.chain(oldCorpora,mergedDict[newCorpora])
+#     
+#         mergedDict.save(self.__destination+dictname+'.dict')
+#         corpora.MmCorpus.serialize(self.__destination+dictname+'.mm', mergedCorpus)
+#===============================================================================
+
+        #=======================================================================
+        # dict = corpora.Dictionary.load(self.__destination+modelName+'.dict')
+        # mm = corpora.MmCorpus(self.__destination+modelName+'.mm')
+        #=======================================================================
+        ldaModel = LdaModel.load(self.__destination+modelName+'.lda', mmap='r')
+        ldaModel.update(newCorpora)
         
     def normalizeLDA(self, modelName='', numberOfTerms=''):
         
@@ -458,25 +496,12 @@ class techDashTopicModel(object):
  
 
 
-lda = techDashTopicModel( destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA',
-                                                                fileName='initalModel')
-
-#===============================================================================
-# lda.getCorpusFromDB()
-# lda.cleanPreparedCorpus()
-# lda.createCorpusFiles()
-#===============================================================================
+lda = techDashTopicModel( destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/', fileName='initalModel')
+lda.getCorpusFromDB()
+lda.cleanPreparedCorpus()
+lda.createCorpusFiles()
 lda.createLDA(ldaPasses=500, topicNum=20, modelName= '500P_20T')
 #===============================================================================
 # lda.createHDP()
+# lda.updateModel_LDA('modelsLDAinitalModel', 'modelsLDA500P_20T')
 #===============================================================================
-     
-#===============================================================================
-# processResults.processResultsHRformatRegex()
-# processResults.createCorpusFiles()
-# processResults.createLDA(modelName= 'extractedData_Temp_NoSem_500T_100P_v1_cleaned', ldaPasses=100, topicNum=500)
-# processResults.getAllTopics(modelName= 'extractedData_Temp_NoSem_500T_100P_v1_cleaned', numberOfTerms=100)
-# processResults.normalizeLDA(modelName= 'extractedData_Temp_NoSem_500T_100P_v1_cleaned')
-# processResults.calculateLDADistance(modelName= 'extractedData_Temp_NoSem_500T_100P_v1_cleaned', topNSimilar=10, topicList=[243,395,238,465,158,408,264,167,315,295,424])
-#===============================================================================
-

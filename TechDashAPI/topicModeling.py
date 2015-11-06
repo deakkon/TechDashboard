@@ -1,3 +1,4 @@
+# encoding=utf8
 '''
 Created on 2 Nov 2015
 
@@ -32,8 +33,12 @@ import re
 # from TechDashAPI.mysqlUtilities import connectMySQL
 #===============================================================================
 from mysqlUtilities import connectMySQL
-from webApp.flaskApp import modelName
-from boto.roboto.awsqueryrequest import Line
+#===============================================================================
+# from webApp.flaskApp import modelName
+#===============================================================================
+#===============================================================================
+# from boto.roboto.awsqueryrequest import Line
+#===============================================================================
 
 
 class techDashTopicModel(object):
@@ -274,7 +279,7 @@ class techDashTopicModel(object):
         resultsCSV.close()
         #pprint.pprint(self.__overlapingTopics)
         
-    def getAllTopics(self, modelName='', numberOfTerms=''):
+    def getAllTopics(self, modelName='', numberOfTerms=100):
         '''
         modelName -> name of model to read in to memory without the extension
         '''
@@ -284,12 +289,9 @@ class techDashTopicModel(object):
         if modelName=='':
             modelName=self.__fileName
             
-        if numberOfTerms=='':
-            numberOfTerms=100
-            
         model = LdaModel.load(self.__destination+modelName+'.lda',  mmap=None)
         
-        return model.show_topics(num_topics=model.num_topics,num_words=100, formatted=False)
+        return model.show_topics(num_topics=model.num_topics,num_words=numberOfTerms, formatted=False)
     
     def getTopicdetails(self,topicId, numOfwords=100):
         
@@ -341,20 +343,48 @@ class techDashTopicModel(object):
         lda.save(self.__destination+modelName+'.lda')
         
         
-    def geteDocumentTopics(self, document, modelName,dictname):
-        document = document[0].decode('utf-8')
+    def getDocumentTopics(self, documentContent, dictname, modelName, documentId=''):
+        
+        #===============================================================================
+        # GET DOCUMENT AND PREPARE ITS CONTENT
+        #===============================================================================
+        document = documentContent.decode('utf-8')
         line = [re.sub(r'\W+', '', i.strip()) for i in word_tokenize(document.lower()) if i not in self.__stopwords]# and len(re.sub(r'\W+', '', i.strip())) > 0 and str.isalpha(re.sub(r'\W+', '', i.strip()))]
         line = [item for item in line if len(item) > 0 and unicode.isalpha(item)]
         
-        print Line
-        raw_input('prompt')
-        
+        #=======================================================================
+        # OPEN LDA AND DICT FILES AND PROJECT DOCUMENT ON TO LDA MODEL
+        #=======================================================================
         ldaModel = LdaModel.load(self.__destination+modelName+'.lda', mmap='r') 
         modelDict = corpora.Dictionary.load(self.__destination+dictname+'.dict')
         documentBOW = modelDict.doc2bow(line)
-        document2Topic = ldaModel[documentBOW]
-        print document2Topic
-        return document2Topic
+        print documentBOW
+        assignedTopic = sorted(ldaModel[documentBOW], key=lambda x: x[1], reverse=True)
+        print assignedTopic
+        print assignedTopic[0][0]
+        
+        #=======================================================================
+        # UPDATE DATABASE WITH BGIHHEST MATHING CATEGORY
+        #=======================================================================
+        if documentId != '':
+            sqlQuery = "update xpathValuesXPath set xpathValuesXPathMainTopic = '%s' where xpathValuesID='%s'" % (assignedTopic[0][0], documentId)
+            print sqlQuery
+            self.__db.executeQuery(sqlQuery)
+            self.__db._connectMySQL__connection.commit()
+        #=======================================================================
+        # RETURN SORTED DATA IF NEEDED
+        #=======================================================================
+        else:
+            return assignedTopic[0][0]
+    
+    
+    def updateAllNonTOpicDocuments(self):
+        query = "select xpathValuesID, xpathValuesContent from xpathValuesXPath where xpathValuesXPathMainTopic is Null" 
+        self.__db.executeQuery(query)
+        
+        for item in self.__db._connectMySQL__results:
+            self.getDocumentTopics(item[1],'initalModel', '500P_20T',item[0])
+    
         
     def normalizeLDA(self, modelName='', numberOfTerms=''):
         
@@ -512,15 +542,26 @@ class techDashTopicModel(object):
                 #===============================================================
                 resultsCSV.write(str(topicList[resultItem])+'; '+str(similarItem)+'; '+', '.join(x[1].lstrip().rstrip() for x in topics[similarItem][:100])+'\n\n')
             resultsCSV.write('*******************************************\n\n')
- 
 
-
-lda = techDashTopicModel( destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/', fileName='initalModel')
-lda.getCorpusFromDB()
-lda.cleanPreparedCorpus()
-lda.createCorpusFiles()
-lda.createLDA(ldaPasses=500, topicNum=20, modelName= '500P_20T')
 #===============================================================================
+# lda = techDashTopicModel( destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/', fileName='initalModel')
+#===============================================================================
+#===============================================================================
+# lda.getCorpusFromDB()
+# lda.cleanPreparedCorpus()
+# lda.createCorpusFiles()
+# lda.createLDA(ldaPasses=500, topicNum=20, modelName= '500P_20T')
 # lda.createHDP()
 # lda.updateModel_LDA('modelsLDAinitalModel', 'modelsLDA500P_20T')
 #===============================================================================
+
+document = "Begin: Wordpress Article Content The writing is on the wall for more consolidation in the world of startups… both literally and figuratively. Today This is a bargain of sorts, and a poor return for investors: Oakland-based Livescribe, founded in 2007, had raised at least To finance the acquisition, Anoto says that it has signed a placement agreement with Sweden’s Carnegie Investment Bank AB to issue 158 million shares in Anoto, for a dilution of a maximum of 15%. Anoto has also taken a short-term loan of $2.9 million (25 million Swedish crowns). Livescribe was one of the early leaders in smart pen technology — and by default one of the early movers in the whole area of Internet of Things and turning “dumb” objects into connected pieces of hardware. But it also faced some significant stumbling blocks. Among them, it Livescribe is selling its business operations, technology, and intellectual property. “The Livescribe brand and existing infrastructure will be retained, with a goal of strengthening the position of both companies through the development and sale of new products,” the companies say in a By acquiring Livescribe, Anoto is widening the kinds of products it’s developing and selling. “Acquiring Livescribe is another important step in consolidating the Anoto ecosystem and realizing synergies in hardware and software development, supply chain and operations, and sales distribution,” said Stein Revelsby, CEO of Anoto, said in a statement. “We are already working on a new range of products to be launched in Livescribe’s sales channels in 2016.” “By joining forces with Anoto, we see huge potential for smartpen technology to expand beyond the consumer market and beyond writing and drawing on paper,” said The Swedish company has in the past worked to provide digital solutions for any kind of writing, from notes through to interactive displays and large walls. Livescribe is more about developing handheld styluses for smaller surfaces. That narrowed focus may have been a boost for developing quality, but it perhaps was also one of its problems as a company, considering the large amount competition in this space, from other startups like Paper to large tech companies like Apple designing their own “native” It looks like this is Anoto’s End: Wordpress Article Content"
+#===============================================================================
+# lda.getDocumentTopics(document, 1,'initalModel', '500P_20T')
+#===============================================================================
+#===============================================================================
+# lda.updateAllNonTOpicDocuments()
+#===============================================================================
+
+
+

@@ -1,8 +1,6 @@
 xpathModels/
 
-modelsLDA/
-
-webApp/static/
+static/
 
 .settings/org.eclipse.core.resources.prefs
 

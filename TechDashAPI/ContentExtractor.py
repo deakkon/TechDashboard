@@ -1,3 +1,4 @@
+# encoding=utf8
 '''
 Created on 9 Oct 2015
 
@@ -10,6 +11,7 @@ import os
 from pprint import pprint
 from pickle import PicklingError
 from TechDashAPI.util import utilities
+from TechDashAPI.topicModeling import techDashTopicModel
 
 class ContentExtractor(object):
     '''
@@ -50,6 +52,7 @@ class ContentExtractor(object):
         
         #DB CONNECTIVITY AND FUNCTIONALITY
         self.__db = connectMySQL(db='xpath', port=3366)
+        self.__topicModel = techDashTopicModel(destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/', fileName='initalModel')
 
     def getDocumentIDKey(self):
         '''
@@ -84,13 +87,16 @@ class ContentExtractor(object):
                 pathStatistics = self.__utilitiesFunctions.getXpathStatistics(path, self.__domainDBkey)
                 itemChildrenText = list(set(self.__utilitiesFunctions.extractContent(path, self.__htmlFile)))
                 for elementChildText in itemChildrenText:
+                    print elementChildText
+                    elementChildText = elementChildText.encode('utf-8','replace')
                     elementChildText = elementChildText.replace('"',"'")
                     #===========================================================
                     # if len(elementChildText) > pathStatistics[u'50%']:
                     #===========================================================
                     if len(elementChildText) > pathStatistics[u'50%']:
                         extractedContent.append(elementChildText)
-                        sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength) VALUES ("%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText))
+                        topicModel = self.__topicModel.getDocumentTopics(elementChildText, 'initalModel', '500P_20T')
+                        sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength,xpathValuesXPathMainTopic) VALUES ("%s","%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText),topicModel)
                         print path, elementChildText, len(elementChildText), pathStatistics[u'50%']
                         self.__db.executeQuery(sqlQuery)
                         self.__db._connectMySQL__connection.commit()

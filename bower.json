@@ -20,6 +20,8 @@
     "angular-material": "~0.11.4",
     "angular-route": "~1.4.7",
     "polymer": "~1.2.1",
-    "react": "~0.14.2"
-  }
+    "react": "~0.14.2",
+    "angular-chart.js": "~0.8.5"
+  },
+  "private": true
 }

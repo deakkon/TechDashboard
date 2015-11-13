@@ -2,6 +2,7 @@ from flask import Flask, jsonify, render_template, request
 from gensim.models import LdaModel
 from TechDashAPI.mysqlUtilities import connectMySQL
 import json
+import pprint
 
 app = Flask(__name__)
 #===============================================================================
@@ -28,7 +29,7 @@ def getTopic():
     #===========================================================================
     post = request.get_json()
     topicId = post.get('topicId')
-    print topicId
+    print 'topicId: ',topicId
     
     #===========================================================================
     # GET ALL DATA FOR PARAMETER AND RETURN IN JSON FORMAT
@@ -41,14 +42,34 @@ def getTopic():
     #===========================================================================
     # GET ALL DOCUMENT BELONGING TO THIS TOPIC, SORTED BY DATE OF EXTRACTION DESCENDING
     #===========================================================================
-    query = "select distinct(xpathValuesContent) from xpathValuesXPath where xpathValuesXPathMainTopic ='%s' order by xpathValuesXPathDateTime DESC limit 20" % (topicId)
+    
+    query = "select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) from xpathValuesXPath where xpathValuesXPathMainTopic = '%s' group by xpathValuesdocumentID order by xpathValuesXPathDateTime DESC" % (topicId)
     results = db.executeQuery(query)
     categroyArticles = [x for x in db.results]
-    
+    #===========================================================================
+    # print categroyArticles
+    #===========================================================================
+    #===========================================================================
+    # categoryArticlesDict = []
+    #===========================================================================
+    categoryArticlesDict ={}
+    for item in categroyArticles:
+        #=======================================================================
+        # categoryArticlesDict.append({'content':item[1],'title':item[2],'articleID':item[0], 'show':True})
+        #=======================================================================
+        categoryArticlesDict[item[0]]={'content':item[1],'title':item[2],'articleID':item[0], 'show':False}
+        
+    pprint.pprint(categoryArticlesDict)
+    #===========================================================================
+    # pprint.pprint(jsonify(categroyArticles))
+    #===========================================================================
     #===========================================================================
     # return data to ajax call
     #===========================================================================
-    return json.dumps({'status':'OK','modelKeywords':modelKeywords, 'categroyArticles':categroyArticles, 'topicId':topicId});
+    return json.dumps({'status':'OK','modelKeywords':modelKeywords, 'categroyArticles':categoryArticlesDict, 'topicId':topicId});
+    #===========================================================================
+    # return jsonify({'status':'OK','modelKeywords':modelKeywords, 'categroyArticles':categroyArticles, 'topicId':topicId})
+    #===========================================================================
 
 if __name__ == '__main__':
     app.debug = True

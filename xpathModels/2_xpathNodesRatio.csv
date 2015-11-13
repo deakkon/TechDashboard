@@ -3483,3 +3483,1881 @@
 //*/div[contains(@class, 'l-two-col')];--;0.657342657343
 //*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
 //*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.35575064534
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.15877110694
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.14087301587
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.07384615385
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.545043450274
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.07878787879
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.848829935283
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'aside aside-related-articles')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.36516128819
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.21366869919
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.24538461538
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.530434782609
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.11111111111
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.977546549836
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'aside aside-related-articles')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.36501215334
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;1.9010989011
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.23487654321
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.76
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;1.80327868852
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;1.78125
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.730827371828
+//*/div[contains(@class, 'l-main')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.09090909091
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;1.64843048066
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;0.981132075472
+//*/div[contains(@class, 'aside aside-related-articles')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;1.85964912281
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;1.88461538462
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.38244913058
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.07510696971
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.24538461538
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.578199052133
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.2
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.857944974733
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'aside aside-related-articles')];--;1.91561181435
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;1.77528089888
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;1.98353909465
+//*/div[contains(@id, 'document-footer-content')];--;1.81818181818
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;1.07692307692
+//*/div[contains(@class, 'num-shares-wrapper')];--;1.09090909091
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;1.81818181818
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.06559714795
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;1.33055051422
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;1.39723998044
+//*/div[contains(@id, 'document-footer-content')];--;0.909090909091
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.538461538462
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.545454545455
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.909090909091
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.31100684985
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.842639593909
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.823394495413
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.29001726477
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.868513017648
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.952416232726
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;1.07692307692
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.29001726477
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.913242009132
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.848174684408
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.29001726477
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.884568944699
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;1.04396958828
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.28201381181
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.836653386454
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.813264903277
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;1.07692307692
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.29001726477
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.829905106686
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.861802506621
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.28201381181
+//*/div[contains(@class, 'center-cropped')];--;0.0
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'box separator less-space internal-links')];--;0.0
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'box contrast less-space')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@id, 'content-after-image')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'box pagination internal expand less-space reveal')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy')][contains(@id, 'article-body')];--;1.98705501618
+//*/header;--;0.831775700935
+//*/div[contains(@class, 'ratingVerdict')][contains(@id, 'best-price-article-top')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.29001726477
+//*/div[contains(@class, 'box pagination internal current-prev-next')];--;0.0
+//*/article[contains(@class, 'review-article')];--;0.0
+//*/div[contains(@class, 'center-cropped')];--;0.0
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'box separator less-space internal-links')];--;0.0
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'box contrast less-space')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@id, 'content-after-image')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.545454545455
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'box pagination internal expand less-space reveal')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy')][contains(@id, 'article-body')];--;1.40641245788
+//*/header;--;0.89119068758
+//*/div[contains(@class, 'ratingVerdict')][contains(@id, 'best-price-article-top')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.29001726477
+//*/div[contains(@class, 'box pagination internal current-prev-next')];--;0.0
+//*/article[contains(@class, 'review-article')];--;0.0
+//*/div[contains(@class, 'center-cropped')];--;0.0
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'box separator less-space internal-links')];--;0.0
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'box contrast less-space')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@id, 'content-after-image')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.89696969697
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'box pagination internal expand less-space reveal')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy')][contains(@id, 'article-body')];--;1.21437173826
+//*/header;--;0.881720430108
+//*/div[contains(@class, 'ratingVerdict')][contains(@id, 'best-price-article-top')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.35686811756
+//*/div[contains(@class, 'box pagination internal current-prev-next')];--;0.0
+//*/article[contains(@class, 'review-article')];--;0.0
+//*/div;--;1.35755305887
+//*/div[contains(@class, 'slide')];--;1.2855701926
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide8')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'shown')];--;0.0
+//*/div[contains(@class, 'slide scrollable-holder')];--;0.0
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'list-item iframe-item clearfix')][contains(@id, 'slide13')];--;0.0
+//*/div[contains(@class, 'ad-to-import ad-to-import-3')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'slide-cnt')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide7')];--;0.0
+//*/div[contains(@id, 'adsDivebf1d709aa')];--;0.0
+//*/div[contains(@class, 'slider-head clearfix')];--;1.86991869919
+//*/div[contains(@class, 'l-main')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide12')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@class, 'sidebar')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/div[contains(@class, 'advertisement')];--;1.22222222222
+//*/div[contains(@id, 'main-slider')];--;1.46153846154
+//*/div[contains(@class, 'ad-box')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'slider-wrapper intro-expanded')];--;1.63636363636
+//*/span[contains(@class, 'slides-count')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'fluid article-featured')];--;1.39130434783
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide6')];--;0.0
+//*/div[contains(@class, 'grv-personalization')][contains(@id, 'grv-personalization-13')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'intro-text text')];--;1.92932862191
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide9')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@class, 'slide-text')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'less')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide11')];--;0.0
+//*/div[contains(@class, 'slider-controls clearfix')];--;1.58823529412
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide10')];--;0.0
+//*/div[contains(@class, 'slide-holder')];--;1.33333333333
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide3')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/div[contains(@id, 'adsDive9c763ad68')];--;0.0
+//*/div[contains(@class, 'ad-wide')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv3a3d8957f7')];--;0.0
+//*/div[contains(@class, 'slide-sidebar')];--;0.0
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'ad-to-import ad-to-import-6')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide4')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'view-options')];--;1.71428571429
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide5')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide2')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide1')];--;0.0
+//*/div[contains(@class, 'scroll-pane')];--;1.45545609645
+//*/div[contains(@class, 'slider-controls slider-controls-bottom clearfix')];--;1.58823529412
+//*/div[contains(@class, 'byline')];--;1.22172830725
+//*/div[contains(@class, 'slider clearfix')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/div[contains(@class, 'slide-item clearfix')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/div[contains(@class, 'ad-holder')];--;0.0
+//*/div[contains(@class, 'slide-sidebar-inner')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/article[contains(@class, 'article lc')];--;1.75
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.34663815673
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'section aside crunchbase-cluster collapse')];--;1.33333333333
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.18928571429
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.14087301587
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.07384615385
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.539951483486
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.16283733695
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;1.10652054268
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.36770999798
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.16865079365
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.24538461538
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.536170212766
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.2
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.933212010919
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.37472304977
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.17209823485
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.24538461538
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.564958486457
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/div[contains(@class, 'embed-vimeo')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.855436646487
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.37739274311
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'adsDiv7a835a8d17')];--;0.0
+//*/div[contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'byline contributor-byline')];--;1.96336996337
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@id, 'adsDivebf1d709aa')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.36044386495
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@class, 'left')];--;1.16405585914
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'native-ad-mobile')][contains(@id, 'adsDive9c763ad68')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'name')];--;1.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.24538461538
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.532188841202
+//*/div[contains(@id, 'comments')];--;0.0
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.0
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.927577595433
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv3a3d8957f7')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@class, 'right')];--;0.869565217391
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.3723411226
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.19484478936
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.24538461538
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.57358794264
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.87878113879
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.37366222582
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'section aside crunchbase-cluster collapse')];--;0.666666666667
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.16605691057
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.14087301587
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.07384615385
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.579150579151
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.19009615385
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.856021409456
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div;--;1.33772475767
+//*/div[contains(@class, 'slide')];--;1.35003501371
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide45')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide39')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide8')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide55')];--;0.0
+//*/div[contains(@class, 'shown')];--;0.0
+//*/div[contains(@class, 'slide scrollable-holder')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide61')];--;0.0
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide26')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide18')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide31')];--;0.0
+//*/div[contains(@class, 'ad-to-import ad-to-import-3')];--;0.0
+//*/div[contains(@class, 'slider-controls clearfix')];--;0.794117647059
+//*/div[contains(@class, 'slider-wrapper intro-expanded slider-disable-bg')];--;1.63636363636
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide29')];--;0.0
+//*/div[contains(@class, 'slide-cnt')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide7')];--;0.0
+//*/div[contains(@id, 'adsDivebf1d709aa')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide60')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide57')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide15')];--;0.0
+//*/div[contains(@class, 'slider-head clearfix')];--;1.15810871857
+//*/div[contains(@class, 'l-main')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide24')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide44')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide12')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@class, 'sidebar')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide25')];--;0.0
+//*/div[contains(@class, 'list-item iframe-item clearfix')][contains(@id, 'slide63')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide56')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/div[contains(@class, 'advertisement')];--;0.611111111111
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide21')];--;0.0
+//*/div[contains(@id, 'main-slider')];--;0.730769230769
+//*/div[contains(@class, 'ad-box')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide23')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide19')];--;0.0
+//*/span[contains(@class, 'slides-count')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'fluid article-featured')];--;0.695652173913
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide47')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide50')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide6')];--;0.0
+//*/div[contains(@class, 'slide-sidebar-inner')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide49')];--;0.0
+//*/div[contains(@class, 'grv-personalization')][contains(@id, 'grv-personalization-13')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'intro-text text')];--;1.48771149525
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide42')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide41')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide33')];--;0.0
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide53')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide13')];--;0.0
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide34')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@class, 'slide-text')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide22')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide51')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide62')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide40')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'less')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide11')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide9')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide48')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide10')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide54')];--;0.0
+//*/div[contains(@class, 'slide-holder')];--;0.666666666667
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide3')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide14')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/div[contains(@id, 'adsDive9c763ad68')];--;0.0
+//*/div[contains(@class, 'ad-wide')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide16')];--;0.0
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide35')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv3a3d8957f7')];--;0.0
+//*/div[contains(@class, 'slide-sidebar')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide38')];--;0.0
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'ad-to-import ad-to-import-6')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide4')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'view-options')];--;0.857142857143
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide5')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide2')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide20')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide43')];--;0.0
+//*/div[contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide37')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide1')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide27')];--;0.0
+//*/div[contains(@class, 'slider-controls slider-controls-bottom clearfix')];--;0.794117647059
+//*/div[contains(@class, 'byline')];--;1.21079261409
+//*/div[contains(@class, 'slider clearfix')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide36')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide52')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide17')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide32')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide46')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/div[contains(@class, 'slide-item clearfix')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide30')];--;0.0
+//*/div[contains(@class, 'scroll-pane')];--;1.34441089635
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide59')];--;0.0
+//*/div[contains(@class, 'ad-holder')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide58')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'list-item clearfix')][contains(@id, 'slide28')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/article[contains(@class, 'article lc')];--;1.75
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.866360231529
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.825586353945
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.818181818182
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.28201381181
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.85393258427
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.839977080914
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.818181818182
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;1.07692307692
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.29001726477
+//*/div[contains(@class, 'dfp-leaderboard-container')];--;0.0
+//*/header;--;0.829311420845
+//*/div[contains(@class, 'container full ')][contains(@id, 'main')];--;0.0
+//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')];--;0.928746928747
+//*/div[contains(@id, 'document-footer-content')];--;0.0
+//*/div[contains(@class, 'button-i18n masthead-item sans-spacing')];--;0.0
+//*/aside[contains(@id, 'sidebar')];--;0.0
+//*/div[contains(@class, 'nav-sub-set-container')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails-2nd')];--;0.0
+//*/section[contains(@id, 'taboola-mobile-below-article-thumbnails')];--;0.0
+//*/footer[contains(@class, 'container full')][contains(@id, 'document-footer')];--;0.0
+//*/div[contains(@class, 'wrapper')];--;0.818181818182
+//*/div[contains(@id, 'popular-box-wrapper')];--;0.0
+//*/div[contains(@class, 'container full burgerbar-small')];--;0.0
+//*/nav[contains(@class, 'socialite-widget box less-space ')];--;0.0
+//*/nav[contains(@class, 'primary-nav')];--;0.0
+//*/div[contains(@class, 'buttons-social masthead-item')];--;0.0
+//*/footer;--;0.923076923077
+//*/div[contains(@class, 'trending-bar container full')];--;0.0
+//*/div[contains(@class, 'num-shares-wrapper')];--;0.0
+//*/div[contains(@class, 'most-popular-tab-bar')];--;0.0
+//*/section[contains(@class, 'box newsletter-signup')];--;0.0
+//*/nav[contains(@class, 'breadcrumb')];--;0.0
+//*/div[contains(@class, 'box pagination internal current-prev-next recent-news')];--;0.0
+//*/section[contains(@class, 'popular-box')];--;0.0
+//*/div[contains(@class, 'grey-box')];--;0.0
+//*/section;--;0.0
+//*/div[contains(@class, 'trending-wrapper')];--;0.0
+//*/article[contains(@class, 'news-article')];--;0.0
+//*/div[contains(@class, 'menuitems container full')];--;0.0
+//*/div[contains(@class, 'other-links')];--;0.0
+//*/div[contains(@class, 'logo')];--;0.0
+//*/section[contains(@id, 'article-comments')];--;0.0
+//*/section[contains(@id, 'taboola-below-article-thumbnails')];--;0.0
+//*/div[contains(@class, 'burgerbar')];--;0.0
+//*/div[contains(@class, 'box')];--;1.28201381181
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.35889087242
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'section aside crunchbase-cluster collapse')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.13970880541
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.14087301587
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.07384615385
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.530517430932
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.08872712965
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.882226591878
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.34707500931
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'section aside crunchbase-cluster collapse')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.18238705739
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.14087301587
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.07384615385
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.541666666667
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.10989010989
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;1.11970899471
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.3654409678
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'byline contributor-byline')];--;1.62103365385
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv7a835a8d17')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.30797525186
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@class, 'more-posts')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.1875
+//*/div[contains(@class, 'left')];--;1.17948163327
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@id, 'adsDivebf1d709aa')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/div[contains(@id, 'adsDive9c763ad68')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'name')];--;0.5
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.24538461538
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.565814262331
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.09380018674
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;1.25125117021
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv3a3d8957f7')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@class, 'right')];--;0.869565217391
+//*/article[contains(@class, 'article lc')];--;0.0
+//*/div[contains(@class, 'cf social-share social-share-inline social-share-with-bubbles')][contains(@id, 'social-after-wrapper')];--;0.0
+//*/div[contains(@class, 'lc')];--;0.90243902439
+//*/div;--;1.3507322091
+//*/div[contains(@class, 'trending-container')];--;0.0
+//*/div[contains(@class, 'ad-cluster-container')];--;0.0
+//*/div[contains(@id, 'comments')];--;0.0
+//*/section[contains(@class, 'comments section')];--;0.0
+//*/div[contains(@class, 'accordion recirc-accordion')];--;0.0
+//*/div[contains(@class, 'l-main-container')];--;0.0
+//*/div[contains(@class, 'toaster-content')];--;0.0
+//*/div[contains(@class, 'headbox')];--;0.0
+//*/div[contains(@class, 'section aside-alt crunchboard-listings collapse collapse-last')];--;0.0
+//*/div[contains(@class, 'announcement-bg')];--;0.0
+//*/div[contains(@class, 'section ad-300x250')];--;0.0
+//*/div[contains(@class, 'announcement announcement-flat-background announcement-centered')];--;0.0
+//*/span[contains(@class, 'footer-section')];--;1.14585218703
+//*/div[contains(@class, 'article-extra')];--;0.0
+//*/div[contains(@class, 'lc l-three-col')];--;0.0
+//*/div[contains(@class, 'section aside crunchbase-cluster collapse')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-header-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'gi')];--;1.28677248677
+//*/div[contains(@class, 'l-two-col-expose')];--;0.0
+//*/div[contains(@class, 'fb-comment-container')][contains(@id, 'fb-comment-container')];--;0.0
+//*/div[contains(@class, 'toaster section')];--;0.0
+//*/div[contains(@class, 'header-logo-bar cf')];--;0.0
+//*/div[contains(@class, 'feature-island-container')];--;0.0
+//*/div[contains(@class, 'byline')];--;1.15805612516
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv28831c56c1')];--;0.0
+//*/div[contains(@class, 'social-share social-share-fixed')];--;0.0
+//*/div[contains(@class, 'section aside newsletters-signup collapse collapse-adjacent block')];--;0.0
+//*/div[contains(@class, 'announcement_left')];--;0.0
+//*/div[contains(@class, 'social-share social-share-inline')];--;0.0
+//*/div[contains(@id, 'adsDivea2086e36f')];--;0.0
+//*/div[contains(@id, 'adsDiv0446582dbe')];--;0.0
+//*/div[contains(@class, 'section')];--;1.14087301587
+//*/div[contains(@id, 'adsDiv87704ef324')];--;0.0
+//*/footer[contains(@class, 'footer')];--;0.0
+//*/div[contains(@class, 'footer-content')];--;0.0
+//*/div[contains(@class, 'footer-social')];--;0.0
+//*/div[contains(@class, 'nav-bar')];--;0.0
+//*/section[contains(@class, 'aside section video-aside crunchreport collapse collapse-adjacent')];--;0.0
+//*/div[contains(@class, 'fluid')];--;0.0
+//*/div[contains(@class, 'mobile-header-menu-search')];--;0.0
+//*/div[contains(@class, 'comments-container')][contains(@id, 'comments-container')];--;0.0
+//*/div[contains(@class, 'tags')];--;0.0
+//*/div[contains(@class, 'trending-head')];--;0.0
+//*/div[contains(@class, 'header-social')];--;0.0
+//*/div[contains(@class, 'newsletter newsletter-side-bar-newsletters')];--;0.0
+//*/div[contains(@class, 'l-sidebar')];--;1.07384615385
+//*/div[contains(@id, 'grv-personalization-56')];--;0.0
+//*/div[contains(@class, 'title-left')];--;0.0
+//*/div[contains(@class, 'ad-top-mobile')];--;0.0
+//*/div[contains(@class, 'collapse-body newsletter-body')];--;0.0
+//*/div[contains(@class, 'l-sidebar demo-block')];--;0.0
+//*/div[contains(@class, 'toaster-container')];--;0.0
+//*/header[contains(@class, 'article-header page-title')];--;0.600732600733
+//*/div[contains(@class, 'l-main')];--;0.904761904762
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-trending-menu-nav')];--;0.0
+//*/div[contains(@class, 'tag-item')];--;1.12376499922
+//*/div[contains(@class, 'l-sidebar-2 recirc-up-next section')];--;0.0
+//*/div[contains(@class, 'g g-3up g-nogutter')];--;0.0
+//*/nav[contains(@class, 'nav-footer')];--;0.0
+//*/div[contains(@class, 'article-entry text')];--;0.856108001317
+//*/div[contains(@class, 'copyright gi')];--;0.0
+//*/div[contains(@class, 'header-ad')];--;0.0
+//*/div[contains(@id, 'adsDivc397fe6626')];--;0.0
+//*/header[contains(@class, 'header header-fixed-mobile cf header-context-news')];--;0.0
+//*/div[contains(@id, 'adsDiv1cdb81d018')];--;0.0
+//*/div[contains(@class, 'menu-nav-modal')][contains(@id, 'mobile-trending-menu-nav-modal')];--;0.0
+//*/div[contains(@class, 'mobile-ads-center')][contains(@id, 'adsDiv5a2d763915')];--;0.0
+//*/div[contains(@class, 'collapse-body')];--;1.12631027254
+//*/div[contains(@class, 'footer-follow g g-3up')];--;0.0
+//*/div[contains(@class, 'menu-nav')][contains(@id, 'mobile-header-menu-nav')];--;0.0
+//*/div[contains(@id, 'adsDiv4889881b6e')];--;0.0
+//*/div[contains(@class, 'ad-unit ad-300x250')];--;0.0
+//*/div[contains(@class, 'l-two-col')];--;0.657342657343
+//*/div[contains(@id, 'adsDiva2153aa663')];--;0.0
+//*/div[contains(@class, 'footer-meta-nav g g-1up')];--;0.0
+//*/article[contains(@class, 'article lc')];--;0.0

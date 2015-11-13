@@ -11,6 +11,7 @@ from mysqlUtilities import connectMySQL #mysql operations -- ADD COMMIT FOR DELE
 import json, os, sys, dpath, dicttoxml
 import pprint
 import traceback
+from cookielib import CookieJar
 
 class createDom(object):
     '''
@@ -58,53 +59,11 @@ class createDom(object):
             
         #GET DB KEY FOR CURRENT DOMAIN OR INSERT IN TO DB IF CONTENT FROM TAHT DOMAIN NOT YET ANALYZED
         self.getDomainKey()
-        #=======================================================================
-        # self.getDocumentIDKey()
-        #=======================================================================
         
         #=======================================================================
-        # if self.__documentIDKey is None:
+        # START CREATING DOM TREE
         #=======================================================================
         self.readDOMrecursive()
-
-    def get_doctype(self):
-        return self.__doctype
-
-
-    def set_doctype(self, value):
-        self.__doctype = value
-
-
-    def del_doctype(self):
-        del self.__doctype
-        
-
-    def get_html_4_elements(self):
-        return self.__html4Elements
-
-
-    def get_html_5_elements(self):
-        return self.__html5Elements
-
-
-    def set_html_4_elements(self, value):
-        self.__html4Elements = value
-
-
-    def set_html_5_elements(self, value):
-        self.__html5Elements = value
-
-
-    def del_html_4_elements(self):
-        del self.__html4Elements
-
-
-    def del_html_5_elements(self):
-        del self.__html5Elements
-
-    html4Elements = property(get_html_4_elements, set_html_4_elements, del_html_4_elements, "html4Elements's docstring")
-    html5Elements = property(get_html_5_elements, set_html_5_elements, del_html_5_elements, "html5Elements's docstring")
-    doctype = property(get_doctype, set_doctype, del_doctype, "doctype's docstring")
         
     def checkDoctype(self, soup):
         items = [item for item in soup.contents if isinstance(item, Doctype)]
@@ -112,9 +71,9 @@ class createDom(object):
         # print items
         #=======================================================================
         if items[0] == 'html':
-            self.__structureElements = self.html5Elements
+            self.__structureElements = self.__html5Elements
         else:
-            self.__structureElements = self.html4Elements
+            self.__structureElements = self.__html4Elements
             
         return items[0] if items else None
 
@@ -131,19 +90,23 @@ class createDom(object):
         self.__db.executeQuery(sqlQuery)
         #print self.__db._connectMySQL__results
         if len(self.__db._connectMySQL__results) == 1:
-            print "Domain already in the database!"
+            #===================================================================
+            # print "Domain already in the database! @ getDomainKey"
+            #===================================================================
             results = self.__db._connectMySQL__results
             self.__domainDBkey = results[0][0]
         elif len(self.__db._connectMySQL__results) >= 1:
             print "Something is wrong in the domain -> DB Key mapping"
             sys.exit(0)
         else:
-            print 'Adding domain %s to list' %(self.__domain) 
+            print 'Adding domain %s to list @ getDomainKey' %(self.__domain) 
             sqlQuery = 'insert into domainList (domainName) values("%s")'%(self.__domain)
             self.__db.executeQuery(sqlQuery)
             self.__db._connectMySQL__connection.commit()
             self.__domainDBkey = self.__db._connectMySQL__cursor.lastrowid
-            print self.__domainDBkey
+            #===================================================================
+            # print self.__domainDBkey
+            #===================================================================
                     
     def readDOMrecursive(self, parentNodeElement='', parentNodeName='', parentNodeID='', dictPath=''):
         
@@ -153,9 +116,12 @@ class createDom(object):
         else:
             #print 'domDict is empty'
             try:
-                page=urllib2.urlopen(self.__url)
+                #===============================================================
+                # page=urllib2.urlopen(self.__url)
+                #===============================================================
+                page = urllib2.build_opener(urllib2.HTTPCookieProcessor).open(self.__url)
             except urllib2.HTTPError:
-                print ('Error opening the url')
+                print ('Error opening the url @ readDOMrecursive, %s') %(self.__url)
                 return
             
             try:

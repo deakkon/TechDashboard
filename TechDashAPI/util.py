@@ -27,6 +27,7 @@ class utilities(object):
         self.__htmlAttributes = ['id', 'class']
         self.__htmlElementsSkip = ['script']
         self.__db = connectMySQL(db='xpath', port=3366)
+
         
     def extractContent(self, path, htmlFile):
 
@@ -57,6 +58,45 @@ class utilities(object):
             return
     
     def calculateRatio(self, itemChildrenTextFile, path, htmlFileBackgroundKnowledge, nodeBackgroundKnowledge):
+        '''
+        Character based Levenshtein Distance 
+        '''
+        
+        ratioList = []
+    
+        if len(itemChildrenTextFile) > 0:
+            
+            
+
+            sumBkn = sum( [ htmlFileBackgroundKnowledge[key]['extractCount'] for key in htmlFileBackgroundKnowledge.keys()])
+            extractCount = htmlFileBackgroundKnowledge[path]['extractCount']
+
+            for itemChild in itemChildrenTextFile:
+                ratio = []
+                for itemBack in nodeBackgroundKnowledge:
+                    
+                    #===========================================================
+                    # print 'calculateRatio ',itemChild, '\n', itemBack, '\n', editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack))
+                    #===========================================================
+                    
+                    ratio.append(editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack)))
+                
+                #===============================================================
+                # if extractCount > 0:
+                #     ratioList.append(median(ratio) * (extractCount / len(itemChildrenTextFile)))
+                # else:
+                #===============================================================
+                ratioList.append(median(ratio))
+                #===============================================================
+                # raw_input('prompt')
+                #===============================================================
+        
+        else:
+            ratioList.append(0)
+
+        return mean(ratioList)
+    
+    def calculateNormalizedRatio(self, itemChildrenTextFile, path, htmlFileBackgroundKnowledge, nodeBackgroundKnowledge):
         '''
         Character based Levenshtein Distance 
         '''
@@ -231,17 +271,40 @@ class utilities(object):
             documentIDKey = True
             
         return documentIDKey
+    
+    def checkNumberOfProcessedArticle(self, domain):
+        sqlQuery = 'select count(*) from document  where documentDomainListID = %s' %(domain)
+        self.__db.executeQuery(sqlQuery)
+        return self.__db._connectMySQL__results[0][0]
             
     def getXpathStatistics(self, xpath, domain):
         sqlQuery = 'SELECT xpathValuesXPathContentLength FROM xpathValuesXPath where xpathValuesXPath = "%s" and xpathValuesXPathContentLength is not Null and xpathValuesdocumentID in (select documentID from document where documentDomainListID = "%s")' %(xpath, domain)
         self.__db.executeQuery(sqlQuery)
         
         results = self.__db._connectMySQL__results
-        pdResults = pd.Series(np.array([item[0] for item in results]))
+        
+        if len(results) > 0:
+            pdResults = pd.Series(np.array([item[0] for item in results]))
+        else:
+            pdResults = pd.Series(np.array([0]))
+            
         statDescRes = pdResults.describe(percentiles=[.25,.35,.50, .75, .95])
+        print statDescRes
         return statDescRes
         
+    def getDomainStatistics(self, domain):
+        sqlQuery = 'SELECT xpathValuesXPathContentLength FROM xpathValuesXPath where xpathValuesXPathContentLength is not Null and xpathValuesdocumentID in (select documentID from document where documentDomainListID = "%s")' %(domain)
+        self.__db.executeQuery(sqlQuery)
         
+        results = self.__db._connectMySQL__results
+        
+        if len(results) > 0:
+            pdResults = pd.Series(np.array([item[0] for item in results]))
+        else:
+            pdResults = pd.Series(np.array([0]))
+            
+        statDescRes = pdResults.describe(percentiles=[.25,.35,.50, .75, .95])
+        return statDescRes
         
     def updateLengthInfo(self):
         
@@ -252,11 +315,15 @@ class utilities(object):
         
         for item in results:
             sqlUpdate = 'update xpathValuesXPath set xpathValuesXPathContentLength = "%s" where xpathValuesID = "%s"'%(len(item[1]),item[0])
-            print sqlUpdate
+            #===================================================================
+            # print sqlUpdate
+            #===================================================================
             self.__db.executeQuery(sqlUpdate)
             self.__db._connectMySQL__connection.commit()
             
 #===============================================================================
 # ut = utilities()
-# ut.getXpathStatistics("//*/body/div/div/div/div[contains(@class, 'articleHead')]", 1)
+# print ut.getXpathStatistics("//*/section[contains(@class, 'page')]", 32)
+# print ut.getDomainStatistics(32)
+# ut.extractContent(path, htmlFile)
 #===============================================================================

@@ -5,18 +5,16 @@ aS"//*/span[contains(@class, 'author')]"
 p2
 aS"//*/div[contains(@class, 'authorInfo article-byline')]"
 p3
-aS"//*/div[contains(@class, 'menu single active')][contains(@id, 'howtoMenu')]"
-p4
 aS"//*/div[contains(@class, 'articleHead')]"
-p5
+p4
 aS"//*/div[contains(@class, 'col-8')]"
-p6
+p5
 aS"//*/div[contains(@class, 'col-2')]"
-p7
+p6
 aS'//*/nav'
-p8
+p7
 aS"//*/div[contains(@class, 'meta')]"
-p9
+p8
 aS"//*/div[contains(@class, 'col-12')]"
-p10
+p9
 a.

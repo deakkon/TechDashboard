@@ -3,30 +3,26 @@ S"//*/div[contains(@class, 'lc')]"
 p1
 aS'//*/div'
 p2
-aS"//*/div[contains(@class, 'gi')]"
+aS"//*/span[contains(@class, 'footer-section')]"
 p3
-aS"//*/div[contains(@class, 'amazon-button')][contains(@id, 'amazon-shop-link-1230608-button')]"
+aS"//*/div[contains(@class, 'gi')]"
 p4
 aS"//*/div[contains(@class, 'byline')]"
 p5
 aS"//*/div[contains(@class, 'section')]"
 p6
-aS"//*/div[contains(@class, 'section section-amazon-shop-link')][contains(@id, 'amazon-shop-link-1230608')]"
-p7
 aS"//*/div[contains(@class, 'l-sidebar')]"
-p8
+p7
 aS"//*/header[contains(@class, 'article-header page-title')]"
-p9
+p8
 aS"//*/div[contains(@class, 'l-main')]"
-p10
+p9
 aS"//*/div[contains(@class, 'tag-item')]"
-p11
+p10
 aS"//*/div[contains(@class, 'article-entry text')]"
-p12
-aS"//*/span[contains(@class, 'footer-section')]"
-p13
+p11
 aS"//*/div[contains(@class, 'collapse-body')]"
-p14
+p12
 aS"//*/div[contains(@class, 'l-two-col')]"
-p15
+p13
 a.

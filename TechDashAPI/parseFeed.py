@@ -28,16 +28,37 @@ class parseNewsFeed(object):
     __etags = None
     
     def __init__(self, feedURL= ''):
+        
+        #=======================================================================
+        # https://news.ycombinator.com/rss
+        # http://skimfeed.com/tech.html
+        # https://gcn.com/rss-feeds/all.aspx',
+        #=======================================================================
+                
         if feedURL == '':
             self.__feedURL = [
                 'http://feeds.reuters.com/reuters/technologyNews?format=xml',
                 'http://feeds.reuters.com/reuters/scienceNews',
                 'http://www.cnet.com/rss/all/',
-                'http://feeds.feedburner.com/TechCrunch/',
                 'http://www.wired.com/category/gear/feed/',
                 'http://www.wired.com/category/science/feed/',
                 'http://feeds.bbci.co.uk/news/technology/rss.xml',
-                'http://www.infoworld.com/index.rss'
+                'http://www.infoworld.com/index.rss',
+                'http://feeds.news.com.au/public/rss/2.0/news_tech_506.xml',
+                'http://www.pcworld.com/index.rss',
+                'http://www.computerworld.com/index.rss',
+                'http://feeds.arstechnica.com/arstechnica/index?format=xml',
+                'http://www.networkcomputing.com/rss_simple.asp',
+                'http://feeds2.feedburner.com/ziffdavis/pcmag/breakingnews',
+                'http://www.engadget.com/rss-full.xml',
+                'http://www.digitaltrends.com/feed/',
+                'http://www.pcworld.com/index.rss',
+                'http://www.independent.co.uk/life-style/gadgets-and-tech/rss',
+                'http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml',
+                'http://rss.nytimes.com/services/xml/rss/nyt/Science.xml',
+                'http://feeds.feedburner.com/Technibble',
+                'http://feeds.feedburner.com/TechCrunch/',
+                'http://feeds.feedburner.com/techradar/allnews'
             ]
         else:
             self.__feedURL=feedURL
@@ -128,7 +149,9 @@ class parseNewsFeed(object):
     
         
     def processArticles(self, listOfURLs):
+
         for url in listOfURLs:
+            print 'Processing ', url
             rd = createDom(url=url)
             rd.readDOMrecursive()
 
@@ -154,6 +177,7 @@ class parseNewsFeed(object):
     def trainArticles(self, listOfURLs, domain):
         
         for url in listOfURLs: 
+            print 'Training on ',url
             cet = ContentExtractorTrainer(domain,url)
             cet.createXPathFromXMLFile()
             cet.evaluateXPathNodeContent()
@@ -173,14 +197,18 @@ class parseNewsFeed(object):
                 
                 for item in feedEntry['entries']:
                     #===========================================================
+                    # if len([link['href'] for link in item.links if link['rel'] == "standout"]) == 1:
+                    #     itemLink = ''.join([link['href'] for link in item.links if link['rel'] == "standout"])
+                    # else:
+                    #     #itemLink = [link['href'] for link in item.links if link['rel'] == "alternate"]
+                    #     itemLink = item['link']
+                    #===========================================================
+
+                    #===========================================================
                     # CHECK IF ARTICLE ALREADY IN DATABASE
                     #===========================================================
                     if self.__utilitiesFunctions.checkProcessedArticle(item['link']):
                         self.__articleLinks.append(item['link'])
-                    #===========================================================
-                    # else:
-                    #     print '%s already processed' %(item['link'])
-                    #===========================================================
                     
                 #===============================================================
                 # TO DO 
@@ -188,8 +216,11 @@ class parseNewsFeed(object):
                 # TRAIN UNTILL THERE IS ONLY A LIMITED AMOUNT OF XPATHS AVAILABLE (E.G. 1 WHICH WOULD BE OPTIMAL BUT LETS SAY 5 SO IF 1ST DOESNT GET ANY OCNTENT THEN GO TO THE SECOND ONE ETC.)
                 #===============================================================
                     
-                if not os.path.exists(self.__filesFolder+str(self.__domainDBkey)+'.pickle'):
-                    print 'Start new thread and train on new domain'
+                if not os.path.exists(self.__filesFolder+str(self.__domainDBkey)+'.pickle') or self.__utilitiesFunctions.checkNumberOfProcessedArticle(self.__domainDBkey) < 100:
+                    #===========================================================
+                    # print 'Training on domain %s' %(self.__domainDBkey)
+                    #===========================================================
+                
                 #===============================================================
                 # if self.__articleLinks:
                 #===============================================================

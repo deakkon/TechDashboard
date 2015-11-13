@@ -1,4 +1,9 @@
 # encoding=utf8
+'''
+Created on 9 Oct 2015
+
+@author: jurica
+'''
 
 from pprint import pprint
 import sys, os
@@ -11,11 +16,8 @@ import numpy
 import traceback
 from docutils.frontend import Values
 from TechDashAPI.util import utilities
-'''
-Created on 9 Oct 2015
+import urllib2
 
-@author: jurica
-'''
 
 class ContentExtractorTrainer(object):
     '''
@@ -38,7 +40,7 @@ class ContentExtractorTrainer(object):
         self.__xpathPathsID = []
         self.__htmlElements = ['body', 'header', 'nav', 'footer', 'article', 'section', 'aside', 'div', 'span']
         self.__htmlAttributes = ['id', 'class']
-        self.__htmlElementsSkip = ['script']
+        self.__htmlElementsSkip = ['script','style']
         self.__utilitiesFunctions = utilities()
         
         #=======================================================================
@@ -81,10 +83,10 @@ class ContentExtractorTrainer(object):
             self.__kMeansValues_NoAttrib = KMeans(n_clusters=2)
             
         try:
-            print self.__htmlFileURL
-            self.__htmlFile = html.parse(self.__htmlFileURL)
+            page = urllib2.build_opener(urllib2.HTTPCookieProcessor).open(self.__htmlFileURL)
+            self.__htmlFile = html.parse(page)
         except IOError:
-            print ('Error opening the url')
+            print ('Error opening %s')%(self.__htmlFileURL)
             print traceback.print_exc()
             return
         
@@ -188,85 +190,92 @@ class ContentExtractorTrainer(object):
         '''
         compare content and backContent extracted from both resources xpath
         '''
-
-        for path in self.__xpathPaths:
-            #===================================================================
-            # GET BACKGROUND KNOWLEDEG AND CURRENT NODE
-            #===================================================================
-            if path in self.__htmlFileBackgroundKnowledge.keys():
-                nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledge[path]['content']
-            else:
-                self.__htmlFileBackgroundKnowledge[path] = {}
-                self.__htmlFileBackgroundKnowledge[path]['content'] = ['empty']
-                self.__htmlFileBackgroundKnowledge[path]['ratioValues'] = numpy.array([])
-                self.__htmlFileBackgroundKnowledge[path]['extractCount'] = 0
-                nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledge[path]['content']
-
-            #===================================================================
-            # GET ACTIVE PAGE PATH NODE CONTENT
-            #===================================================================
-            itemChildrenTextFile = self.__utilitiesFunctions.extractContent(path, self.__htmlFile)
-
-            #===================================================================
-            # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
-            #===================================================================
-            ratio = self.__utilitiesFunctions.calculateRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
-
-            #===================================================================
-            # CREATE NODES IN THE DICT WITH CONTENT AND RATIO INFORMATION
-            # MINIMUM RATIO VS AVERAGE RATIO
-            # NORMALIZING VALUE OF NUMBER OF PATH IDENTIFICATIONS AS EXTRACTED PATHS
-            #===================================================================
-            
-            self.__htmlFileBackgroundKnowledge[path]['ratio'] = ratio
-            self.__htmlFileBackgroundKnowledge[path]['ratioValues'] = numpy.append(self.__htmlFileBackgroundKnowledge[path]['ratioValues'], ratio)
-                        
-            #===================================================================
-            # if (numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) - numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])
-            #     < ratio 
-            #     < numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) + numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])):
-            #===================================================================
-            nodeBackgroundKnowledge.extend(itemChildrenTextFile)
-            #===================================================================
-            # nodeBackgroundKnowledge = list(set(nodeBackgroundKnowledge))
-            #===================================================================
-            self.__htmlFileBackgroundKnowledge[path]['content'] = nodeBackgroundKnowledge
-            
-            with open(self.__dictionaryPath + self.__domain + '_xpathNodesRatio.csv', 'a') as file:
-                file.write(path + ';--;' + str(ratio) + '\n')
-
-        #===================================================================
-        # KMEANS CLUSTERING
-        #===================================================================
-        data = numpy.asarray([[self.__htmlFileBackgroundKnowledge[key]['ratio']] for key in self.__xpathPaths])
-
-        self.__kMeansValues.fit(data, self.__xpathPaths)
-        generatedClusters = self.__kMeansValues.predict(data)
-
-        
-        uniq_y = {ind: [] for ind in list(set(generatedClusters))} 
-        for idx, el in enumerate(generatedClusters):
-            uniq_y[el].append(int(idx))
-
-        indexValues = uniq_y.values()
-        paths2Extract = [self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]]
-        
-        for item in paths2Extract:
-            self.__htmlFileBackgroundKnowledge[item]['extractCount']+=1
+        try:
+            for path in self.__xpathPaths:
+                #===================================================================
+                # GET BACKGROUND KNOWLEDEG AND CURRENT NODE
+                #===================================================================
+                if path in self.__htmlFileBackgroundKnowledge.keys():
+                    nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledge[path]['content']
+                else:
+                    self.__htmlFileBackgroundKnowledge[path] = {}
+                    self.__htmlFileBackgroundKnowledge[path]['content'] = ['empty']
+                    self.__htmlFileBackgroundKnowledge[path]['ratioValues'] = numpy.array([])
+                    self.__htmlFileBackgroundKnowledge[path]['extractCount'] = 0
+                    nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledge[path]['content']
+    
+                #===================================================================
+                # GET ACTIVE PAGE PATH NODE CONTENT
+                #===================================================================
+                itemChildrenTextFile = self.__utilitiesFunctions.extractContent(path, self.__htmlFile)
+                #===================================================================
+                # print path, itemChildrenTextFile
+                #===================================================================
                 
-
-        #===================================================================
-        # PICKLE BACKGROUND KNOWLEDGE, CLUSTER CENTERS FOR FUTURE ITERATIONS AND LIST OF DYNAMIC PATHS
-        #===================================================================
-        pickle.dump(self.__htmlFileBackgroundKnowledge, open(self.__dictionaryPath + self.__domain + '_bckKnowledge.pickle', 'wb'))
-        pickle.dump(self.__kMeansValues.cluster_centers_, open(self.__dictionaryPath + self.__domain + '_centroids.pickle', 'wb'))
-        pickle.dump([self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '.pickle', 'wb'))
-        
-        self.__htmlFileURL
-        print generatedClusters
-        print self.__kMeansValues.cluster_centers_
-        print paths2Extract
-        print '***************************'
+                #===================================================================
+                # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
+                #===================================================================
+                ratio = self.__utilitiesFunctions.calculateRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
+    
+                #===================================================================
+                # CREATE NODES IN THE DICT WITH CONTENT AND RATIO INFORMATION
+                # MINIMUM RATIO VS AVERAGE RATIO
+                # NORMALIZING VALUE OF NUMBER OF PATH IDENTIFICATIONS AS EXTRACTED PATHS
+                #===================================================================
+                
+                self.__htmlFileBackgroundKnowledge[path]['ratio'] = ratio
+                self.__htmlFileBackgroundKnowledge[path]['ratioValues'] = numpy.append(self.__htmlFileBackgroundKnowledge[path]['ratioValues'], ratio)
+                            
+                #===================================================================
+                # if (numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) - numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])
+                #     < ratio 
+                #     < numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) + numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])):
+                #===================================================================
+                nodeBackgroundKnowledge.extend(itemChildrenTextFile)
+                #===================================================================
+                # nodeBackgroundKnowledge = list(set(nodeBackgroundKnowledge))
+                #===================================================================
+                self.__htmlFileBackgroundKnowledge[path]['content'] = nodeBackgroundKnowledge
+                
+                with open(self.__dictionaryPath + self.__domain + '_xpathNodesRatio.csv', 'a') as file:
+                    file.write(path + ';--;' + str(ratio) + '\n')
+    
+            #===================================================================
+            # KMEANS CLUSTERING
+            #===================================================================
+            data = numpy.asarray([[self.__htmlFileBackgroundKnowledge[key]['ratio']] for key in self.__xpathPaths])
+    
+            self.__kMeansValues.fit(data, self.__xpathPaths)
+            generatedClusters = self.__kMeansValues.predict(data)
+    
+            
+            uniq_y = {ind: [] for ind in list(set(generatedClusters))} 
+            for idx, el in enumerate(generatedClusters):
+                uniq_y[el].append(int(idx))
+    
+            indexValues = uniq_y.values()
+            paths2Extract = [self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]]
+            
+            for item in paths2Extract:
+                self.__htmlFileBackgroundKnowledge[item]['extractCount']+=1
+                    
+    
+            #===================================================================
+            # PICKLE BACKGROUND KNOWLEDGE, CLUSTER CENTERS FOR FUTURE ITERATIONS AND LIST OF DYNAMIC PATHS
+            #===================================================================
+            pickle.dump(self.__htmlFileBackgroundKnowledge, open(self.__dictionaryPath + self.__domain + '_bckKnowledge.pickle', 'wb'))
+            pickle.dump(self.__kMeansValues.cluster_centers_, open(self.__dictionaryPath + self.__domain + '_centroids.pickle', 'wb'))
+            pickle.dump([self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '.pickle', 'wb'))
+            
+            self.__htmlFileURL
+            print generatedClusters
+            print self.__kMeansValues.cluster_centers_
+            print paths2Extract
+            print '***************************'
+            
+        except (ValueError,AttributeError):
+            traceback.print_exc()
+            pass
         #=======================================================================
         # raw_input('prompt')
         #=======================================================================

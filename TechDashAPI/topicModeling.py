@@ -26,7 +26,6 @@ import numpy as np
 from scipy.spatial.distance import euclidean
 
 import os.path, time
-import itertools
 import re
 
 #===============================================================================
@@ -51,7 +50,9 @@ class techDashTopicModel(object):
         '''
         Constructor
         '''
-        logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+        #=======================================================================
+        # logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+        #=======================================================================
         
         self.__destination = destination
         self.__fileName = fileName

@@ -82,13 +82,16 @@ class ContentExtractorTrainer(object):
         else:
             self.__kMeansValues_NoAttrib = KMeans(n_clusters=2)
             
-        try:
-            page = urllib2.build_opener(urllib2.HTTPCookieProcessor).open(self.__htmlFileURL)
-            self.__htmlFile = html.parse(page)
-        except IOError:
-            print ('Error opening %s')%(self.__htmlFileURL)
-            print traceback.print_exc()
-            return
+        #=======================================================================
+        # try:
+        #     page = urllib2.build_opener(urllib2.HTTPCookieProcessor).open(self.__htmlFileURL)
+        #     self.__htmlFile = html.parse(page)
+        # except IOError:
+        #     print ('Error opening %s')%(self.__htmlFileURL)
+        #     print traceback.print_exc()
+        #     return
+        #=======================================================================
+        self.__htmlFile = self.__utilitiesFunctions.openULR(self.__htmlFileURL)
         
     def createXPathFromXMLFile(self):
         '''
@@ -207,16 +210,17 @@ class ContentExtractorTrainer(object):
                 #===================================================================
                 # GET ACTIVE PAGE PATH NODE CONTENT
                 #===================================================================
-                itemChildrenTextFile = self.__utilitiesFunctions.extractContent(path, self.__htmlFile)
-                #===================================================================
-                # print path, itemChildrenTextFile
-                #===================================================================
+                itemChildrenTextFile = self.__utilitiesFunctions.extractContentLXML(path, self.__htmlFile)
                 
                 #===================================================================
                 # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
                 #===================================================================
-                ratio = self.__utilitiesFunctions.calculateRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
-    
+                
+                #===============================================================
+                # ratio = self.__utilitiesFunctions.calculateRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
+                #===============================================================
+                ratio = self.__utilitiesFunctions.calculateNormalizedRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
+                
                 #===================================================================
                 # CREATE NODES IN THE DICT WITH CONTENT AND RATIO INFORMATION
                 # MINIMUM RATIO VS AVERAGE RATIO

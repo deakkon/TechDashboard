@@ -3,15 +3,39 @@ Created on 26 Oct 2015
 
 @author: jurica
 '''
+
+#===============================================================================
+# FLOATING POINT DIVISIONS
+#===============================================================================
 from __future__ import division
-from lxml import *
+
+#===============================================================================
+# SYS ORIENTED IMPORTS
+#===============================================================================
 import sys
 import traceback
 import editdistance
+
+#===============================================================================
+# NUMPY PANDAS DATA MANIPULATION AND CALUCLATIONS
+#===============================================================================
 import numpy as np
 from numpy import mean, median, sum
-from TechDashAPI.mysqlUtilities import connectMySQL
 import pandas as pd
+
+#===============================================================================
+# OPEN AND MANUPULATE WITH HTML DOCUMENTS FROM URL
+#===============================================================================
+import urllib2
+from lxml import html
+from lxml.html.clean import Cleaner
+from bs4 import BeautifulSoup
+
+#===============================================================================
+# USE MYSQL DATABASE
+#===============================================================================
+from TechDashAPI.mysqlUtilities import connectMySQL
+
 
 class utilities(object):
     '''
@@ -27,6 +51,43 @@ class utilities(object):
         self.__htmlAttributes = ['id', 'class']
         self.__htmlElementsSkip = ['script']
         self.__db = connectMySQL(db='xpath', port=3366)
+        
+        #=======================================================================
+        # LXML CLEANER
+        #=======================================================================
+        self.__cleaner = Cleaner()
+        self.__cleaner.javascript = True
+        self.__cleaner.scripts = True
+        self.__cleaner.style = True
+        self.__cleaner.comments = True
+        self.__cleaner.embedded = True
+        self.__cleaner.frames = True
+        self.__cleaner.meta = True
+        
+        
+        
+    def openULR(self, fileURL):
+        try:
+            #===================================================================
+            # NO CLEANING PERFORMED
+            #===================================================================
+            page = urllib2.build_opener(urllib2.HTTPCookieProcessor).open(fileURL)
+            htmlFile = html.parse(page)
+            
+            #===================================================================
+            # LXML CLEANER USED OT GET RID OF JS
+            #===================================================================
+            #===================================================================
+            # page = urllib2.build_opener(urllib2.HTTPCookieProcessor).
+            # htmlFile = self.__cleaner.clean_html(html.parse(page))
+            # print htmlFile
+            #===================================================================
+
+        except IOError:
+            print ('Error opening the url')
+            htmlFile = None
+
+        return htmlFile
 
         
     def extractContent(self, path, htmlFile):
@@ -48,6 +109,33 @@ class utilities(object):
                     else:
                         childrenValues.append(childrentext)
                         
+            return list(set(childrenValues))
+
+        except AttributeError as er:
+            print er
+            e = sys.exc_info()[0]
+            print e
+            print traceback.print_exc()
+            return
+        
+    def extractContentLXML(self, path, htmlFile):
+
+        try:
+            xpathContentFile = htmlFile.xpath(path)
+            childrenValues = []
+            
+            if len(xpathContentFile) == 0:
+                childrenValues.append('empty')
+            else:
+                  
+                for xpathElement in xpathContentFile:
+                    childrentext = ' '.join(self.__cleaner.clean_html(xpathElement).text_content().split())
+                    
+                    if childrentext.isspace() or len(childrentext) == 0:
+                        childrenValues.append('empty')
+                    else:
+                        childrenValues.append(childrentext)
+
             return list(set(childrenValues))
 
         except AttributeError as er:
@@ -111,7 +199,7 @@ class utilities(object):
             for itemChild in itemChildrenTextFile:
                 ratio = []
                 for itemBack in nodeBackgroundKnowledge:
-                    ratio.append(editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack)))
+                    ratio.append((editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack)))/len(itemChildrenTextFile))
                 
                 #===============================================================
                 # if extractCount > 0:

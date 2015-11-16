@@ -56,14 +56,7 @@ class ContentExtractor(object):
         #=======================================================================
         # OPEN URL
         #=======================================================================
-        try:
-            page = urllib2.build_opener(urllib2.HTTPCookieProcessor).open(self.__fileURL)
-            cleaner = Cleaner()
-            cleaner.javascript = True
-            self.__htmlFile = html.parse(page)
-        except IOError:
-            print ('Error opening the url')
-            return
+        self.__htmlFile = self.__utilitiesFunctions.openULR(self.__fileURL)
 
     def getDocumentIDKey(self):
         '''
@@ -91,40 +84,36 @@ class ContentExtractor(object):
         '''
 
         if self.__documentIDKey is not None:
-   
+            
             itemChildrenText = ''
             extractedContent = []
             pathStatistics = self.__utilitiesFunctions.getDomainStatistics(self.__domainDBkey)
             articleTitle = self.__htmlFile.find(".//title").text.encode('utf-8')
+            longestElement = -1
             
             for path in self.__XpathList:
 
                 path = path.replace('"',"'")
-                #===============================================================
-                # pathStatistics = self.__utilitiesFunctions.getXpathStatistics(path, self.__domainDBkey)
-                #===============================================================
+                itemChildrenText = list(set(self.__utilitiesFunctions.extractContentLXML(path, self.__htmlFile)))
 
-                itemChildrenText = list(set(self.__utilitiesFunctions.extractContent(path, self.__htmlFile)))
-                print len(itemChildrenText)
                 for elementChildText in itemChildrenText:
                     #===========================================================
                     # print elementChildText
                     #===========================================================
                     elementChildText = elementChildText.encode('utf-8','replace')
                     elementChildText = elementChildText.replace('"',"'")
-                    print len(elementChildText), pathStatistics[u'50%']
+                    
                     if len(elementChildText) > pathStatistics[u'50%']:
                         print "EXTRACTED:\t", path, elementChildText
                         extractedContent.append(elementChildText)
                         topicModel = self.__topicModel.getDocumentTopics(elementChildText, 'initalModel', '500P_20T')
                         sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength,xpathValuesXPathMainTopic, xpathValuesXPathTitle) VALUES ("%s","%s","%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText),topicModel,articleTitle)
-                        #=======================================================
-                        # print path, elementChildText, len(elementChildText), pathStatistics[u'50%']
-                        #=======================================================
                         self.__db.executeQuery(sqlQuery)
                         self.__db._connectMySQL__connection.commit()
-                    else:
-                        print 'NOT EXTRACTED: ', path, elementChildText
+                    #===========================================================
+                    # else:
+                    #     print 'NOT EXTRACTED: ', path, elementChildText
+                    #===========================================================
 
             print 'PROCESSED : Extracted content from %s \n =======================' %(self.__fileURL)
             

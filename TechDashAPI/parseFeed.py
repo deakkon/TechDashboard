@@ -98,8 +98,12 @@ class parseNewsFeed(object):
         Check if at least one document from domain was already analyzed! 
         '''
         parsed_uri = urlparse(url)
-        self.__domain = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
         
+        if '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri) == 'http://feeds.feedburner.com/':
+            self.__domain = '{uri.scheme}://{uri.netloc}{uri.path}'.format(uri=parsed_uri)
+        else:
+            self.__domain = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
+            
         sqlQuery = 'select domainListID from domainList where domainName="%s"' %(self.__domain)
         #sqlQuery = 'select domainListID from domainList'
         self.__db.executeQuery(sqlQuery)
@@ -126,24 +130,27 @@ class parseNewsFeed(object):
         #=======================================================================
 
         for keys in self.__etags:
-            self.__etags[keys]['feed'] = feedparser.parse(keys, etag=self.__etags[keys]['etag'],modified=self.__etags[keys]['modified'])
-            
-            if self.__etags[keys]['feed'].status == 304:
-                print datetime.now(),'Feed %s did not change since last attempt. Be patient.' %(keys)
+            try:
+                self.__etags[keys]['feed'] = feedparser.parse(keys, etag=self.__etags[keys]['etag'],modified=self.__etags[keys]['modified'])
+                
+                if self.__etags[keys]['feed'].status == 304:
+                    print datetime.now(),'Feed %s did not change since last attempt. Be patient.' %(keys)
+                    self.__etags[keys]['changed'] = False
+                else:
+                    print datetime.now(),'Feed %s changed since last attempt. New content to extract.' %(keys)
+                    try:
+                        self.__etags[keys]['etag'] = self.__etags[keys]['feed'].etag
+                    except AttributeError:
+                        self.__etags[keys]['etag'] = ''
+                        
+                    try:
+                        self.__etags[keys]['modified'] = self.__etags[keys]['feed'].modified
+                    except AttributeError:
+                        self.__etags[keys]['modified'] = ''
+                        
+                    self.__etags[keys]['changed'] = True
+            except AttributeError:
                 self.__etags[keys]['changed'] = False
-            else:
-                print datetime.now(),'Feed %s changed since last attempt. New content to extract.' %(keys)
-                try:
-                    self.__etags[keys]['etag'] = self.__etags[keys]['feed'].etag
-                except AttributeError:
-                    self.__etags[keys]['etag'] = ''
-                    
-                try:
-                    self.__etags[keys]['modified'] = self.__etags[keys]['feed'].modified
-                except AttributeError:
-                    self.__etags[keys]['modified'] = ''
-                    
-                self.__etags[keys]['changed'] = True
             
         print '############################'
     
@@ -196,13 +203,6 @@ class parseNewsFeed(object):
                 feedEntry = self.__etags[key]['feed']
                 
                 for item in feedEntry['entries']:
-                    #===========================================================
-                    # if len([link['href'] for link in item.links if link['rel'] == "standout"]) == 1:
-                    #     itemLink = ''.join([link['href'] for link in item.links if link['rel'] == "standout"])
-                    # else:
-                    #     #itemLink = [link['href'] for link in item.links if link['rel'] == "alternate"]
-                    #     itemLink = item['link']
-                    #===========================================================
 
                     #===========================================================
                     # CHECK IF ARTICLE ALREADY IN DATABASE
@@ -210,20 +210,8 @@ class parseNewsFeed(object):
                     if self.__utilitiesFunctions.checkProcessedArticle(item['link']):
                         self.__articleLinks.append(item['link'])
                     
-                #===============================================================
-                # TO DO 
-                # REMOVE IF NOT
-                # TRAIN UNTILL THERE IS ONLY A LIMITED AMOUNT OF XPATHS AVAILABLE (E.G. 1 WHICH WOULD BE OPTIMAL BUT LETS SAY 5 SO IF 1ST DOESNT GET ANY OCNTENT THEN GO TO THE SECOND ONE ETC.)
-                #===============================================================
-                    
-                if not os.path.exists(self.__filesFolder+str(self.__domainDBkey)+'.pickle') or self.__utilitiesFunctions.checkNumberOfProcessedArticle(self.__domainDBkey) < 100:
-                    #===========================================================
-                    # print 'Training on domain %s' %(self.__domainDBkey)
-                    #===========================================================
-                
-                #===============================================================
-                # if self.__articleLinks:
-                #===============================================================
+                if not os.path.exists(self.__filesFolder+str(self.__domainDBkey)+'.pickle') or self.__utilitiesFunctions.checkNumberOfProcessedArticle(self.__domainDBkey) < 200:
+                    print 'Training on domain %s' %(self.__domainDBkey)
                     self.processArticles(self.__articleLinks)
                     self.trainArticles(self.__articleLinks, self.__domainDBkey)
 

@@ -44,7 +44,12 @@ def getTopic():
     #===========================================================================
     
     query = "select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) from xpathValuesXPath where xpathValuesXPathMainTopic = '%s' group by xpathValuesdocumentID order by xpathValuesXPathDateTime DESC" % (topicId)
-    results = db.executeQuery(query)
+    
+    query1 = """SELECT xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) 
+                from xpathValuesXPath where xpathValuesXPathMainTopic = '%s' group by xpathValuesdocumentID order by xpathValuesXPathDateTime DESC
+            """% (topicId)
+
+    results = db.executeQuery(query1)
     categroyArticles = [x for x in db.results]
     #===========================================================================
     # print categroyArticles

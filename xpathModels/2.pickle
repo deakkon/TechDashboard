@@ -1,28 +1,16 @@
 (lp0
-S"//*/div[contains(@class, 'lc')]"
+S'//*/header'
 p1
-aS'//*/div'
+aS"//*/div[contains(@class, 'container full ')][contains(@id, 'main')]"
 p2
-aS"//*/span[contains(@class, 'footer-section')]"
+aS"//*/div[contains(@class, 'text-copy bodyCopy auto')][contains(@id, 'article-body')]"
 p3
-aS"//*/div[contains(@class, 'gi')]"
+aS'//*/footer'
 p4
-aS"//*/div[contains(@class, 'byline')]"
+aS"//*/nav[contains(@class, 'breadcrumb')]"
 p5
-aS"//*/div[contains(@class, 'section')]"
+aS'//*/section'
 p6
-aS"//*/div[contains(@class, 'l-sidebar')]"
+aS"//*/article[contains(@class, 'news-article')]"
 p7
-aS"//*/header[contains(@class, 'article-header page-title')]"
-p8
-aS"//*/div[contains(@class, 'l-main')]"
-p9
-aS"//*/div[contains(@class, 'tag-item')]"
-p10
-aS"//*/div[contains(@class, 'article-entry text')]"
-p11
-aS"//*/div[contains(@class, 'collapse-body')]"
-p12
-aS"//*/div[contains(@class, 'l-two-col')]"
-p13
 a.

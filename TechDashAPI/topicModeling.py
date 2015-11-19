@@ -12,7 +12,7 @@ GENSIM BASED TOPIC MODELING CODE
 3) LOOK IN TO USING NGRAM FOR CONTENT REPRESENTATION
 '''
 
-import logging
+
 import json
 import string
 

@@ -3,16 +3,17 @@ Created on 8 Sep 2015
 
 @author: jurica
 '''
-from TechDashAPI.parseFeed import *
-from TechDashAPI.ContentExtractor import *
-from TechDashAPI.createDOM import *
-from TechDashAPI import ContentExtractorTrainer
+from TechDashAPI.parseFeed import parseNewsFeed
+import logging
 
 #from TechDashAPI.repeater import *
 
 from time import sleep
 
 if __name__ == '__main__':
+    
+    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+    
     print "starting..."
     gn = parseNewsFeed()
     while True:

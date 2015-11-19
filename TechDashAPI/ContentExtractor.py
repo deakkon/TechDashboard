@@ -12,11 +12,19 @@ import os
 from pprint import pprint
 from pickle import PicklingError
 import urllib2
-
+import traceback
 
 from TechDashAPI.util import utilities
 from TechDashAPI.topicModeling import techDashTopicModel
 from TechDashAPI.mysqlUtilities import connectMySQL
+
+#===============================================================================
+# from stanford_corenlp_pywrapper import CoreNLP
+# from pprint import pprint
+#===============================================================================
+from itertools import groupby
+from operator import itemgetter
+from cgitb import text
 
 class ContentExtractor(object):
     '''
@@ -28,7 +36,7 @@ class ContentExtractor(object):
         get serialized json file
     '''
 
-    def __init__(self, domain, htmlFileURL):
+    def __init__(self, domain, htmlFileURL, nerExtractor, dbConnection = ''):
         '''
         Constructor
         '''
@@ -57,6 +65,11 @@ class ContentExtractor(object):
         # OPEN URL
         #=======================================================================
         self.__htmlFile = self.__utilitiesFunctions.openULR(self.__fileURL)
+        
+        #=======================================================================
+        # NER 
+        #=======================================================================
+        self.__extractNerStanford = nerExtractor
 
     def getDocumentIDKey(self):
         '''
@@ -77,11 +90,67 @@ class ContentExtractor(object):
             self.__db.executeQuery(sqlQuery)
             self.__db._connectMySQL__connection.commit()
             self.__documentIDKey = self.__db._connectMySQL__cursor.lastrowid
+            
+    
+    #===========================================================================
+    # EXTRACT NER 
+    #===========================================================================
+            
+    def checkNeighbour(self, indexList, entityList):
         
+        #===========================================================================
+        # print indexList
+        # print entityList
+        #===========================================================================
+        entities = []
+        
+        for k, g in groupby(enumerate(indexList), lambda (i, x): i-x):
+                                                                         
+            consecutive = map(itemgetter(1), g)        
+            consecutiveValues = ' '.join([entityList[conInd] for conInd in  consecutive ])
+            entities.append(consecutiveValues)
+     
+        return entities
+    
+    
+    def extractNER(self, text):
+        
+        data = self.__extractNerStanford.parse_doc(text)
+        
+        nerEntities = []
+        peopleEntitiesList = []
+        
+        for item in data['sentences']:
+            #===========================================================================
+            # for key in item.keys():
+            #===========================================================================
+            try:
+                nerIndex = [i for i, x in enumerate(item['ner']) if x == u'PERSON' or x == u'ORGANIZATION']
+                
+                if len(nerIndex)> 0:
+                    try:
+                        peopleEntitiesList.extend(self.checkNeighbour(nerIndex,item['tokens']))
+                    except AttributeError:
+                        peopleEntitiesList = []
+                        print traceback.print_exc()
+                        pass
+    
+            except ValueError:
+                peopleEntitiesList = []
+                print traceback.print_exc()
+                pass
+        
+        if len(nerEntities) > 0:
+            nerEntities = ",".join(list(set(peopleEntitiesList)))
+        else:
+            nerEntities = ''
+            
+        return nerEntities.encode('utf-8')
+        
+    #===========================================================================
+    # EXTRACT AND WRITE CONTENT TO DB
+    #===========================================================================
     def extractContent(self):
-        '''
-        TO DO: ELIMINATE DUPLICATES FROM EXTRACTED CONTENT (E.G. ARTICLE GET EXTRACTED MORE THAN ONCE)
-        '''
 
         if self.__documentIDKey is not None:
             
@@ -89,12 +158,14 @@ class ContentExtractor(object):
             extractedContent = []
             pathStatistics = self.__utilitiesFunctions.getDomainStatistics(self.__domainDBkey)
             articleTitle = self.__htmlFile.find(".//title").text.encode('utf-8')
-            longestElement = -1
             
             for path in self.__XpathList:
 
                 path = path.replace('"',"'")
-                itemChildrenText = list(set(self.__utilitiesFunctions.extractContentLXML(path, self.__htmlFile)))
+                itemChildrenText = list(set(self.__utilitiesFunctions.extractContentBS(path, self.__htmlFile)))
+                #===============================================================
+                # self.__utilitiesFunctions.extractContentBS(path, self.__htmlFile)
+                #===============================================================
 
                 for elementChildText in itemChildrenText:
                     #===========================================================
@@ -104,10 +175,14 @@ class ContentExtractor(object):
                     elementChildText = elementChildText.replace('"',"'")
                     
                     if len(elementChildText) > pathStatistics[u'50%']:
-                        print "EXTRACTED:\t", path, elementChildText
-                        extractedContent.append(elementChildText)
+                        print "EXTRACTED:\t", path, pathStatistics[u'50%'], len(elementChildText)
+
+                        NERs = self.extractNER(elementChildText)
+
                         topicModel = self.__topicModel.getDocumentTopics(elementChildText, 'initalModel', '500P_20T')
-                        sqlQuery = 'INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength,xpathValuesXPathMainTopic, xpathValuesXPathTitle) VALUES ("%s","%s","%s","%s","%s","%s","%s")'%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText),topicModel,articleTitle)
+
+                        sqlQuery = '''INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength,xpathValuesXPathMainTopic, xpathValuesXPathTitle,xpathValuesXPathNER) 
+                        VALUES ("%s","%s","%s","%s","%s","%s","%s","%s")'''%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText),topicModel,articleTitle,NERs)
                         self.__db.executeQuery(sqlQuery)
                         self.__db._connectMySQL__connection.commit()
                     #===========================================================
@@ -186,4 +261,3 @@ class ContentExtractor(object):
 #             self.__db._connectMySQL__connection.commit()
 #             print 'Extracted content from %s to PROCESSED list' %(self.__fileURL) 
 #===============================================================================
-                 

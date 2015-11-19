@@ -4,68 +4,81 @@
 <meta charset="UTF-8">
 <title>TechoDashboard</title>
 </head>
-<body>
-    <div ng-controller="mainController as vm">
-	  <md-toolbar layout="row">
-	    <div class="md-toolbar-tools">
-	      <md-button ng-click="vm.toggleSidenav('left')" hide-gt-sm class="md-icon-button">
-	        <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg">
-	        </md-icon>
-	      </md-button>
-	      <h1>Technological Dashboard {[topicId]} </h1>
-	      
-	    </div>
-	  </md-toolbar>
-<!-- 	  <div layout="row" flex> -->
-<!-- 	    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-4dp" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')"> -->
-<!-- 	      <md-button class="md-accent">Button 1</md-button> -->
-<!-- 	      <md-button class="md-accent">Button 2</md-button> -->
-<!-- 	    </md-sidenav> -->
-<!-- 	    <div layout="column" flex id="content"> -->
-<!-- 	      <md-content layout="column" flex class="md-padding"> -->
-<!-- 	        This Starter Application consists of a Toolbar, SideNav (with two buttons), and Content area. -->
-<!-- 	        <p>This is the content area! </p> -->
-<!-- 	        <p>{{ result }}</p> -->
-<!-- 	        {% for n in range(0,result) %}{{ n }} -->
-<!-- 	         {% endfor %} -->
-<!-- 	      </md-content> -->
-<!-- 	    </div> -->
-<!-- 	  </div> -->
-<!--     </div> -->
+<body ng-init="topicNumber='{{topicNumber}}';">
+    <div ng-controller="AppCtrl as appCtrl" >
+		 <md-toolbar>
+		   <div class="md-toolbar-tools" layout-align="center center">
+		     <h1>Technological Dashboard</h1>
+		   </div>
+		 </md-toolbar>
     
-   <div ng-controller="AppCtrl as appCtrl" ng-cloak  ng-init="{{ result }}" layout='column'>
-  	  <md-button flex="50" class="md-primary md-raised" ng-click="myValue = myValue ? false : true" ng-hide="!myValue">Show all topics</md-button>
-	   <md-content layout-padding ng-hide="myValue">
-	    <md-grid-list
-	        md-cols-gt-md="12" md-cols-sm="3" md-cols-md="8"
-	        md-row-height-gt-md="1:1" md-row-height="4:3"
-	        md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px">
-	      <md-grid-tile
-	          ng-repeat="tile in appCtrl.colorTiles"
-	          ng-style="{
-	            'background': tile.color
-	          }"
-	          md-colspan-gt-sm="{[tile.colspan]}"
-	          md-rowspan-gt-sm="{[tile.rowspan]}">
-	          <md-button flex="50" class="md-primary md-raised" ng-click="showTopicDetails(tile.textLabel)">Topic {[tile.textLabel]}</md-button>
+	 	  <md-button class="md-primary md-raised" ng-click="myValue = myValue ? false : true" ng-hide="!myValue">Show all topics</md-button>
+<!-- 		   <md-content ng-hide="myValue" layout-padding> -->
+		   <div ng-hide="myValue" layout-padding layout="row">
+			    <md-grid-list
+			        md-cols-gt-md="5" md-cols-sm="2" md-cols-md="3"
+			        md-row-height-gt-md="1:1" md-row-height="4:3"
+			        md-gutter-gt-md="16px" md-gutter-gt-sm="8px" md-gutter="4px" 
+			        flex=40>
+			      <md-grid-tile
+			          ng-repeat="tile in appCtrl.colorTiles"
+			          ng-style="{
+			            'background': tile.color
+			          }"
+			          md-colspan-gt-sm="{[tile.colspan]}"
+			          md-rowspan-gt-sm="{[tile.rowspan]}">
+			          <md-button class="md-primary md-raised" ng-click="showTopicDetails(tile.textLabel)" ng-mouseover="getTopicInfo(tile.textLabel)" ng-mouseleave="removeTopicInfo()">Topic {[tile.textLabel]}</md-button>
+			      </md-grid-tile>
+			    </md-grid-list>
+			    <div layout="column" flex>
+			    <h2 class="md-title">Distribution of extracted content over LDA topics</h2>
+					<div google-chart chart="chartObject" ></div>
+				    <h2 class="md-title">Topic keywords, generated with LDA</h2>
+				    <md-chips ng-model="topicKeywords" readonly="readonly">
+				      <md-chip-template>
+				        <strong>{[$chip]}</strong>
+				      </md-chip-template>
+				    </md-chips>
+			    </div>
+<!-- 		  </md-content> -->
+		  </div>
+		  
+		  <!--  article content -->
+		  <div layout=row ng-hide="!myValue">
+			  	<div flex=65>
+					 <md-content ng-repeat="value in categroyArticles | orderBy:'-value.articleID'">
+		<!-- 			 <md-content ng-hide="!myValue" dir-paginate="(key, value) in categroyArticles | itemsPerPage: pageSize"  current-page="currentPage"> -->
+						 		<md-button ng-click="toggleVisibility(value.articleID)" >{[ value.title ]}</md-button>
+								<md-content ng-show="visibleID == value.articleID" ng-hide="visibleID != value.articleID" style="text-align:justify" layout-padding layout-margin>{[ value.content ]}</md-content>	
+					</md-content>
+			  	</div>
+			  	<div flex=30 layout-align="end end">
+								<table st-table="modelKeywords" layout-align="end end" layout-margin>
+									<thead>
+									<h2 class="md-title" layout-align="end center">Topic keywords, generated with LDA</h2>
+									<tr>
+										<th>Keyword</th>
+										<th>Correlation value</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr ng-repeat="word in modelKeywords">
+										<td>{[ word[1] ]}</td>
+										<td>{[ word[0] ]}</td>
+									</tr>
+									</tbody>
+								</table>
+								<div layout-align="start start" layout-margin google-chart chart="topicChartObject"></div>
+<!-- 						  		<tang-cloud words="words" flex></tang-cloud> -->
+								
+			  	</div>
 
-	      </md-grid-tile>
-	    </md-grid-list>
-	  </md-content>
-	  
-	  <!--  article content -->
-  	<md-subheader class="md-no-sticky" ng-hide="!myValue">Topic keywords: {[keywords]}</md-subheader>
-	 <md-content layout-padding ng-hide="!myValue" ng-repeat="(key, value) in categroyArticles">
-	 		<md-button ng-click="toggleVisibility(key)">{[ value.title ]}</md-button>
-			<md-content ng-show="visibleID == key" ng-hide="visibleID != key ]}">
-				<p>{[ value.content ]}</p>
-				<p><a href="">Original Link</a></p>
-				<p>		<canvas id="line" class="chart chart-line" chart-data="data"
-	  chart-labels="labels" chart-legend="true" chart-series="series"
-	  chart-click="onClick" >
-	</canvas> </p>
-			</md-content>	
-	</md-content>
+		  </div>
+
+<!--           <div class="text-center"> -->
+<!--           <dir-pagination-controls boundary-links="true" template-url="dirPagination.tpl.html"></dir-pagination-controls> -->
+<!--           </div> -->  
+
   </div>
   
 
@@ -83,17 +96,32 @@
     <script src="{{ url_for('static', filename='Chart.js/Chart.js') }}"></script>
     <script src="{{ url_for('static', filename='angular-chart.js/dist/angular-chart.js') }}"></script>
     
-	<!--     GOOGLE CHART JS -->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    
 	<!--     angular-google-chart -->
     <script src="{{ url_for('static', filename='angular-google-chart/ng-google-chart.js') }}"></script>
     
+	<!--     PAGINATION  -->
+	<script src="{{ url_for('static', filename='angularUtils-pagination/dirPagination.js') }}"></script>
+	
+	<!-- 	HTML TABLES  -->
+    <script src="{{ url_for('static', filename='angular-smart-table/dist/smart-table.js') }}"></script>
+    
+	<!-- 	WORD CLOUD  -->
+    <script src="{{ url_for('static', filename='tiny-angular-wordcloud/dist/tangCloud.js') }}"></script>
+    
+	<!--     NG PROGRESS -->
+    <script src="{{ url_for('static', filename='ngprogress/build/ngprogress.js') }}"></script>
+
     <!-- CSS DEPENDENCIES  -->
     <link rel="stylesheet" href="{{ url_for('static', filename='angular-material/angular-material.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='techDash.css') }}">  
+	<link rel="stylesheet" href="{{ url_for('static', filename='angular-material-data-table/dist/md-data-table.min.css') }}" />
     
 	<!-- 	angular app  -->
    <script src="{{ url_for('static', filename='angularApp.js') }}"></script>
+   
+
+<!-- module -->
+
     
 
 </body>

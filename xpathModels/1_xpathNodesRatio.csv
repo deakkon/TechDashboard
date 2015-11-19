@@ -12815,3 +12815,823 @@
 //*/div[contains(@class, 'ad-video-thumbnail-top')][contains(@id, 'video-thumbnail-top-5644d2ad96015')];--;0.0
 //*/div[contains(@id, 'secondary')];--;0.0
 //*/span[contains(@class, 'date')];--;0.424242424242
+//*/div;--;0.0248102675345
+//*/div[contains(@class, 'controls')];--;0.0
+//*/div[contains(@class, 'showcase-title')];--;0.0
+//*/div[contains(@class, 'player-inner-wrap')];--;0.0
+//*/div[contains(@class, 'showcase-info')];--;0.0
+//*/div[contains(@class, 'item feedback')];--;0.0
+//*/div[contains(@class, 'videoControls')];--;0.0
+//*/div[contains(@class, 'showcase-meta')];--;0.0
+//*/div[contains(@class, 'col-3')][contains(@id, 'interactive-component')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;1.44444444444
+//*/div[contains(@class, 'col-3')][contains(@id, 'related-area')];--;0.0
+//*/span[contains(@class, 'date')];--;1.36363636364
+//*/div[contains(@class, 'showcase-description')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;1.88
+//*/div[contains(@class, 'item transcript')];--;0.0
+//*/div[contains(@id, 'rbSkin')];--;1.99222697241
+//*/div[contains(@class, 'altContent')];--;0.0
+//*/div[contains(@class, 'col-9')][contains(@id, 'player-area')];--;0.0
+//*/div[contains(@id, 'timeline')];--;0.0
+//*/div[contains(@class, 'videoSlide')];--;1.88235294118
+//*/div[contains(@class, 'videoPlayer')];--;0.0
+//*/div[contains(@id, 'content-lower')];--;0.0
+//*/div[contains(@class, 'video-wrapper-inner')];--;0.0
+//*/div[contains(@class, 'label icon-share')];--;0.0
+//*/div[contains(@class, 'row')];--;0.199458322387
+//*/div[contains(@id, 'vidInfoContainer')];--;0.0
+//*/div[contains(@class, 'play-video')];--;0.0
+//*/div[contains(@id, 'content-upper-inner-wrap')];--;0.0
+//*/div[contains(@id, 'vid-info')];--;0.0
+//*/div[contains(@id, 'video-showcase')];--;0.0
+//*/div[contains(@class, 'popup social-button-group')];--;0.0
+//*/span[contains(@class, 'author')];--;1.36842105263
+//*/div[contains(@class, 'label icon-transcript')];--;0.0
+//*/div[contains(@id, 'related-heading')];--;0.0
+//*/div[contains(@class, 'carousel')];--;0.0
+//*/div[contains(@class, 'popup transcript noTrans')];--;0.0
+//*/div[contains(@id, 'socialHeader')];--;1.62162162162
+//*/footer[contains(@id, 'rbFooter')];--;1.96688741722
+//*/div[contains(@class, 'menu single')][contains(@id, 'newsMenu')];--;1.93630573248
+//*/div[contains(@class, 'item share')];--;0.0
+//*/div[contains(@class, 'label icon-info')];--;0.0
+//*/div[contains(@class, 'player-outer-wrap')];--;0.0
+//*/div[contains(@class, 'pad')];--;0.0
+//*/div[contains(@class, 'socialWrapper')];--;1.33333333333
+//*/div[contains(@class, 'showcase-item')];--;0.0
+//*/div[contains(@class, 'col-12 ')][contains(@id, 'contentBody')];--;0.0
+//*/div[contains(@class, 'viewport')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;1.23076923077
+//*/div[contains(@id, 'tools')];--;0.0
+//*/div[contains(@class, 'fixation')];--;1.98433829287
+//*/nav[contains(@id, 'primaryNav')];--;1.98427672956
+//*/div[contains(@class, 'container')];--;0.366381538248
+//*/div[contains(@id, 'primary')];--;1.98433829287
+//*/nav;--;0.212973766227
+//*/div[contains(@class, 'meta')];--;1.88235294118
+//*/div[contains(@class, 'videoPromo')];--;1.89130434783
+//*/div[contains(@class, 'menu single active')][contains(@id, 'videoMenu')];--;0.0
+//*/div[contains(@class, 'col-3 showcase-tile showcase-video')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;1.82692307692
+//*/div[contains(@class, 'menuWrapper')];--;0.314928717335
+//*/div[contains(@id, 'countdownSpinner')];--;0.0
+//*/div[contains(@class, 'showcase-overlay')];--;0.0
+//*/div[contains(@class, 'tab-content selected')][contains(@id, 'related-content')];--;0.0
+//*/div[contains(@id, 'content-upper')];--;0.0
+//*/div[contains(@class, 'videoContainer')];--;0.0
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;1.98473282443
+//*/span[contains(@class, 'menuHead')];--;1.2
+//*/div[contains(@class, 'col-12')][contains(@id, 'footerCopyright')];--;1.85454545455
+//*/div[contains(@class, 'label icon-feedback')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;1.88439306358
+//*/div[contains(@class, 'player-wrap')];--;0.0
+//*/div[contains(@class, 'YAD-e76de29e-774b-3a1c-b9a8-450947e596d8')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;1.94812680115
+//*/div[contains(@class, 'menu single')][contains(@id, 'gamesMenu')];--;1.0
+//*/div[contains(@id, 'player')];--;0.0
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@id, 'countdownCount')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;0.0
+//*/div[contains(@id, 'content-upper-outer-wrap')];--;0.0
+//*/div[contains(@class, 'showSkin')];--;0.0
+//*/div[contains(@class, 'tab-content interactive-content')][contains(@id, 'interactive-content')];--;0.0
+//*/div[contains(@class, 'popup about-video')];--;0.0
+//*/div[contains(@id, 'secondary')];--;1.62162162162
+//*/div[contains(@class, 'item info')];--;0.0
+//*/div;--;0.0106384017305
+//*/div[contains(@class, 'controls')];--;1.33333333333
+//*/div[contains(@class, 'showcase-title')];--;0.208177027821
+//*/div[contains(@class, 'player-inner-wrap')];--;1.99064108563
+//*/div[contains(@class, 'showcase-info')];--;0.185185185185
+//*/div[contains(@class, 'item feedback')];--;1.2
+//*/div[contains(@class, 'videoControls')];--;0.0
+//*/div[contains(@class, 'showcase-meta')];--;0.228958247604
+//*/div[contains(@class, 'col-3')][contains(@id, 'interactive-component')];--;1.98875140607
+//*/div[contains(@class, 'menuHead')];--;0.722222222222
+//*/div[contains(@class, 'col-3')][contains(@id, 'related-area')];--;1.98842592593
+//*/span[contains(@class, 'date')];--;0.0638749353964
+//*/div[contains(@class, 'showcase-description')];--;0.227679727282
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.94
+//*/div[contains(@class, 'item transcript')];--;1.78125
+//*/div[contains(@id, 'rbSkin')];--;1.4354965413
+//*/div[contains(@class, 'altContent')];--;1.91266375546
+//*/div[contains(@class, 'col-9')][contains(@id, 'player-area')];--;1.95041322314
+//*/div[contains(@id, 'timeline')];--;0.0
+//*/div[contains(@class, 'videoSlide')];--;1.35310635311
+//*/div[contains(@class, 'videoPlayer')];--;1.81818181818
+//*/div[contains(@id, 'content-lower')];--;1.98697916667
+//*/div[contains(@class, 'video-wrapper-inner')];--;0.0
+//*/div[contains(@class, 'label icon-share')];--;1.14285714286
+//*/div[contains(@class, 'row')];--;0.820602027669
+//*/div[contains(@id, 'vidInfoContainer')];--;1.9328358209
+//*/div[contains(@class, 'play-video')];--;1.33333333333
+//*/div[contains(@id, 'content-upper-inner-wrap')];--;1.99064108563
+//*/div[contains(@id, 'vid-info')];--;1.9328358209
+//*/div[contains(@id, 'video-showcase')];--;1.98697916667
+//*/div[contains(@class, 'popup social-button-group')];--;1.65853658537
+//*/span[contains(@class, 'author')];--;1.02443609023
+//*/div[contains(@class, 'label icon-transcript')];--;1.2
+//*/div[contains(@id, 'related-heading')];--;1.26315789474
+//*/div[contains(@class, 'carousel')];--;1.98842592593
+//*/div[contains(@class, 'popup transcript noTrans')];--;1.7358490566
+//*/div[contains(@id, 'socialHeader')];--;0.810810810811
+//*/footer[contains(@id, 'rbFooter')];--;0.983443708609
+//*/div[contains(@class, 'menu single')][contains(@id, 'newsMenu')];--;0.968152866242
+//*/div[contains(@class, 'item share')];--;1.72549019608
+//*/div[contains(@class, 'label icon-info')];--;1.25
+//*/div[contains(@class, 'player-outer-wrap')];--;1.99064108563
+//*/div[contains(@class, 'pad')];--;1.7358490566
+//*/div[contains(@class, 'socialWrapper')];--;0.666666666667
+//*/div[contains(@class, 'showcase-item')];--;0.0
+//*/div[contains(@class, 'col-12 ')][contains(@id, 'contentBody')];--;1.99454892341
+//*/div[contains(@class, 'viewport')];--;1.98818665092
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.615384615385
+//*/div[contains(@id, 'tools')];--;1.92372881356
+//*/div[contains(@class, 'fixation')];--;0.992169146437
+//*/nav[contains(@id, 'primaryNav')];--;0.99213836478
+//*/div[contains(@class, 'container')];--;0.930867288214
+//*/div[contains(@id, 'primary')];--;0.992169146437
+//*/nav;--;0.138552733353
+//*/div[contains(@class, 'meta')];--;0.15020395226
+//*/div[contains(@class, 'videoPromo')];--;1.37795537796
+//*/div[contains(@class, 'menu single active')][contains(@id, 'videoMenu')];--;1.90476190476
+//*/div[contains(@class, 'col-3 showcase-tile showcase-video')];--;0.236216931452
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.913461538462
+//*/div[contains(@class, 'menuWrapper')];--;0.158951339882
+//*/div[contains(@id, 'countdownSpinner')];--;0.0
+//*/div[contains(@class, 'showcase-overlay')];--;0.236216931452
+//*/div[contains(@class, 'tab-content selected')][contains(@id, 'related-content')];--;1.98842592593
+//*/div[contains(@id, 'content-upper')];--;1.99064108563
+//*/div[contains(@class, 'videoContainer')];--;1.81818181818
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.992366412214
+//*/span[contains(@class, 'menuHead')];--;0.6
+//*/div[contains(@class, 'col-12')][contains(@id, 'footerCopyright')];--;0.927272727273
+//*/div[contains(@class, 'label icon-feedback')];--;1.2
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.942196531792
+//*/div[contains(@class, 'player-wrap')];--;1.99064108563
+//*/div[contains(@class, 'YAD-e76de29e-774b-3a1c-b9a8-450947e596d8')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.974063400576
+//*/div[contains(@class, 'menu single')][contains(@id, 'gamesMenu')];--;0.5
+//*/div[contains(@id, 'player')];--;0.942148760331
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@id, 'countdownCount')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;1.99454892341
+//*/div[contains(@id, 'content-upper-outer-wrap')];--;1.99064108563
+//*/div[contains(@class, 'showSkin')];--;0.0
+//*/div[contains(@class, 'tab-content interactive-content')][contains(@id, 'interactive-content')];--;0.0
+//*/div[contains(@class, 'popup about-video')];--;1.83018867925
+//*/div[contains(@id, 'secondary')];--;0.810810810811
+//*/div[contains(@class, 'item info')];--;1.84745762712
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.0
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.0
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0542530360194
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e08687301b')];--;0.0
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;0.0
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;0.0
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'viewport')];--;1.98873873874
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e08687301b')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;0.0
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e08687301b')];--;0.0
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e08687301b')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;0.0
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'caption')];--;0.0
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;1.0
+//*/div[contains(@class, 'col-8')];--;0.0
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;0.0
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;1.23076923077
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;1.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;1.11111111111
+//*/nav;--;0.257769162991
+//*/div[contains(@class, 'image-meta')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;0.0
+//*/div[contains(@class, 'open')];--;0.0
+//*/div[contains(@class, 'container')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e08687301b')];--;0.0
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;1.09090909091
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;1.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;0.0
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e08687301b')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;0.0
+//*/div[contains(@class, 'productList reviewListing')];--;0.0
+//*/div[contains(@class, 'content')];--;0.0
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;1.63636363636
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;1.62790697674
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0384492255927
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e08687301b')];--;0.0
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;1.11111111111
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;0.5625
+//*/div[contains(@class, 'thumbViewport')];--;2.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'viewport')];--;2.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e08687301b')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;1.53846153846
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e08687301b')];--;0.0
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e08687301b')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;1.78947368421
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'caption')];--;0.187349606835
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;1.0
+//*/div[contains(@class, 'col-8')];--;0.447368421053
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;1.68888888889
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;1.23076923077
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;1.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;1.11111111111
+//*/nav;--;0.29279402041
+//*/div[contains(@class, 'image-meta')];--;0.759324009324
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;1.57575757576
+//*/div[contains(@class, 'open')];--;1.89247311828
+//*/div[contains(@class, 'container')];--;0.451612903226
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e08687301b')];--;0.0
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;1.72727272727
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;1.09090909091
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;1.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;1.75675675676
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e08687301b')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;1.8064516129
+//*/div[contains(@class, 'productList reviewListing')];--;1.96023856859
+//*/div[contains(@class, 'content')];--;1.89361702128
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;2.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.813953488372
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.813953488372
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.813953488372
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0371414351098
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;0.555555555556
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;0.527777777778
+//*/div[contains(@class, 'thumbViewport')];--;1.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e13245d030')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e13245d030')];--;0.0
+//*/div[contains(@class, 'viewport')];--;1.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e13245d030')];--;0.0
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;0.894736842105
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;0.769230769231
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e13245d030')];--;0.0
+//*/div[contains(@class, 'caption')];--;0.0890731257411
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;0.5
+//*/div[contains(@class, 'col-8')];--;0.447368421053
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;0.844444444444
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.615384615385
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;0.5
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e13245d030')];--;0.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;0.555555555556
+//*/nav;--;0.229848998836
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e13245d030')];--;0.0
+//*/div[contains(@class, 'image-meta')];--;0.204081632653
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;0.787878787879
+//*/div[contains(@class, 'open')];--;0.94623655914
+//*/div[contains(@class, 'container')];--;0.451612903226
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;0.863636363636
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.545454545455
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.5
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;0.878378378378
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;0.903225806452
+//*/div[contains(@class, 'productList reviewListing')];--;0.980119284294
+//*/div[contains(@class, 'content')];--;0.946808510638
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;1.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;1.62790697674
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.061521448563
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;1.11111111111
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;1.0
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e13245d030')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e13245d030')];--;0.0
+//*/div[contains(@class, 'viewport')];--;1.98893193138
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e13245d030')];--;0.0
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;1.78947368421
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;1.53846153846
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e13245d030')];--;0.0
+//*/div[contains(@class, 'caption')];--;1.85507246377
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;0.0
+//*/div[contains(@class, 'col-8')];--;0.0
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;1.68888888889
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.0
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;0.0
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e13245d030')];--;0.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;0.0
+//*/nav;--;0.199322186909
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e13245d030')];--;0.0
+//*/div[contains(@class, 'image-meta')];--;1.46153846154
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;1.57575757576
+//*/div[contains(@class, 'open')];--;1.89247311828
+//*/div[contains(@class, 'container')];--;0.0
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;1.72727272727
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;1.75675675676
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;1.8064516129
+//*/div[contains(@class, 'productList reviewListing')];--;1.96023856859
+//*/div[contains(@class, 'content')];--;1.89361702128
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.813953488372
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0289145318513
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;0.555555555556
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;1.0
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e13245d030')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e13245d030')];--;0.0
+//*/div[contains(@class, 'viewport')];--;0.994465965689
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e13245d030')];--;0.0
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;0.894736842105
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;0.769230769231
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e13245d030')];--;0.0
+//*/div[contains(@class, 'caption')];--;1.85507246377
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;0.0
+//*/div[contains(@class, 'col-8')];--;0.493781094527
+//*/div[contains(@class, 'row')];--;0.318274853801
+//*/div[contains(@class, 'time')];--;0.844444444444
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.0
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;0.0
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e13245d030')];--;0.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;0.0
+//*/nav;--;0.199322186909
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e13245d030')];--;0.0
+//*/div[contains(@class, 'image-meta')];--;1.46153846154
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;0.787878787879
+//*/div[contains(@class, 'open')];--;0.94623655914
+//*/div[contains(@class, 'container')];--;0.0
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;0.863636363636
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;0.878378378378
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;0.903225806452
+//*/div[contains(@class, 'productList reviewListing')];--;0.980119284294
+//*/div[contains(@class, 'content')];--;1.49832227858
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;1.64444444444
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0335212897729
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;1.11111111111
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;0.527777777778
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e13245d030')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e13245d030')];--;0.0
+//*/div[contains(@class, 'viewport')];--;1.93965517241
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e13245d030')];--;0.0
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;1.78947368421
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;1.53846153846
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e13245d030')];--;0.0
+//*/div[contains(@class, 'caption')];--;0.0742992998943
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;0.0
+//*/div[contains(@class, 'col-8')];--;0.447368421053
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;1.68888888889
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;1.63157894737
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.0
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;0.0
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e13245d030')];--;0.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;0.0
+//*/nav;--;0.227264913005
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e13245d030')];--;0.0
+//*/div[contains(@class, 'image-meta')];--;1.46153846154
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;0.0
+//*/div[contains(@class, 'open')];--;1.9018404908
+//*/div[contains(@class, 'container')];--;0.449438202247
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;1.72727272727
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;1.74285714286
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;1.79775280899
+//*/div[contains(@class, 'productList reviewListing')];--;1.96023856859
+//*/div[contains(@class, 'content')];--;1.28755364807
+//*/div[contains(@class, 'relatedObject slide')];--;1.82795698925
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;1.62790697674
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0391457176384
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;1.11111111111
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;0.5625
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'viewport')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@class, 'content')];--;1.89361702128
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;1.53846153846
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;1.78947368421
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'caption')];--;0.187349606835
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;1.0
+//*/div[contains(@class, 'col-8')];--;0.447368421053
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;1.68888888889
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e0ddf2bfea')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;1.23076923077
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;1.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;1.11111111111
+//*/nav;--;0.29279402041
+//*/div[contains(@class, 'image-meta')];--;0.759324009324
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;1.57575757576
+//*/div[contains(@class, 'open')];--;1.89247311828
+//*/div[contains(@class, 'container')];--;0.451612903226
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;1.72727272727
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;1.09090909091
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;1.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;1.75675675676
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;1.8064516129
+//*/div[contains(@class, 'productList reviewListing')];--;1.96023856859
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.813953488372
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0609508241699
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;0.555555555556
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;1.0
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'viewport')];--;1.98893193138
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@class, 'content')];--;0.946808510638
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;0.769230769231
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;0.894736842105
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'caption')];--;1.85507246377
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;0.5
+//*/div[contains(@class, 'col-8')];--;0.0
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;0.844444444444
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e0ddf2bfea')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.615384615385
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;0.5
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;0.555555555556
+//*/nav;--;0.201950113143
+//*/div[contains(@class, 'image-meta')];--;1.46153846154
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;0.787878787879
+//*/div[contains(@class, 'open')];--;0.94623655914
+//*/div[contains(@class, 'container')];--;0.0
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;0.863636363636
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.545454545455
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.5
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;0.878378378378
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;0.903225806452
+//*/div[contains(@class, 'productList reviewListing')];--;0.980119284294
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;0.0
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0289960590899
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;0.0
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;0.5
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'viewport')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@class, 'content')];--;1.70909090909
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;0.0
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;0.0
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'caption')];--;1.85346215781
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;0.0
+//*/div[contains(@class, 'col-8')];--;0.493781094527
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'row')];--;0.318274853801
+//*/div[contains(@class, 'time')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e0ddf2bfea')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.0
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;0.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;0.0
+//*/nav;--;0.201675272163
+//*/div[contains(@class, 'image-meta')];--;0.730769230769
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;0.0
+//*/div[contains(@class, 'open')];--;0.0
+//*/div[contains(@class, 'container')];--;0.0
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;0.0
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;0.0
+//*/div[contains(@class, 'productList reviewListing')];--;0.0
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'relatedObject slide')];--;0.0
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'wtbAux')];--;0.0
+//*/div[contains(@class, 'credits')];--;1.64444444444
+//*/div[contains(@class, 'thumb-controls')];--;0.0
+//*/div;--;0.0339864734906
+//*/div[contains(@class, 'ad-skin')][contains(@id, 'skin-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'ad-leader-top')][contains(@id, 'leader-top-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'menu single active')][contains(@id, 'newsMenu')];--;1.11111111111
+//*/div[contains(@id, 'leaderTopWrap')];--;0.0
+//*/div[contains(@class, 'heading')];--;0.5625
+//*/div[contains(@class, 'thumbViewport')];--;0.0
+//*/div[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'viewport')];--;1.93965517241
+//*/div[contains(@class, 'menu single')][contains(@id, 'headerLogin')];--;0.0
+//*/div[contains(@class, 'content')];--;1.59058533467
+//*/div[contains(@id, 'rbSkin')];--;0.0
+//*/section[contains(@class, 'galleryPromoUnit')][contains(@id, 'promoUnit')];--;0.0
+//*/section[contains(@class, 'dontMissRight')];--;1.53846153846
+//*/div[contains(@class, 'pageTools')];--;0.0
+//*/div[contains(@class, 'ad-mpu-middle2')][contains(@id, 'mpu-middle2-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'scroll-wrapper')];--;0.0
+//*/div[contains(@class, 'YAD-a1e2086d-5df6-376b-bb51-ffda4eb29ec0')];--;0.0
+//*/div[contains(@class, 'col-4')];--;0.0
+//*/div[contains(@class, 'sharebarWrapper col-8')];--;1.78947368421
+//*/div[contains(@class, 'image-gallery')];--;0.0
+//*/div[contains(@class, 'sharebarRedesign inline-view atTop')];--;0.0
+//*/div[contains(@class, 'sponsor')][contains(@id, 'sponsor_ad')];--;0.0
+//*/div[contains(@class, 'caption')];--;0.0761356797721
+//*/div[contains(@class, 'menu single ')][contains(@id, 'dealsMenu')];--;0.0
+//*/div[contains(@class, 'col-8')];--;0.447368421053
+//*/div[contains(@class, 'ad-intromercial')][contains(@id, 'intromercial-564e0ddf2bfea')];--;0.0
+//*/div[contains(@class, 'row')];--;0.0
+//*/div[contains(@class, 'time')];--;1.68888888889
+//*/div[contains(@class, 'ad-mpu-middle')][contains(@id, 'mpu-middle-564e0ddf2bfea')];--;0.0
+//*/div[contains(@id, 'galleryPage')];--;0.0
+//*/div[contains(@class, 'wtb')][contains(@id, 'wtbAux')];--;1.63157894737
+//*/div[contains(@class, 'fixation fixed')];--;0.0
+//*/div[contains(@class, 'menu')][contains(@id, 'download')];--;0.0
+//*/div[contains(@class, 'gallery-header-border')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'videoMenu')];--;0.0
+//*/nav[contains(@id, 'primaryNav')];--;0.0
+//*/div[contains(@class, 'sharebarOuter')];--;0.0
+//*/div[contains(@id, 'primary')];--;0.0
+//*/nav;--;0.23065335577
+//*/div[contains(@class, 'image-meta')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'editionMenu')];--;0.0
+//*/div[contains(@class, 'menuWrapper')];--;0.0
+//*/div[contains(@class, 'gallery-controls')];--;0.0
+//*/div[contains(@class, 'count')];--;0.0
+//*/div[contains(@class, 'image-meta selected')];--;0.0
+//*/div[contains(@class, 'open')];--;1.9018404908
+//*/div[contains(@class, 'container')];--;0.449438202247
+//*/header[contains(@class, 'page-header')][contains(@id, 'rbHeader')];--;0.0
+//*/span[contains(@class, 'menuHead')];--;0.0
+//*/div[contains(@class, 'slidecontrols')];--;1.72727272727
+//*/div[contains(@class, 'menu single')][contains(@id, 'howtoMenu')];--;0.0
+//*/div[contains(@class, 'menu single')][contains(@id, 'reviewsMenu')];--;0.0
+//*/div[contains(@class, 'mpu')][contains(@id, 'mpu-top')];--;0.0
+//*/header[contains(@class, 'gallery-header')];--;1.74285714286
+//*/div[contains(@id, 'omnibar_top')];--;0.0
+//*/div[contains(@class, 'container ')][contains(@id, 'rbContent')];--;1.79775280899
+//*/div[contains(@class, 'productList reviewListing')];--;1.96023856859
+//*/div[contains(@class, 'col-1 imageLinkWrapper')];--;0.0
+//*/div[contains(@class, 'relatedObject slide')];--;1.82795698925
+//*/div[contains(@class, 'ad-mpu-bottom')][contains(@id, 'mpu-bottom-564e0ddf2bfea')];--;0.0

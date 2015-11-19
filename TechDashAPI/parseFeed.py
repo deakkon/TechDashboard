@@ -3,23 +3,33 @@ Created on 7 Sep 2015
 
 @author: jurica
 '''
-import feedparser
-from datetime import datetime 
-from urlparse import urlparse #domain extraction
-import sys
+
+#===============================================================================
+# MY STUFF
+#===============================================================================
 from TechDashAPI.mysqlUtilities import connectMySQL
 from TechDashAPI.ContentExtractor import ContentExtractor
 from TechDashAPI.ContentExtractorTrainer import ContentExtractorTrainer
 from TechDashAPI.createDOM import createDom
 from TechDashAPI.util import utilities
 
-from pprint import pprint
+#===============================================================================
+# VARIOUS STUFF
+#===============================================================================
 import os
 import json
 import dicttoxml
 import traceback
+import feedparser
+from datetime import datetime 
+from urlparse import urlparse #domain extraction
+import sys
 
 
+#===============================================================================
+# NER STUFF
+#===============================================================================
+from stanford_corenlp_pywrapper import CoreNLP
 
 class parseNewsFeed(object):
     __feedURL = None
@@ -92,6 +102,11 @@ class parseNewsFeed(object):
         self.__db = connectMySQL(db='xpath', port=3366)
         self.__filesFolder = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'
         self.__utilitiesFunctions = utilities()
+        
+        #=======================================================================
+        # STANFORD NER 
+        #=======================================================================
+        self.__extractNerStanford = CoreNLP( "nerparse",corenlp_jars=["/Users/jurica/Downloads/stanford-corenlp-full-2015-04-20/*"])
             
     def getDomainKey(self, url):
         '''
@@ -217,7 +232,8 @@ class parseNewsFeed(object):
 
                 for article in self.__articleLinks:
                     try:
-                        ce = ContentExtractor(self.__domainDBkey,article)
+                        print article
+                        ce = ContentExtractor(self.__domainDBkey,article, self.__extractNerStanford)
                         ce.getDocumentIDKey()
                         ce.extractContent()
                         #=======================================================
@@ -227,4 +243,5 @@ class parseNewsFeed(object):
                     except AttributeError:
                         print traceback.print_exc()
                         pass
-                    
+            
+            

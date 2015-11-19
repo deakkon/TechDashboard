@@ -29,7 +29,9 @@ import pandas as pd
 import urllib2
 from lxml import html
 from lxml.html.clean import Cleaner
+from lxml.etree import tostring
 from bs4 import BeautifulSoup
+from itertools import chain
 
 #===============================================================================
 # USE MYSQL DATABASE
@@ -89,7 +91,9 @@ class utilities(object):
 
         return htmlFile
 
-        
+    #===========================================================================
+    # EXTRACT CONTENT
+    #===========================================================================
     def extractContent(self, path, htmlFile):
 
         try:
@@ -101,14 +105,16 @@ class utilities(object):
             else:
                   
                 for xpathElement in xpathContentFile:
-                    childrentext = ' '.join([child.text.strip() for child in xpathElement.getchildren() if child.text and child.tag not in self.__htmlElementsSkip])
+                        
+                    childrentext = ' '.join([child.xpath("string()") for child in xpathElement.getchildren() if child.text and child.tag not in self.__htmlElementsSkip])
                     childrentext = ' '.join(childrentext.split())
-    
+                     
+                    
                     if childrentext.isspace() or len(childrentext) == 0:
                         childrenValues.append('empty')
                     else:
                         childrenValues.append(childrentext)
-                        
+                    
             return list(set(childrenValues))
 
         except AttributeError as er:
@@ -118,6 +124,44 @@ class utilities(object):
             print traceback.print_exc()
             return
         
+        
+    def extractContentBS(self, path, htmlFile):
+
+        try:
+            xpathContentFile = htmlFile.xpath(path)
+            childrenValues = []
+            
+            if len(xpathContentFile) == 0:
+                childrenValues.append('empty')
+            else:
+                  
+                for xpathElement in xpathContentFile:
+                    
+                    directChildren = " ".join([tostring(child) for child in xpathElement.getchildren() if child.tag not in self.__htmlElementsSkip and child.tag not in self.__htmlElements])
+                
+                    soup = BeautifulSoup(directChildren, "lxml")
+                    childrentextSoup = soup.find_all(recursive=False)
+
+                    if len(childrentextSoup)>0:
+                        childrenTextHTML = childrentextSoup[0]
+                        childrenTextClean = " ".join((childrentextSoup[0].get_text()).split())
+                        if len(childrenTextClean)>0:
+                            childrenValues.append(childrenTextClean)
+                        else:
+                            childrenValues.append('empty')
+                    else:
+                        childrenValues.append('empty')
+
+            return list(set(childrenValues))
+
+        except Exception, err:
+            print err, sys.exc_info()[0]
+            print traceback.print_exc()
+            return
+        
+    #===========================================================================
+    # EXTRACT CONTENT WITH LXML FUNCTION - NOT GOOD AS IT EXTRACTS TEXT FROM ALL CHILDREN DATA MAKING IMPOSSIBRU TO DETECT THE ACTUAL CONTENT NODES
+    #===========================================================================
     def extractContentLXML(self, path, htmlFile):
 
         try:
@@ -143,8 +187,11 @@ class utilities(object):
             e = sys.exc_info()[0]
             print e
             print traceback.print_exc()
-            return
+            return None
     
+    #===========================================================================
+    # DIFFERENT WAYS OF CALCULATING RATIOS
+    #===========================================================================
     def calculateRatio(self, itemChildrenTextFile, path, htmlFileBackgroundKnowledge, nodeBackgroundKnowledge):
         '''
         Character based Levenshtein Distance 
@@ -199,15 +246,26 @@ class utilities(object):
             for itemChild in itemChildrenTextFile:
                 ratio = []
                 for itemBack in nodeBackgroundKnowledge:
-                    ratio.append((editdistance.eval(itemChild, itemBack) * 2 / (len(itemChild)+len(itemBack)))/len(itemChildrenTextFile))
+                    #===========================================================
+                    # print itemChild, len(itemChild), '\t', itemBack, len(itemBack),'\t', itemChildrenTextFile, len(itemChildrenTextFile)
+                    #===========================================================
+                    
+                    distanceValue = editdistance.eval(itemChild, itemBack) * (2 / (len(itemChild)+len(itemBack))) * (1/len(itemChildrenTextFile))
+                    ratio.append(distanceValue)
                 
                 #===============================================================
                 # if extractCount > 0:
                 #     ratioList.append(median(ratio) * (extractCount / len(itemChildrenTextFile)))
                 # else:
                 #===============================================================
-                ratioList.append(median(ratio))
                 
+                #===============================================================
+                # print median(ratio)
+                #===============================================================
+                ratioList.append(median(ratio))
+                #===============================================================
+                # raw_input('prompt')
+                #===============================================================
         
         else:
             ratioList.append(0)

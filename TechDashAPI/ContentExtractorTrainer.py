@@ -17,7 +17,7 @@ import traceback
 from docutils.frontend import Values
 from TechDashAPI.util import utilities
 import urllib2
-
+import logging
 
 class ContentExtractorTrainer(object):
     '''
@@ -29,7 +29,7 @@ class ContentExtractorTrainer(object):
     http://lxml.de/api/lxml.html.clean.Cleaner-class.html - LXML CLEANING OPTIONS FOR FURTHER PREPROCESSING
     '''
 
-    def __init__(self, domain, htmlFileURL):
+    def __init__(self, domain, htmlFileURL, dbConnection=''):
         self.__domain = str(domain)
         self.__dictionaryPath = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'
         self.__domainDoctionary = json.load(open(self.__dictionaryPath + self.__domain + '.json', 'rb'))
@@ -42,7 +42,7 @@ class ContentExtractorTrainer(object):
         self.__htmlAttributes = ['id', 'class']
         self.__htmlElementsSkip = ['script','style']
         self.__utilitiesFunctions = utilities()
-        
+        logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
         #=======================================================================
         # LOAD BACKGROUND KNOWLEDGE
         #=======================================================================
@@ -123,14 +123,16 @@ class ContentExtractorTrainer(object):
                                         a += 1
  
                                     tempPaths.append('//*/'+parentElements.tag+xPathValueTemp)
-                                     
                      
                 except (ValueError, TypeError) as ve:
                     print ve
                     traceback.print_exc()
                     pass
-                                     
+        
         self.__xpathPaths = list(set(tempPaths))
+        #=======================================================================
+        # print self.__xpathPaths
+        #=======================================================================
  
                      
     def createXPathFromXMLFile_FullPath(self):
@@ -195,6 +197,7 @@ class ContentExtractorTrainer(object):
         '''
         try:
             for path in self.__xpathPaths:
+
                 #===================================================================
                 # GET BACKGROUND KNOWLEDEG AND CURRENT NODE
                 #===================================================================
@@ -206,39 +209,23 @@ class ContentExtractorTrainer(object):
                     self.__htmlFileBackgroundKnowledge[path]['ratioValues'] = numpy.array([])
                     self.__htmlFileBackgroundKnowledge[path]['extractCount'] = 0
                     nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledge[path]['content']
-    
+                
                 #===================================================================
                 # GET ACTIVE PAGE PATH NODE CONTENT
                 #===================================================================
-                itemChildrenTextFile = self.__utilitiesFunctions.extractContentLXML(path, self.__htmlFile)
-                
+                itemChildrenTextFile = self.__utilitiesFunctions.extractContentBS(path, self.__htmlFile)
+
                 #===================================================================
                 # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
                 #===================================================================
-                
-                #===============================================================
-                # ratio = self.__utilitiesFunctions.calculateRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
-                #===============================================================
                 ratio = self.__utilitiesFunctions.calculateNormalizedRatio(itemChildrenTextFile, path, self.__htmlFileBackgroundKnowledge, nodeBackgroundKnowledge)
-                
-                #===================================================================
-                # CREATE NODES IN THE DICT WITH CONTENT AND RATIO INFORMATION
-                # MINIMUM RATIO VS AVERAGE RATIO
-                # NORMALIZING VALUE OF NUMBER OF PATH IDENTIFICATIONS AS EXTRACTED PATHS
-                #===================================================================
-                
                 self.__htmlFileBackgroundKnowledge[path]['ratio'] = ratio
                 self.__htmlFileBackgroundKnowledge[path]['ratioValues'] = numpy.append(self.__htmlFileBackgroundKnowledge[path]['ratioValues'], ratio)
-                            
-                #===================================================================
-                # if (numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) - numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])
-                #     < ratio 
-                #     < numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) + numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])):
-                #===================================================================
+
+                #===============================================================
+                # UPDATE BACKGROUND KNOWLEDGE - TO BE EXCHANGED WITH DATABASE CONTENT
+                #===============================================================
                 nodeBackgroundKnowledge.extend(itemChildrenTextFile)
-                #===================================================================
-                # nodeBackgroundKnowledge = list(set(nodeBackgroundKnowledge))
-                #===================================================================
                 self.__htmlFileBackgroundKnowledge[path]['content'] = nodeBackgroundKnowledge
                 
                 with open(self.__dictionaryPath + self.__domain + '_xpathNodesRatio.csv', 'a') as file:
@@ -271,11 +258,13 @@ class ContentExtractorTrainer(object):
             pickle.dump(self.__kMeansValues.cluster_centers_, open(self.__dictionaryPath + self.__domain + '_centroids.pickle', 'wb'))
             pickle.dump([self.__xpathPaths[i] for i in indexValues[numpy.argmax(self.__kMeansValues.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '.pickle', 'wb'))
             
-            self.__htmlFileURL
-            print generatedClusters
-            print self.__kMeansValues.cluster_centers_
-            print paths2Extract
-            print '***************************'
+            #===================================================================
+            # self.__htmlFileURL
+            # print generatedClusters
+            # print self.__kMeansValues.cluster_centers_
+            # print paths2Extract
+            # print '***************************'
+            #===================================================================
             
         except (ValueError,AttributeError):
             traceback.print_exc()

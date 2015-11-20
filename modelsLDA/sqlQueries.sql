@@ -12,7 +12,13 @@ select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPat
 show full processlist;
 
 -- GET ALL VALUES WITH NO NER --
-SELECT COUNT(*) FROM xpathValuesXPath WHERE xpathValuesXPathNER IS NULL;
+SELECT COUNT(*) FROM xpathValuesXPath WHERE xpathValuesXPathNER IS NULL or xpathValuesXPathNER = "" or xpathValuesXPathNER="'" limit 200;
 
 -- GET ALL ELEMENTS WITH NER
-SELECT xpathValuesID,xpathValuesXPathNER FROM xpathValuesXPath WHERE xpathValuesXPathNER IS NOT NULL AND xpathValuesXPathNER != '';
+SELECT xpathValuesID, xpathValuesdocumentID,xpathValuesXPathNER FROM xpathValuesXPath WHERE xpathValuesXPathNER IS NOT NULL AND xpathValuesXPathNER != "'" and xpathValuesXPathNER != "";
+
+-- GET ALL SIMILAR
+select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPathTitle, lala.xpathValuesXPathMainTopic, lala.xpathValuesXPathDateTime, lala.xpathValuesXPathNER from
+                    (select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) as xpathValuesXPathContentLength, xpathValuesXPathMainTopic,xpathValuesXPathDateTime, xpathValuesXPathNER
+                    from xpathValuesXPath group by xpathValuesdocumentID) as lala
+                    where lala.xpathValuesXPathNER LIKE '%Microsoft%' order by lala.xpathValuesdocumentID DESC;

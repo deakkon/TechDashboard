@@ -117,7 +117,6 @@ class ContentExtractor(object):
         
         data = self.__extractNerStanford.parse_doc(text)
         
-        nerEntities = []
         peopleEntitiesList = []
         
         for item in data['sentences']:
@@ -125,26 +124,26 @@ class ContentExtractor(object):
             # for key in item.keys():
             #===========================================================================
             try:
+                
                 nerIndex = [i for i, x in enumerate(item['ner']) if x == u'PERSON' or x == u'ORGANIZATION']
                 
                 if len(nerIndex)> 0:
                     try:
                         peopleEntitiesList.extend(self.checkNeighbour(nerIndex,item['tokens']))
                     except AttributeError:
-                        peopleEntitiesList = []
                         print traceback.print_exc()
                         pass
     
             except ValueError:
-                peopleEntitiesList = []
                 print traceback.print_exc()
                 pass
         
-        if len(nerEntities) > 0:
+        if len(peopleEntitiesList) > 0:
             nerEntities = ",".join(list(set(peopleEntitiesList)))
         else:
             nerEntities = ''
             
+        nerEntities = nerEntities.replace("'","\'")
         return nerEntities.encode('utf-8')
         
     #===========================================================================

@@ -4,6 +4,7 @@ from TechDashAPI.mysqlUtilities import connectMySQL
 import json
 import pprint
 import time
+from boto.dynamodb.item import Item
 
 
 app = Flask(__name__)
@@ -83,8 +84,8 @@ def getTopic():
     # GET ALL DOCUMENT BELONGING TO THIS TOPIC, SORTED BY DATE OF EXTRACTION DESCENDING
     #===========================================================================
     query1 = """
-            select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPathTitle, lala.xpathValuesXPathMainTopic, lala.xpathValuesXPathDateTime from 
-                (select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) as xpathValuesXPathContentLength, xpathValuesXPathMainTopic,xpathValuesXPathDateTime from xpathValuesXPath group by xpathValuesdocumentID) as lala
+            select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPathTitle, lala.xpathValuesXPathMainTopic, lala.xpathValuesXPathDateTime, lala.xpathValuesXPathNER from 
+                (select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) as xpathValuesXPathContentLength, xpathValuesXPathMainTopic,xpathValuesXPathDateTime, xpathValuesXPathNER from xpathValuesXPath group by xpathValuesdocumentID) as lala
                 where lala.xpathValuesXPathMainTopic = '%s' order by lala.xpathValuesdocumentID DESC;
             """% (topicId)
 
@@ -106,7 +107,12 @@ def getTopic():
         #=======================================================================
         # ARTICLE INFORMATION
         #=======================================================================
-        categoryArticlesDict.append({'content':item[1],'title':item[2],'articleID':item[0], 'show':False})
+        try:
+            NERs = item[5].split(',')
+        except AttributeError:
+            NERs = item[5]
+            
+        categoryArticlesDict.append({'content':item[1],'title':item[2],'articleID':item[0],'NER':NERs, 'show':False})
         
     #===========================================================================
     # GET TOPIC-RELATED STATISTICS; DAY-2-DAY NUMBER OF ARTICLES IN TOPIC
@@ -188,7 +194,94 @@ def getOverallChart():
     #===========================================================================
     return json.dumps({'type':chartValues['type'] ,'data':chartValues['data'], 'options':chartValues['options']})
 
+@app.route('/getNERSearch', methods=["GET", "POST"])
+def getNERSearch():
+    post = request.get_json()
+    nerKeywords = post.get('nerKeywords')
+    overlappingArticles = []
+    for keyword in nerKeywords:
+        keyword = "%"+ keyword + "%"
+        print keyword
+        query1 = """
+                select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPathTitle, lala.xpathValuesXPathMainTopic, lala.xpathValuesXPathDateTime, lala.xpathValuesXPathNER from 
+                    (select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) as xpathValuesXPathContentLength, xpathValuesXPathMainTopic,xpathValuesXPathDateTime, xpathValuesXPathNER 
+                    from xpathValuesXPath group by xpathValuesdocumentID) as lala 
+                    where lala.xpathValuesXPathNER LIKE '%s' order by lala.xpathValuesdocumentID DESC;
+                """% (keyword)
+    
+        db.executeQuery(query1)
+        categroyArticles = [x for x in db.results]
+        overlappingArticles.extend(categroyArticles)
 
+    overlappingArticles = list(set(sorted(overlappingArticles, key=lambda x: x[4]))) 
+
+    #=======================================================================
+    #  
+    #=======================================================================
+    categoryArticlesDict =[]
+    summeryTopicNumbers = {}
+    for item in overlappingArticles:
+        #=======================================================================
+        # SUMMARY NUBMER OF DOCUMENTS PER DAY IN SELECTED TOPIC
+        #=======================================================================
+
+        if str(item[3]) in summeryTopicNumbers:
+            summeryTopicNumbers[item[3]] += 1
+        else:
+            summeryTopicNumbers[item[3]] = 1
+        
+        #=======================================================================
+        # ARTICLE INFORMATION
+        #=======================================================================
+        try:
+            NERs = item[5].split(',')
+        except AttributeError:
+            NERs = item[5]
+            
+        categoryArticlesDict.append({'content':item[1],'title':item[2],'articleID':item[0],'NER':NERs, 'show':False})
+        
+    #===========================================================================
+    # GET SELECTED KEYWORD-RELATED STATISTICS; DAY-2-DAY NUMBER OF ARTICLES IN TOPIC
+    #===========================================================================
+    chartObject = {}
+    chartObject['type'] = "ColumnChart"
+    chartObject['options'] = {
+        "title": "Documents and topics for selected keywords",
+        "isStacked": True,
+        "fill": 20,
+        "displayExactValues": True,
+        "vAxis": {
+            "title": "Numer of documents", "gridlines": {"count": 6}
+        },
+        "hAxis": {
+            "title": "LDA Topic"
+        }
+    };
+    
+    chartObject['data'] = {}
+    chartObject['data']['cols'] = [{'id': "t", 'label': "LDA Topic", 'type': "string"},{'id': "s", 'label': "Number of documents", 'type': "number"}]
+    chartObject['data']['rows'] = []
+
+    
+    for item in summeryTopicNumbers:
+        chartObject['data']['rows'].append({'c':[{'v':item},{'v':summeryTopicNumbers[item]}]})
+        
+    #===========================================================================
+    # GET ALL KEYWORDS FOR TOPICS WHICH DEFINE THE ARTICLES
+    #===========================================================================
+    topicKeywords = []
+    for key in summeryTopicNumbers.keys():
+        print key, type(key)
+        topicKeywords.extend([item for item in model.show_topic(int(key), topn=20)])
+    
+    print topicKeywords
+    topicKeywords = sorted(topicKeywords, key=lambda x: x[0])
+    #===========================================================================
+    # return data to ajax call
+    #===========================================================================
+    return json.dumps({'modelKeywords':topicKeywords, 'categroyArticles':categoryArticlesDict, 'topicChartObject':chartObject});
+    
 if __name__ == '__main__':
     app.debug = True
     app.run(host='0.0.0.0')
+    

@@ -28,7 +28,8 @@
     "angularUtils-pagination": "angular-utils-pagination#~0.9.2",
     "angular-smart-table": "~2.1.5",
     "tiny-angular-wordcloud": "*",
-    "ngprogress": "~1.1.2"
+    "ngprogress": "~1.1.2",
+    "md-chips-select": "~0.0.9"
   },
   "private": true
 }

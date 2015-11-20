@@ -70,6 +70,7 @@ class parseNewsFeed(object):
                 'http://feeds.feedburner.com/TechCrunch/',
                 'http://feeds.feedburner.com/techradar/allnews'
             ]
+            
         else:
             self.__feedURL=feedURL
 

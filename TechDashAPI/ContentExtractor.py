@@ -13,6 +13,7 @@ from pprint import pprint
 from pickle import PicklingError
 import urllib2
 import traceback
+from pprint import pprint
 
 from TechDashAPI.util import utilities
 from TechDashAPI.topicModeling import techDashTopicModel
@@ -24,7 +25,13 @@ from TechDashAPI.mysqlUtilities import connectMySQL
 #===============================================================================
 from itertools import groupby
 from operator import itemgetter
-from cgitb import text
+
+#===============================================================================
+# Wordseer CoreNLP libraries
+#===============================================================================
+import jsonrpclib
+from simplejson import loads
+
 
 class ContentExtractor(object):
     '''
@@ -35,8 +42,8 @@ class ContentExtractor(object):
     steps:
         get serialized json file
     '''
-
-    def __init__(self, domain, htmlFileURL, nerExtractor, dbConnection = ''):
+    #@profile
+    def __init__(self, domain, htmlFileURL, CoreNLPner='',spacyNER='', dbConnection = ''):
         '''
         Constructor
         '''
@@ -64,12 +71,13 @@ class ContentExtractor(object):
         #=======================================================================
         # OPEN URL
         #=======================================================================
-        self.__htmlFile = self.__utilitiesFunctions.openULR(self.__fileURL)
+        url2Open, self.__htmlFile = self.__utilitiesFunctions.openULR(self.__fileURL)
         
         #=======================================================================
         # NER 
         #=======================================================================
-        self.__extractNerStanford = nerExtractor
+        self.__extractNerStanford = CoreNLPner
+        self.__extractNerSpacy = spacyNER
 
     def getDocumentIDKey(self):
         '''
@@ -107,13 +115,16 @@ class ContentExtractor(object):
         for k, g in groupby(enumerate(indexList), lambda (i, x): i-x):
                                                                          
             consecutive = map(itemgetter(1), g)        
-            consecutiveValues = ' '.join([entityList[conInd] for conInd in  consecutive ])
+            consecutiveValues = ' '.join([entityList[conInd].strip('"').strip("'") for conInd in  consecutive ])
             entities.append(consecutiveValues)
      
         return entities
     
     
     def extractNER(self, text):
+        #=======================================================================
+        # https://github.com/brendano/stanford_corenlp_pywrapper
+        #=======================================================================
         
         data = self.__extractNerStanford.parse_doc(text)
         
@@ -145,118 +156,88 @@ class ContentExtractor(object):
             
         nerEntities = nerEntities.replace("'","\'")
         return nerEntities.encode('utf-8')
+
+    def extractNER_Wordseer(self, text):
+        #=======================================================================
+        # https://github.com/Wordseer/stanford-corenlp-python
+        #=======================================================================
+        print 'in wordseer'
+        server = jsonrpclib.Server("http://localhost:1111")
+        result = loads(server.parse(text))
+        print result.keys()
+        #=======================================================================
+        # 
+        # for item in result['sentences']:
+        #     print item
+        #=======================================================================
+            
+        raw_input('prompt')
+    
+    #@profile
+    def extractNER_Spacy(self, text):
         
+        returnNERTypes =['PERSON','ORG','WORK_OF_ART','PRODUCT']
+        doc = self.__extractNerSpacy(text.decode('utf-8'))
+        nerEntities = [str(ent).strip('"').strip("'") for ent in doc.ents if ent.label_ in returnNERTypes]
+
+        
+        if len(nerEntities) > 0:
+            nerEntities = ",".join(list(set(nerEntities)))
+        else:
+            nerEntities = ''
+
+        print nerEntities
+        return nerEntities
+
     #===========================================================================
     # EXTRACT AND WRITE CONTENT TO DB
     #===========================================================================
+    #@profile
     def extractContent(self):
 
         if self.__documentIDKey is not None:
             
             itemChildrenText = ''
             extractedContent = []
-            pathStatistics = self.__utilitiesFunctions.getDomainStatistics(self.__domainDBkey)
+            #===================================================================
+            # pathStatistics = self.__utilitiesFunctions.getDomainStatistics(self.__domainDBkey)
+            #===================================================================
             articleTitle = self.__htmlFile.find(".//title").text.encode('utf-8')
+            extracted = False
+            articleLength = -1
+            articlePath = ''
             
             for path in self.__XpathList:
 
                 path = path.replace('"',"'")
                 itemChildrenText = list(set(self.__utilitiesFunctions.extractContentBS(path, self.__htmlFile)))
                 #===============================================================
-                # self.__utilitiesFunctions.extractContentBS(path, self.__htmlFile)
+                # print itemChildrenText
                 #===============================================================
 
                 for elementChildText in itemChildrenText:
-                    #===========================================================
-                    # print elementChildText
-                    #===========================================================
                     elementChildText = elementChildText.encode('utf-8','replace')
                     elementChildText = elementChildText.replace('"',"'")
+                    #===========================================================
+                    # print path,'\t', len(elementChildText),'\t',elementChildText
+                    #===========================================================
                     
-                    if len(elementChildText) > pathStatistics[u'50%']:
-                        print "EXTRACTED:\t", path, pathStatistics[u'50%'], len(elementChildText)
-
-                        NERs = self.extractNER(elementChildText)
-
-                        topicModel = self.__topicModel.getDocumentTopics(elementChildText, 'initalModel', '500P_20T')
-
-                        sqlQuery = '''INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength,xpathValuesXPathMainTopic, xpathValuesXPathTitle,xpathValuesXPathNER) 
-                        VALUES ("%s","%s","%s","%s","%s","%s","%s","%s")'''%(path,elementChildText,self.__documentIDKey,'Attribs',len(elementChildText),topicModel,articleTitle,NERs)
-                        self.__db.executeQuery(sqlQuery)
-                        self.__db._connectMySQL__connection.commit()
-                    #===========================================================
-                    # else:
-                    #     print 'NOT EXTRACTED: ', path, elementChildText
-                    #===========================================================
-
-            print 'PROCESSED : Extracted content from %s \n =======================' %(self.__fileURL)
+                    if len(elementChildText)  > articleLength:
+                        extractedContent = elementChildText
+                        articlePath = path
+                        extracted = True
+                        articleLength = len(elementChildText)
             
-
-
-#===============================================================================
-#                 
-#     def extractContentID(self):
-# 
-#         if self.__documentIDKey is not None:
-#             #===================================================================
-#             # print 'Adding document %s to PROCESSED list' %(self.__fileURL) 
-#             #===================================================================      
-#             for path in self.__XpathListID:
-#                 
-#                 xpathContent = self.__htmlFile.xpath(path)
-#             
-#                 if len(xpathContent) > 0:
-#                     for item in xpathContent:
-#                         itemChildren = [child.text.lstrip().rstrip() for child in item.getchildren() if child.tag not in self.__htmlElements and child.text is not None]
-#         
-#                     itemChildrenText = ' '.join(itemChildren).encode('utf-8')
-#                     itemChildrenText = itemChildrenText.replace("'",'"')
-#                     path = path.replace("'","\\'")
-#                     
-#                     #===========================================================
-#                     # if len(itemChildrenText) > 10:
-#                     #===========================================================
-#                     sqlQuery = "INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType) VALUES ('%s','%s','%s','%s')"%(path,itemChildrenText,self.__documentIDKey,'ID')
-#                     #===================================================================
-#                     # print sqlQuery
-#                     #===================================================================
-#                     self.__db.executeQuery(sqlQuery)
-#                     self.__db._connectMySQL__connection.commit()
-#             print 'Extracted content from %s to PROCESSED list' %(self.__fileURL) 
-#    
-#     def extractContentNoAttrib(self):
-# 
-#         if self.__documentIDKey is not None:
-#             #===================================================================
-#             # print 'Adding document %s to PROCESSED list' %(self.__fileURL) 
-#             #===================================================================
-#             xpathContentsAll = []
-#             path = ''
-#             itemChildrenText = ''
-#             
-#             for path in self.__XpathListNoAttrib:
-# 
-#                 xpathContent = self.__htmlFile.xpath(path)
-#                 
-#                 if len(xpathContent) > 0:
-#                     for item in xpathContent:
-#                         itemChildren = [child.text.lstrip().rstrip() for child in item.getchildren() if child.text is not None]
-#         
-#                     itemChildrenTextTemp = ' '.join([item.lstrip().rstrip() for item in itemChildren  if item.lstrip().rstrip()]).encode('utf-8')
-#                     itemChildrenTextTemp = itemChildrenText.replace("'",'"')
-#                     
-#                     if len(itemChildrenTextTemp) > len(itemChildrenText):
-#                         itemChildrenText = itemChildrenTextTemp
-#                         path = path.replace("'","\\'")
-#                     
-#             #===========================================================
-#             # if len(itemChildrenText) > 10:
-#             #===========================================================
-#             sqlQuery = "INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType) VALUES ('%s','%s','%s', '%s')"%(path,itemChildrenText,self.__documentIDKey, 'NoAttrib')
-#             #===================================================================
-#             # print sqlQuery
-#             #===================================================================
-#             self.__db.executeQuery(sqlQuery)
-#             self.__db._connectMySQL__connection.commit()
-#             print 'Extracted content from %s to PROCESSED list' %(self.__fileURL) 
-#===============================================================================
+            if extracted:
+                NERs = self.extractNER_Spacy(extractedContent)
+                topicModel = self.__topicModel.getDocumentTopics(extractedContent, 'initalModel', '500P_20T')
+                sqlQuery = '''INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength,xpathValuesXPathMainTopic, xpathValuesXPathTitle,xpathValuesXPathNER) 
+                VALUES ("%s","%s","%s","%s","%s","%s","%s","%s")'''%(articlePath,extractedContent,self.__documentIDKey,'Attribs',len(extractedContent),topicModel,articleTitle,NERs)
+                self.__db.executeQuery(sqlQuery)
+                self.__db._connectMySQL__connection.commit()
+                #===============================================================
+                # print 'EXTRACTED\t', articlePath,'\t', extractedContent,'\t',len(extractedContent), NERs
+                #===============================================================
+                print 'PROCESSED : Extracted content from %s \n =======================' %(self.__fileURL)
+            else:
+                print 'NOT PROCESSED : NO content from %s extracted \n =======================' %(self.__fileURL)

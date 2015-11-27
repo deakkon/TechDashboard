@@ -22,3 +22,12 @@ select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPat
                     (select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) as xpathValuesXPathContentLength, xpathValuesXPathMainTopic,xpathValuesXPathDateTime, xpathValuesXPathNER
                     from xpathValuesXPath group by xpathValuesdocumentID) as lala
                     where lala.xpathValuesXPathNER LIKE '%Microsoft%' order by lala.xpathValuesdocumentID DESC;
+                    
+-- GET DOCUMENT FROM EXTRACTED TOPIC
+select lala.xpathValuesdocumentID,lala.xpathValuesXPathMainTopic,lala.xpathValuesXPathMainTopic, lala.xpathValuesContent, lala.xpathValuesXPathNER, lala.xpathValuesXPathTitle from 
+	(select xpathValuesdocumentID, max(xpathValuesXPathContentLength),xpathValuesXPathMainTopic, xpathValuesContent, xpathValuesXPathNER, xpathValuesXPathTitle  from xpathValuesXPath group by xpathValuesdocumentID)as lala  
+	ORDER BY xpathValuesXPathDateTime DESC;
+    
+-- disable foreign key check
+SET foreign_key_checks = 0;
+truncate domainList

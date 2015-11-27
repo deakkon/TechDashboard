@@ -5,6 +5,7 @@ import json
 import pprint
 import time
 from boto.dynamodb.item import Item
+import re
 
 
 app = Flask(__name__)
@@ -32,8 +33,8 @@ def initialize():
     # SQL QUERY
     #===========================================================================
     query = "select lala.xpathValuesXPathMainTopic,count(*) from (select xpathValuesdocumentID, max(xpathValuesXPathContentLength),xpathValuesXPathMainTopic from xpathValuesXPath group by xpathValuesdocumentID)as lala group by lala.xpathValuesXPathMainTopic order by lala.xpathValuesXPathMainTopic"
-    results = db.executeQuery(query)
-    categroyArticles = [x for x in db.results]
+    db.executeQuery(query)
+    categroyArticles = [x for x in db._connectMySQL__results]
     
     #===========================================================================
     # PREPARE JSON OBJECT
@@ -90,7 +91,7 @@ def getTopic():
             """% (topicId)
 
     results = db.executeQuery(query1)
-    categroyArticles = [x for x in db.results]
+    categroyArticles = [x for x in db._connectMySQL__results]
 
     categoryArticlesDict =[]
     summeryTopicNumbers = {}
@@ -108,9 +109,9 @@ def getTopic():
         # ARTICLE INFORMATION
         #=======================================================================
         try:
-            NERs = item[5].split(',')
+            NERs = [x.strip('"').strip("'") for x in item[5].split(',') if x]
         except AttributeError:
-            NERs = item[5]
+            NERs = item[5].strip('"').strip("'")
             
         categoryArticlesDict.append({'content':item[1],'title':item[2],'articleID':item[0],'NER':NERs, 'show':False})
         
@@ -197,7 +198,8 @@ def getOverallChart():
 @app.route('/getNERSearch', methods=["GET", "POST"])
 def getNERSearch():
     post = request.get_json()
-    nerKeywords = post.get('nerKeywords')
+    nerKeywords = [x.strip('"').strip("'") for x in post.get('nerKeywords') if x]
+    print nerKeywords
     overlappingArticles = []
     for keyword in nerKeywords:
         keyword = "%"+ keyword + "%"
@@ -210,7 +212,7 @@ def getNERSearch():
                 """% (keyword)
     
         db.executeQuery(query1)
-        categroyArticles = [x for x in db.results]
+        categroyArticles = [x for x in db._connectMySQL__results]
         overlappingArticles.extend(categroyArticles)
 
     overlappingArticles = list(set(sorted(overlappingArticles, key=lambda x: x[4]))) 

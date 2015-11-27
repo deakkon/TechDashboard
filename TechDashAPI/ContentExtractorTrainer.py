@@ -28,70 +28,78 @@ class ContentExtractorTrainer(object):
     
     http://lxml.de/api/lxml.html.clean.Cleaner-class.html - LXML CLEANING OPTIONS FOR FURTHER PREPROCESSING
     '''
-
-    def __init__(self, domain, htmlFileURL, dbConnection=''):
+    #@profile
+    def __init__(self, domain, htmlFileURL, dbConnection='', path=''):
+        #=======================================================================
+        # LOGGING INFORMATION
+        #=======================================================================s
+        logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+        
+        #=======================================================================
+        # INITIAL VARIABLES
+        #=======================================================================
         self.__domain = str(domain)
-        self.__dictionaryPath = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'
-        self.__domainDoctionary = json.load(open(self.__dictionaryPath + self.__domain + '.json', 'rb'))
-        self.__domainDoctionaryXML = ET.parse(self.__dictionaryPath + self.__domain + '.xml')
         self.__htmlFileURL = htmlFileURL
         self.__xpathPaths = []
-        self.__xpathPathsNoAttrib = []
-        self.__xpathPathsID = []
+        #=======================================================================
+        # self.__xpathPathsNoAttrib = []
+        #=======================================================================
+        #=======================================================================
+        # self.__xpathPathsID = []
+        #=======================================================================
+        
+        #=======================================================================
+        # SET UP THE DIRECTORY STRUCTURE; WHERE THE FILES ARE/WILL BE STORED
+        #=======================================================================
+        self.__dictionaryPath = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'
+        self.__domainResourcesFile = self.__dictionaryPath + self.__domain
+        
+        #=======================================================================
+        # DICTIONARY WITH KNOWLEDGE INFORMATION, only need when using 2-step xpath list creation, DEPRECATED
+        #=======================================================================
+        
+        #=======================================================================
+        # self.__domainDoctionary = json.load(open(self.__domainResourcesFile + '.json', 'rb'))
+        # self.__domainDoctionaryXML = ET.parse(self.__domainResourcesFile + '.xml')
+        #=======================================================================
+        
+        #=======================================================================
+        # STRUCTURE AND CONTENT ELEMENTS FOR XPATH CREATION
+        #=======================================================================
         self.__htmlElements = ['body', 'header', 'nav', 'footer', 'article', 'section', 'aside', 'div', 'span']
         self.__htmlAttributes = ['id', 'class']
         self.__htmlElementsSkip = ['script','style']
-        self.__utilitiesFunctions = utilities()
-        logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+        
         #=======================================================================
         # LOAD BACKGROUND KNOWLEDGE
         #=======================================================================
-        if os.path.isfile(self.__dictionaryPath + self.__domain + '_bckKnowledge.pickle'):
-            self.__htmlFileBackgroundKnowledge = pickle.load(open(self.__dictionaryPath + self.__domain + '_bckKnowledge.pickle', 'rb'))
-        else:
+        try:
+        #=======================================================================
+        # if os.path.isfile(self.__dictionaryPath + self.__domain + '_bckKnowledge.pickle'):
+        #=======================================================================
+            self.__htmlFileBackgroundKnowledge = pickle.load(open(self.__domainResourcesFile + '_bckKnowledge.pickle', 'rb'))
+        except:
             self.__htmlFileBackgroundKnowledge = {}
-            
-        if os.path.isfile(self.__dictionaryPath + self.__domain + '_ID_bckKnowledge.pickle'):
-            self.__htmlFileBackgroundKnowledgeID = pickle.load(open(self.__dictionaryPath + self.__domain + '_ID_bckKnowledge.pickle', 'rb'))
-        else:
-            self.__htmlFileBackgroundKnowledgeID = {}
-            
-        if os.path.isfile(self.__dictionaryPath + self.__domain + '_ID_bckKnowledge.pickle'):
-            self.__htmlFileBackgroundKnowledge_NoAttrib = pickle.load(open(self.__dictionaryPath + self.__domain + '_NoAttrib_bckKnowledge.pickle', 'rb'))
-        else:
-            self.__htmlFileBackgroundKnowledge_NoAttrib = {}
+            print traceback.print_exc()
             
         #=======================================================================
-        # SET UP KMEANS AND DEFINE CLUSTER CENTERS
+        # SET UP K-MEANS AND DEFINE CLUSTER CENTERS
         #=======================================================================
-        if os.path.isfile(self.__dictionaryPath + self.__domain + '_centroids.pickle'):
-            centroids = pickle.load(open(self.__dictionaryPath + self.__domain + '_centroids.pickle', 'rb'))
+        try:
+            #===================================================================
+            # if os.path.isfile(self.__dictionaryPath + self.__domain + '_centroids.pickle'):
+            #===================================================================
+            centroids = pickle.load(open(self.__domainResourcesFile + '_centroids.pickle', 'rb'))
             self.__kMeansValues = KMeans(n_clusters=2, init=centroids)
-        else:
+        except:
+            print traceback.print_exc()
             self.__kMeansValues = KMeans(n_clusters=2)
-            
-        if os.path.isfile(self.__dictionaryPath + self.__domain + '_ID_centroids.pickle'):
-            centroids = pickle.load(open(self.__dictionaryPath + self.__domain + '_ID_centroids.pickle', 'rb'))
-            self.__kMeansValues_ID = KMeans(n_clusters=2, init=centroids)
-        else:
-            self.__kMeansValues_ID = KMeans(n_clusters=2)
-            
-        if os.path.isfile(self.__dictionaryPath + self.__domain + '_NoAttrib_centroids.pickle'):
-            centroids = pickle.load(open(self.__dictionaryPath + self.__domain + '_NoAttrib_centroids.pickle', 'rb'))
-            self.__kMeansValues_NoAttrib = KMeans(n_clusters=2, init=centroids)
-        else:
-            self.__kMeansValues_NoAttrib = KMeans(n_clusters=2)
-            
+
         #=======================================================================
-        # try:
-        #     page = urllib2.build_opener(urllib2.HTTPCookieProcessor).open(self.__htmlFileURL)
-        #     self.__htmlFile = html.parse(page)
-        # except IOError:
-        #     print ('Error opening %s')%(self.__htmlFileURL)
-        #     print traceback.print_exc()
-        #     return
+        # UTILITIES FUNCTION
         #=======================================================================
-        self.__htmlFile = self.__utilitiesFunctions.openULR(self.__htmlFileURL)
+        self.__utilitiesFunctions = utilities()
+        url2Open, self.__htmlFile = self.__utilitiesFunctions.openULR(self.__htmlFileURL)
         
     def createXPathFromXMLFile(self):
         '''
@@ -190,14 +198,16 @@ class ContentExtractorTrainer(object):
         self.__xpathPaths = list(set(tempPaths))
         self.__xpathPathsID = list(set(self.__xpathPathsID))
         self.__xpathPathsNoAttrib = list(set(self.__xpathPathsNoAttrib))
-
+    
+    #@profile
     def evaluateXPathNodeContent(self):
         '''
         compare content and backContent extracted from both resources xpath
         '''
+        self.__xpathPaths = self.__utilitiesFunctions.extractXPaths_LXML(self.__domain, self.__htmlFileURL, self.__domainResourcesFile + '_candidates.pickle')
+
         try:
             for path in self.__xpathPaths:
-
                 #===================================================================
                 # GET BACKGROUND KNOWLEDEG AND CURRENT NODE
                 #===================================================================
@@ -266,200 +276,6 @@ class ContentExtractorTrainer(object):
             # print '***************************'
             #===================================================================
             
-        except (ValueError,AttributeError):
+        except (ValueError,AttributeError,TypeError):
             traceback.print_exc()
-            pass
-        #=======================================================================
-        # raw_input('prompt')
-        #=======================================================================
-        
-#===============================================================================
-# 
-#     def evaluateXPathNodeContentID(self):
-#         '''
-#         compare content and backContent extracted from both resources xpath
-#         '''
-#         for path in self.__xpathPathsID:
-#             #===================================================================
-#             # GET BACKGROUND KNOWLEDEG AND CURRENT NODE
-#             #===================================================================
-#             if path in self.__htmlFileBackgroundKnowledgeID.keys():
-#                 nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledgeID[path]['content']
-#             else:
-#                 self.__htmlFileBackgroundKnowledgeID[path] = {}
-#                 self.__htmlFileBackgroundKnowledgeID[path]['content'] = ['empty']
-#                 self.__htmlFileBackgroundKnowledgeID[path]['ratioValues'] = numpy.array([])
-#                 nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledgeID[path]['content']
-# 
-#             #===================================================================
-#             # GET ACTIVE PAGE PATH NODE CONTENT
-#             #===================================================================
-#             try:
-#                 xpathContentFile = self.__htmlFile.xpath(path)
-#             except AttributeError:
-#                 print traceback.print_exc()
-#                 return
-# 
-#             for item in xpathContentFile:
-#                 itemChildrenFile = [child.text.lstrip().rstrip() for child in item.getchildren() if child.tag not in self.__htmlElements and child.text is not None]
-# 
-#             try:
-#                 itemChildrenTextFile = ' '.join(itemChildrenFile).encode('utf-8')
-#                 itemChildrenTextFile = ' '.join(itemChildrenTextFile.split())
-#                 if len(itemChildrenTextFile) == 0:
-#                     itemChildrenTextFile = 'empty'
-#             except UnboundLocalError:
-#                 print traceback.print_exc()
-#                 itemChildrenTextFile = 'empty'
-#                 
-#             #===================================================================
-#             # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
-#             #===================================================================
-#             
-#             ratio = min([(Levenshtein.distance(item, itemChildrenTextFile) * (2 / (len(item) + len(itemChildrenTextFile))))] for item in nodeBackgroundKnowledge)
-#             
-#             #===================================================================
-#             # CREATE NODES IN THE DICT WITH CONTENT AND RATIO INFORMATION
-#             #===================================================================
-#             self.__htmlFileBackgroundKnowledgeID[path]['ratio'] = ratio[0]
-#             self.__htmlFileBackgroundKnowledgeID[path]['ratioValues'] = numpy.append(self.__htmlFileBackgroundKnowledgeID[path]['ratioValues'], ratio[0])
-#             #===================================================================
-#             # if (numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) - numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])
-#             #     < ratio 
-#             #     < numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) + numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])):
-#             #===================================================================
-#             nodeBackgroundKnowledge.append(itemChildrenTextFile)
-#             nodeBackgroundKnowledge = list(set(nodeBackgroundKnowledge))
-#             self.__htmlFileBackgroundKnowledgeID[path]['content'] = nodeBackgroundKnowledge
-#             
-# 
-#             with open(self.__dictionaryPath + self.__domain + '_ID_xpathNodesRatio.csv', 'a') as file:
-#                 file.write(path + ';--;' + str(ratio) + '\n')
-# 
-#         #===================================================================
-#         # KMEANS CLUSTERING
-#         #===================================================================
-#         data = numpy.asarray([[self.__htmlFileBackgroundKnowledgeID[key]['ratio']] for key in self.__htmlFileBackgroundKnowledgeID.keys()])
-#         self.__kMeansValues_ID.fit(data, self.__htmlFileBackgroundKnowledgeID.keys())
-#         generatedClusters = self.__kMeansValues_ID.predict(data)
-#         
-#         #=======================================================================
-#         # print 'Generated clusters: ',generatedClusters, len(generatedClusters)
-#         # print 'Cluster centers: ', self.__kMeansValues.cluster_centers_
-#         # print 'Labels: ', self.__kMeansValues.labels_
-#         # print "Max index",  numpy.argmax(self.__kMeansValues.cluster_centers_)
-#         #=======================================================================
-# 
-#         uniq_y = {ind: [] for ind in list(set(generatedClusters))} 
-#         for idx, el in enumerate(generatedClusters):
-#             uniq_y[el].append(int(idx))
-# 
-#         indexValues = uniq_y.values()
-# 
-#         print 'Not in xPaths', [self.__htmlFileBackgroundKnowledgeID.keys()[i] for i in indexValues[numpy.argmin(self.__kMeansValues_ID.cluster_centers_)]]#, [data[i] for i in uniq_y.keys()[1]]
-#         print 'Xpath cluster',[self.__htmlFileBackgroundKnowledgeID.keys()[i] for i in indexValues[numpy.argmax(self.__kMeansValues_ID.cluster_centers_)]]
-#         print self.__domain
-#         
-#         #===================================================================
-#         # PICKLE BACKGROUND KNOWLEDGE, CLUSTER CENTERS FOR FUTURE ITERATIONS AND LIST OF DYNAMIC PATHS
-#         #===================================================================
-#         pickle.dump(self.__htmlFileBackgroundKnowledgeID, open(self.__dictionaryPath + self.__domain + '_ID_bckKnowledge.pickle', 'wb'))
-#         pickle.dump(self.__kMeansValues_ID.cluster_centers_, open(self.__dictionaryPath + self.__domain + '_ID_centroids.pickle', 'wb'))
-#         pickle.dump([self.__htmlFileBackgroundKnowledgeID.keys()[i] for i in indexValues[numpy.argmax(self.__kMeansValues_ID.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '_ID.pickle', 'wb'))
-# 
-#     def evaluateXPathNodeContentNoAttrib(self):
-#         '''
-#         compare content and backContent extracted from both resources xpath
-#         '''
-# 
-#         for path in self.__xpathPathsNoAttrib:
-#             #===================================================================
-#             # GET BACKGROUND KNOWLEDEG AND CURRENT NODE
-#             #===================================================================
-#             if path in self.__htmlFileBackgroundKnowledge_NoAttrib.keys():
-#                 nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledge_NoAttrib[path]['content']
-#             else:
-#                 self.__htmlFileBackgroundKnowledge_NoAttrib[path] = {}
-#                 self.__htmlFileBackgroundKnowledge_NoAttrib[path]['content'] = ['empty']
-#                 self.__htmlFileBackgroundKnowledge_NoAttrib[path]['ratioValues'] = numpy.array([])
-#                 nodeBackgroundKnowledge = self.__htmlFileBackgroundKnowledge_NoAttrib[path]['content']
-# 
-#             #===================================================================
-#             # GET ACTIVE PAGE PATH NODE CONTENT
-#             #===================================================================
-#             try:
-#                 xpathContentFile = self.__htmlFile.xpath(path)
-#             except AttributeError:
-#                 print traceback.print_exc()
-#                 return
-# 
-#             for item in xpathContentFile:
-#                 itemChildrenFile = [child.text.lstrip().rstrip() for child in item.getchildren() if child.tag not in self.__htmlElements and child.text is not None]
-# 
-#             try:
-#                 itemChildrenTextFile = ' '.join(itemChildrenFile).encode('utf-8')
-#                 itemChildrenTextFile = ' '.join(itemChildrenTextFile.split())
-#                 if len(itemChildrenTextFile) == 0:
-#                     itemChildrenTextFile = 'empty'
-#             except UnboundLocalError:
-#                 itemChildrenTextFile = 'empty'
-#                 
-#             #===================================================================
-#             # CALCULTE DISTANCE BETWEEN BACKGROUND KNOWLEDGE
-#             #===================================================================
-#             
-#             ratio = min([(Levenshtein.distance(item, itemChildrenTextFile) * (2 / (len(item) + len(itemChildrenTextFile))))] for item in nodeBackgroundKnowledge)
-#             
-#             #===================================================================
-#             # CREATE NODES IN THE DICT WITH CONTENT AND RATIO INFORMATION
-#             #===================================================================
-#             self.__htmlFileBackgroundKnowledge_NoAttrib[path]['ratio'] = ratio[0]
-#             self.__htmlFileBackgroundKnowledge_NoAttrib[path]['ratioValues'] = numpy.append(self.__htmlFileBackgroundKnowledge_NoAttrib[path]['ratioValues'], ratio[0])
-#             #===================================================================
-#             # if (numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) - numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])
-#             #     < ratio 
-#             #     < numpy.mean(self.__htmlFileBackgroundKnowledge[path]['ratioValues']) + numpy.std(self.__htmlFileBackgroundKnowledge[path]['ratioValues'])):
-#             #===================================================================
-#             nodeBackgroundKnowledge.append(itemChildrenTextFile)
-#             nodeBackgroundKnowledge = list(set(nodeBackgroundKnowledge))
-#             self.__htmlFileBackgroundKnowledge_NoAttrib[path]['content'] = nodeBackgroundKnowledge
-#             
-# 
-#             with open(self.__dictionaryPath + self.__domain + '_NoAttrib_xpathNodesRatio.csv', 'a') as file:
-#                 file.write(path + ';--;' + str(ratio) + '\n')
-# 
-#         #===================================================================
-#         # KMEANS CLUSTERING
-#         #===================================================================
-#         data = numpy.asarray([[self.__htmlFileBackgroundKnowledge_NoAttrib[key]['ratio']] for key in self.__htmlFileBackgroundKnowledge_NoAttrib.keys()])
-#         self.__kMeansValues_NoAttrib.fit(data, self.__htmlFileBackgroundKnowledge_NoAttrib.keys())
-#         generatedClusters = self.__kMeansValues_NoAttrib.predict(data)
-#         
-#         #=======================================================================
-#         # print 'Generated clusters: ',generatedClusters, len(generatedClusters)
-#         # print 'Cluster centers: ', self.__kMeansValues.cluster_centers_
-#         # print 'Labels: ', self.__kMeansValues.labels_
-#         # print "Max index",  numpy.argmax(self.__kMeansValues.cluster_centers_)
-#         #=======================================================================
-# 
-#         uniq_y = {ind: [] for ind in list(set(generatedClusters))} 
-#         for idx, el in enumerate(generatedClusters):
-#             uniq_y[el].append(int(idx))
-# 
-#         indexValues = uniq_y.values()
-# 
-#         print 'not in xPath: ', [self.__htmlFileBackgroundKnowledge_NoAttrib.keys()[i] for i in indexValues[numpy.argmin(self.__kMeansValues_NoAttrib.cluster_centers_)]]#, [data[i] for i in uniq_y.keys()[1]]
-#         print 'Xpath cluster:',[self.__htmlFileBackgroundKnowledge_NoAttrib.keys()[i] for i in indexValues[numpy.argmax(self.__kMeansValues_NoAttrib.cluster_centers_)]]
-#         print self.__domain
-#         
-#         #===================================================================
-#         # PICKLE BACKGROUND KNOWLEDGE, CLUSTER CENTERS FOR FUTURE ITERATIONS AND LIST OF DYNAMIC PATHS
-#         #===================================================================
-#         pickle.dump(self.__htmlFileBackgroundKnowledge_NoAttrib, open(self.__dictionaryPath + self.__domain + '_NoAttrib_bckKnowledge.pickle', 'wb'))
-#         pickle.dump(self.__kMeansValues_NoAttrib.cluster_centers_, open(self.__dictionaryPath + self.__domain + '_NoAttrib_centroids.pickle', 'wb'))
-#         pickle.dump([self.__htmlFileBackgroundKnowledge_NoAttrib.keys()[i] for i in indexValues[numpy.argmax(self.__kMeansValues_NoAttrib.cluster_centers_)]], open(self.__dictionaryPath + self.__domain + '_NoAttrib.pickle', 'wb'))
-#         
-#===============================================================================
-
-
-
+            return False

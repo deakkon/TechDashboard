@@ -79,7 +79,8 @@ def getTopic():
     # GET ALL DATA FOR PARAMETER AND RETURN IN JSON FORMAT
     #===========================================================================
     modelKeywords = [item for item in model.show_topic(topicId, topn=20)]
-    cloudKeywords = [{'word':item[1],'size':1} for item in model.show_topic(topicId, topn=20)]
+    cloudKeywords = [{'word':item[1],'size':int(item[0]*1000)/2} for item in model.show_topic(topicId, topn=20)]
+    print cloudKeywords
 
     #===========================================================================
     # GET ALL DOCUMENT BELONGING TO THIS TOPIC, SORTED BY DATE OF EXTRACTION DESCENDING
@@ -87,7 +88,7 @@ def getTopic():
     query1 = """
             select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPathTitle, lala.xpathValuesXPathMainTopic, lala.xpathValuesXPathDateTime, lala.xpathValuesXPathNER from 
                 (select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) as xpathValuesXPathContentLength, xpathValuesXPathMainTopic,xpathValuesXPathDateTime, xpathValuesXPathNER from xpathValuesXPath group by xpathValuesdocumentID) as lala
-                where lala.xpathValuesXPathMainTopic = '%s' order by lala.xpathValuesdocumentID DESC;
+                where lala.xpathValuesXPathMainTopic = '%s' order by lala.xpathValuesdocumentID DESC limit 50;
             """% (topicId)
 
     results = db.executeQuery(query1)
@@ -208,7 +209,7 @@ def getNERSearch():
                 select lala.xpathValuesdocumentID, lala.xpathValuesContent, lala.xpathValuesXPathTitle, lala.xpathValuesXPathMainTopic, lala.xpathValuesXPathDateTime, lala.xpathValuesXPathNER from 
                     (select xpathValuesdocumentID, xpathValuesContent, xpathValuesXPathTitle, max(xpathValuesXPathContentLength) as xpathValuesXPathContentLength, xpathValuesXPathMainTopic,xpathValuesXPathDateTime, xpathValuesXPathNER 
                     from xpathValuesXPath group by xpathValuesdocumentID) as lala 
-                    where lala.xpathValuesXPathNER LIKE '%s' order by lala.xpathValuesdocumentID DESC;
+                    where lala.xpathValuesXPathNER LIKE '%s' order by lala.xpathValuesdocumentID DESC limit 50;
                 """% (keyword)
     
         db.executeQuery(query1)

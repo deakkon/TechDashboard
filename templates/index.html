@@ -53,21 +53,25 @@
 					</md-content>
 			  	</div>
 			  	<div flex=30 layout-align="end end">
-								<table st-table="modelKeywords" layout-align="end end" layout-margin>
+								<table st-table="cloudKeywords" layout-align="end end" layout-margin>
 									<thead>
 									<h2 class="md-title" layout-align="end center">LDA topic keywords</h2>
 									<tr>
-										<th>Keyword</th>
-										<th>Correlation value</th>
+										<th st-sort="word">Keyword</th>
+										<th st-sort="size">Correlation value</th>
 									</tr>
 									</thead>
 									<tbody>
-									<tr ng-repeat="word in modelKeywords">
-										<td>{[ word[1] ]}</td>
-										<td>{[ word[0] ]}</td>
+									<tr ng-repeat="words in modelKeywords">
+										<td>{[ words[1] ]}</td>
+										<td>{[ words[0] ]}</td>
 									</tr>
 									</tbody>
 								</table>
+								
+<!-- 								<h2 class="md-title" layout-align="end end">Word cloud representation of the topic</h2> -->
+
+								
 								<h2 class="md-title" layout-align="end end">Distrubtion of articles in selected topic over time</h2>
 								<div layout-align="start start" layout-margin google-chart chart="topicChartObject"></div>
 								
@@ -106,32 +110,24 @@
     <script src="{{ url_for('static', filename='angular-route/angular-route.js') }}"></script>
     <script src="{{ url_for('static', filename='angular-messages/angular-messages.js') }}"></script>
     
-	<!--     ANGULAR CHART JS -->
-    <script src="{{ url_for('static', filename='Chart.js/Chart.js') }}"></script>
-    <script src="{{ url_for('static', filename='angular-chart.js/dist/angular-chart.js') }}"></script>
-    
 	<!--     angular-google-chart -->
     <script src="{{ url_for('static', filename='angular-google-chart/ng-google-chart.js') }}"></script>
     
 	<!--     PAGINATION  -->
-	<script src="{{ url_for('static', filename='angularUtils-pagination/dirPagination.js') }}"></script>
 	
 	<!-- 	HTML TABLES  -->
     <script src="{{ url_for('static', filename='angular-smart-table/dist/smart-table.js') }}"></script>
     
 	<!-- 	WORD CLOUD  -->
-    <script src="{{ url_for('static', filename='tiny-angular-wordcloud/dist/tangCloud.js') }}"></script>
     
 	<!--     NG PROGRESS -->
-    <script src="{{ url_for('static', filename='ngprogress/build/ngprogress.js') }}"></script>
     
 	<!--     MD-CHIPS-SELECT -->
     <script src="{{ url_for('static', filename='md-chips-select/md-chips-select.js') }}"></script>
-
+    
     <!-- CSS DEPENDENCIES  -->
     <link rel="stylesheet" href="{{ url_for('static', filename='angular-material/angular-material.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='techDash.css') }}">  
-	<link rel="stylesheet" href="{{ url_for('static', filename='angular-material-data-table/dist/md-data-table.min.css') }}" />
     
 	<!-- 	angular app  -->
    <script src="{{ url_for('static', filename='angularApp.js') }}"></script>

@@ -230,7 +230,7 @@ class ContentExtractor(object):
             
             if extracted:
                 NERs = self.extractNER_Spacy(extractedContent)
-                topicModel = self.__topicModel.getDocumentTopics(extractedContent, 'fullModel', 'fullModel_100P_20T')
+                topicModel = self.__topicModel.getDocumentTopics(extractedContent)
                 sqlQuery = '''INSERT INTO xpathValuesXPath (xpathValuesXPath, xpathValuesContent, xpathValuesdocumentID, xpathValuesXPathType, xpathValuesXPathContentLength,xpathValuesXPathMainTopic, xpathValuesXPathTitle,xpathValuesXPathNER) 
                 VALUES ("%s","%s","%s","%s","%s","%s","%s","%s")'''%(articlePath,extractedContent,self.__documentIDKey,'Attribs',len(extractedContent),topicModel,articleTitle,NERs)
                 self.__db.executeQuery(sqlQuery)

@@ -27,17 +27,10 @@ from scipy.spatial.distance import euclidean
 
 import os.path, time
 import re
+import logging
 
-#===============================================================================
-# from TechDashAPI.mysqlUtilities import connectMySQL
-#===============================================================================
 from mysqlUtilities import connectMySQL
-#===============================================================================
-# from webApp.flaskApp import modelName
-#===============================================================================
-#===============================================================================
-# from boto.roboto.awsqueryrequest import Line
-#===============================================================================
+
 
 
 class techDashTopicModel(object):
@@ -46,17 +39,17 @@ class techDashTopicModel(object):
     '''
 
 
-    def __init__(self, destination, fileName, modelName, ldaPasses='', topicNum=''):
+    def __init__(self, destination, fileName, modelName='', ldaPasses='', topicNum=''):
         '''
         Constructor
         '''
-        #=======================================================================
-        # logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-        #=======================================================================
+        logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
         
         self.__destination = destination
         self.__fileName = fileName
         self.__modelName = modelName
+        self.__ldaPasses = ldaPasses
+        self.__topicNum = topicNum
                 
         #=======================================================================
         # STOP WORDS AND CAHRACTERS
@@ -85,10 +78,24 @@ class techDashTopicModel(object):
         # ADD PERIODICAL UPDATE BASED ON TIMESTAMPS
         #=======================================================================
         if dateSince == '':
-            sqlQuery = 'SELECT xpathValuesContent FROM xpathValuesXPath'
+            sqlQuery = '''
+                SELECT xpathValuesContent 
+                FROM xpathValuesXPath WHERE (xpathValuesdocumentID,xpathValuesXPathContentLength) IN 
+                ( SELECT distinct(xpathValuesdocumentID), MAX(xpathValuesXPathContentLength)
+                  FROM xpathValuesXPath
+                  GROUP BY xpathValuesdocumentID
+                )
+            '''
             
         else:
-            sqlQuery = 'SELECT xpathValuesContent FROM xpathValuesXPath where xpathValuesXPathDateTime >= "%s"' %(dateSince)
+            sqlQuery = '''
+                SELECT xpathValuesContent 
+                FROM xpathValuesXPath WHERE (xpathValuesdocumentID,xpathValuesXPathContentLength) IN 
+                ( SELECT distinct(xpathValuesdocumentID), MAX(xpathValuesXPathContentLength)
+                  FROM xpathValuesXPath where xpathValuesXPathDateTime >= "%s"
+                  GROUP BY xpathValuesdocumentID
+                )
+            ''' %(dateSince)
             
         self.__db.executeQuery(sqlQuery)
         self.__queryResults = self.__db._connectMySQL__results
@@ -101,7 +108,7 @@ class techDashTopicModel(object):
         for dox in self.__queryResults:
             dox = dox[0].decode('utf-8')
             line = [re.sub(r'\W+', '', i.strip()) for i in word_tokenize(dox.lower()) if i not in self.__stopwords]# and len(re.sub(r'\W+', '', i.strip())) > 0 and str.isalpha(re.sub(r'\W+', '', i.strip()))]
-            line = [item for item in line if len(item) > 0 and unicode.isalpha(item)]
+            line = [item for item in line if len(item) > 2 and unicode.isalpha(item)]
             self.__cleanedCorpus.append(line)
         #=======================================================================
         # print self.__cleanedCorpus
@@ -134,21 +141,23 @@ class techDashTopicModel(object):
             fileName = self.__fileName
             
         if ldaPasses == '':
-            ldaPasses = 10
+            ldaPasses = self.__ldaPasses
     
         if topicNum == '':
-            topicNum = 100
+            topicNum = self.__topicNum
 
         if modelName == '':
-            modelName = fileName + '_' + ldaPasses + 'P_' + topicNum + 'T'
+            modelName = fileName + '_' + str(ldaPasses) + 'P_' + str(topicNum) + 'T'
         
         dict = corpora.Dictionary.load(self.__destination+fileName+'.dict')
         mm = corpora.MmCorpus(self.__destination+fileName+'.mm')
         
         #lda = models.ldamodel.LdaModel(corpus=mm, id2word=dict, num_topics=6, update_every=1, chunksize=10000, passes=10)
-        lda = LdaMulticore(corpus=mm, num_topics=topicNum, id2word=dict, chunksize=30000, passes=ldaPasses)
+        lda = LdaMulticore(corpus=mm, num_topics=topicNum, id2word=dict, chunksize=30000, passes=ldaPasses, workers=3)
         lda.save(self.__destination+modelName+'.lda')
-        print lda
+        #=======================================================================
+        # print lda
+        #=======================================================================
         print 'Created LDA model %s'%self.__fileName 
         
     def createHDP(self, fileName = '', modelName= ''):
@@ -354,14 +363,14 @@ class techDashTopicModel(object):
         lda.save(self.__destination+modelName+'.lda')
         
         
-    def getDocumentTopics(self, documentContent, dictname, modelName, documentId=''):
+    def getDocumentTopics(self, documentContent, documentId=''):
         
         #===============================================================================
         # GET DOCUMENT AND PREPARE ITS CONTENT
         #===============================================================================
         document = documentContent.decode('utf-8')
         line = [re.sub(r'\W+', '', i.strip()) for i in word_tokenize(document.lower()) if i not in self.__stopwords]# and len(re.sub(r'\W+', '', i.strip())) > 0 and str.isalpha(re.sub(r'\W+', '', i.strip()))]
-        line = [item for item in line if len(item) > 0 and unicode.isalpha(item)]
+        line = [item for item in line if len(item) > 2 and unicode.isalpha(item)]
         
         #=======================================================================
         # OPEN LDA AND DICT FILES AND PROJECT DOCUMENT ON TO LDA MODEL
@@ -565,21 +574,16 @@ class techDashTopicModel(object):
             resultsCSV.write('*******************************************\n\n')
 
 #===============================================================================
-# lda = techDashTopicModel( destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/', fileName='initalModel')
-#===============================================================================
-#===============================================================================
+# lda = techDashTopicModel( destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/', fileName='fullModel')
 # lda.getCorpusFromDB()
 # lda.cleanPreparedCorpus()
 # lda.createCorpusFiles()
-# lda.createLDA(ldaPasses=500, topicNum=20, modelName= '500P_20T')
-# lda.createHDP()
-# lda.updateModel_LDA('modelsLDAinitalModel', 'modelsLDA500P_20T')
+# lda.createLDA(ldaPasses=100, topicNum=20)
 #===============================================================================
 
 #===============================================================================
-# document = "Begin: Wordpress Article Content The writing is on the wall for more consolidation in the world of startups… both literally and figuratively. Today This is a bargain of sorts, and a poor return for investors: Oakland-based Livescribe, founded in 2007, had raised at least To finance the acquisition, Anoto says that it has signed a placement agreement with Sweden’s Carnegie Investment Bank AB to issue 158 million shares in Anoto, for a dilution of a maximum of 15%. Anoto has also taken a short-term loan of $2.9 million (25 million Swedish crowns). Livescribe was one of the early leaders in smart pen technology — and by default one of the early movers in the whole area of Internet of Things and turning “dumb” objects into connected pieces of hardware. But it also faced some significant stumbling blocks. Among them, it Livescribe is selling its business operations, technology, and intellectual property. “The Livescribe brand and existing infrastructure will be retained, with a goal of strengthening the position of both companies through the development and sale of new products,” the companies say in a By acquiring Livescribe, Anoto is widening the kinds of products it’s developing and selling. “Acquiring Livescribe is another important step in consolidating the Anoto ecosystem and realizing synergies in hardware and software development, supply chain and operations, and sales distribution,” said Stein Revelsby, CEO of Anoto, said in a statement. “We are already working on a new range of products to be launched in Livescribe’s sales channels in 2016.” “By joining forces with Anoto, we see huge potential for smartpen technology to expand beyond the consumer market and beyond writing and drawing on paper,” said The Swedish company has in the past worked to provide digital solutions for any kind of writing, from notes through to interactive displays and large walls. Livescribe is more about developing handheld styluses for smaller surfaces. That narrowed focus may have been a boost for developing quality, but it perhaps was also one of its problems as a company, considering the large amount competition in this space, from other startups like Paper to large tech companies like Apple designing their own “native” It looks like this is Anoto’s End: Wordpress Article Content"
-# lda.getDocumentTopics(document, 1,'initalModel', '500P_20T')
-# lda.updateAllNonTOpicDocuments()
+# lda.createHDP()
+# lda.updateModel_LDA('modelsLDAinitalModel', 'modelsLDA500P_20T')
 #===============================================================================
 
 

@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 
 modelDestination = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/'
-modelName ='500P_20T'
+modelName ='fullModel_100P_20T'
 model = LdaModel.load(modelDestination+modelName+'.lda',  mmap=None)
 #===============================================================================
 # print dir(model)

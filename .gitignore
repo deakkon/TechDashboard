@@ -4,19 +4,11 @@ static/
 
 coreNLP/
 
+TechDashboard_paper/
+
 .settings/org.eclipse.core.resources.prefs
 
 *.pyc
 
-*.lda
-
-*.state
-
-*.dict
-
-*.mm
-
-*.index
-
-*.hdp
+*.csv
 

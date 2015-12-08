@@ -29,7 +29,7 @@ class ContentExtractorTrainer(object):
     http://lxml.de/api/lxml.html.clean.Cleaner-class.html - LXML CLEANING OPTIONS FOR FURTHER PREPROCESSING
     '''
     @profile
-    def __init__(self, domain, htmlFileURL, dbConnection='', path=''):
+    def __init__(self, domain, htmlFileURL, pwd, dbConnection='', path=''):
         #=======================================================================
         # LOGGING INFORMATION
         #=======================================================================s
@@ -51,7 +51,7 @@ class ContentExtractorTrainer(object):
         #=======================================================================
         # SET UP THE DIRECTORY STRUCTURE; WHERE THE FILES ARE/WILL BE STORED
         #=======================================================================
-        self.__dictionaryPath = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'
+        self.__dictionaryPath = pwd+'/xpathModels/'
         self.__domainResourcesFile = self.__dictionaryPath + self.__domain
         
         #=======================================================================

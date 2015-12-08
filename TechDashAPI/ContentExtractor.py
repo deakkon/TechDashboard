@@ -44,7 +44,7 @@ class ContentExtractor(object):
         get serialized json file
     '''
     @profile
-    def __init__(self, domain, htmlFileURL, CoreNLPner='',spacyNER='', dbConnection = ''):
+    def __init__(self, domain, htmlFileURL, pwd, CoreNLPner='',spacyNER='', dbConnection = ''):
         '''
         Constructor
         '''
@@ -52,7 +52,7 @@ class ContentExtractor(object):
         self.__domainDBkey = domain
         
         try:
-            self.__XpathList = pickle.load(open('/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'+str(self.__domainDBkey)+'.pickle', 'rb'))
+            self.__XpathList = pickle.load(open(pwd+'/xpathModels/'+str(self.__domainDBkey)+'.pickle', 'rb'))
             #===================================================================
             # self.__XpathListID = pickle.load(open('/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'+str(self.__domainDBkey)+'_ID.pickle', 'rb'))
             # self.__XpathListNoAttrib = pickle.load(open('/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'+str(self.__domainDBkey)+'_NoAttrib.pickle', 'rb'))
@@ -67,7 +67,7 @@ class ContentExtractor(object):
         
         #DB CONNECTIVITY AND FUNCTIONALITY
         self.__db = connectMySQL(db='xpath', port=3366)
-        self.__topicModel = techDashTopicModel(destination='/Users/jurica/Documents/workspace/eclipse/TechDashboard/modelsLDA/', fileName='fullModel', modelName='fullModel_100P_20T')
+        self.__topicModel = techDashTopicModel(destination=pwd+'/modelsLDA/', fileName='fullModel', modelName='fullModel_100P_20T')
         
         #=======================================================================
         # OPEN URL

@@ -42,7 +42,7 @@ class parseNewsFeed(object):
     __entries = None
     __etags = None
     
-    def __init__(self, feedURL= ''):
+    def __init__(self, pwd, feedURL= ''):
         
         #=======================================================================
         # https://news.ycombinator.com/rss
@@ -106,7 +106,8 @@ class parseNewsFeed(object):
         self.__articleLinks = []
         self.__domainDBkey = None
         self.__db = connectMySQL(db='xpath', port=3366)
-        self.__filesFolder = '/Users/jurica/Documents/workspace/eclipse/TechDashboard/xpathModels/'
+        self.__pwd = pwd
+        self.__filesFolder = pwd+'/xpathModels/'
         self.__utilitiesFunctions = utilities()
         
         #=======================================================================
@@ -185,7 +186,7 @@ class parseNewsFeed(object):
             #===================================================================
             # print 'Training on domain ', domain,'\t Looking @ ', url
             #===================================================================
-            cet = ContentExtractorTrainer(domain,url)
+            cet = ContentExtractorTrainer(domain,url, self.__pwd)
             #===================================================================
             # cet.createXPathFromXMLFile()
             #===================================================================
@@ -248,7 +249,7 @@ class parseNewsFeed(object):
                             # print 'Processing domain %s'%(key)
                             #===================================================
                             for article in articleDictionary[key]:
-                                ce = ContentExtractor(key, article,spacyNER=self.__SpacyNLP)
+                                ce = ContentExtractor(key, article,self.__pwd,spacyNER=self.__SpacyNLP)
                                 ce.getDocumentIDKey()
                                 ce.extractContent()
 

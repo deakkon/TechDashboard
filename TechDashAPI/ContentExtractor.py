@@ -14,6 +14,7 @@ from pickle import PicklingError
 import urllib2
 import traceback
 from pprint import pprint
+from time import gmtime, strftime
 
 from TechDashAPI.util import utilities
 from TechDashAPI.topicModeling import techDashTopicModel
@@ -42,7 +43,7 @@ class ContentExtractor(object):
     steps:
         get serialized json file
     '''
-    #@profile
+    @profile
     def __init__(self, domain, htmlFileURL, CoreNLPner='',spacyNER='', dbConnection = ''):
         '''
         Constructor
@@ -173,7 +174,7 @@ class ContentExtractor(object):
             
         raw_input('prompt')
     
-    #@profile
+    @profile
     def extractNER_Spacy(self, text):
         
         returnNERTypes =['PERSON','ORG','WORK_OF_ART','PRODUCT']
@@ -192,7 +193,7 @@ class ContentExtractor(object):
     #===========================================================================
     # EXTRACT AND WRITE CONTENT TO DB
     #===========================================================================
-    #@profile
+    @profile
     def extractContent(self):
 
         if self.__documentIDKey is not None:
@@ -238,6 +239,6 @@ class ContentExtractor(object):
                 #===============================================================
                 # print 'EXTRACTED\t', articlePath,'\t', extractedContent,'\t',len(extractedContent), NERs
                 #===============================================================
-                print 'PROCESSED : Extracted content from %s \n =======================' %(self.__fileURL)
+                print strftime("%Y-%m-%d %H:%M:%S", gmtime()), ', PROCESSED : Extracted content from %s \n =======================' %(self.__fileURL)
             else:
-                print 'NOT PROCESSED : NO content from %s extracted \n =======================' %(self.__fileURL)
+                print strftime("%Y-%m-%d %H:%M:%S", gmtime()), ', NOT PROCESSED : NO content from %s extracted \n =======================' %(self.__fileURL)

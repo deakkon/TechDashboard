@@ -28,7 +28,7 @@ class ContentExtractorTrainer(object):
     
     http://lxml.de/api/lxml.html.clean.Cleaner-class.html - LXML CLEANING OPTIONS FOR FURTHER PREPROCESSING
     '''
-    #@profile
+    @profile
     def __init__(self, domain, htmlFileURL, dbConnection='', path=''):
         #=======================================================================
         # LOGGING INFORMATION
@@ -92,7 +92,9 @@ class ContentExtractorTrainer(object):
             centroids = pickle.load(open(self.__domainResourcesFile + '_centroids.pickle', 'rb'))
             self.__kMeansValues = KMeans(n_clusters=2, init=centroids)
         except:
-            print traceback.print_exc()
+            #===================================================================
+            # print traceback.print_exc()
+            #===================================================================
             self.__kMeansValues = KMeans(n_clusters=2)
 
         #=======================================================================
@@ -199,13 +201,13 @@ class ContentExtractorTrainer(object):
         self.__xpathPathsID = list(set(self.__xpathPathsID))
         self.__xpathPathsNoAttrib = list(set(self.__xpathPathsNoAttrib))
     
-    #@profile
+    @profile
     def evaluateXPathNodeContent(self):
         '''
         compare content and backContent extracted from both resources xpath
         '''
         self.__xpathPaths = self.__utilitiesFunctions.extractXPaths_LXML(self.__domain, self.__htmlFileURL, self.__domainResourcesFile + '_candidates.pickle')
-
+        
         try:
             for path in self.__xpathPaths:
                 #===================================================================

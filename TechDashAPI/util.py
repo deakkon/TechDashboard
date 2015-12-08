@@ -8,7 +8,7 @@ Created on 26 Oct 2015
 # FLOATING POINT DIVISIONS
 #===============================================================================
 from __future__ import division
-
+from time import gmtime, strftime
 #===============================================================================
 # SYS ORIENTED IMPORTS
 #===============================================================================
@@ -134,7 +134,7 @@ class utilities(object):
     #===========================================================================
     # CHECK IF ARTILE ALREADY IN DATABASE
     #===========================================================================
-    #@profile
+    @profile
     def checkProcessedArticle(self, fileURL):
         
         sqlQuery = 'select documentID from document where documentURL="%s"' %(fileURL)
@@ -153,6 +153,7 @@ class utilities(object):
     # TO DO:
     #     CLEAN TREE FROM SCRIPT AND CSS BEFORE PARSING
     #===========================================================================
+    @profile
     def extractXPaths_LXML(self, domain, url, filePath):
         #=======================================================================
         # USE LXML 
@@ -160,7 +161,7 @@ class utilities(object):
         url, htmlFile = self.openULR(url)
         xpathList = []
         currentXpathValues = []
-        
+        print strftime("%Y-%m-%d %H:%M:%S", gmtime()), 'extractXPaths_LXML'
         #=======================================================================
         # GET XPATHS FROM FILE @ URL
         #=======================================================================
@@ -224,9 +225,9 @@ class utilities(object):
     #===========================================================================
     # EXTRACT CONTENT WITH BEAUTIFUL SOUP
     #===========================================================================
-    #@profile
+    @profile
     def extractContentBS(self, path, htmlFile):
-    
+        print strftime("%Y-%m-%d %H:%M:%S", gmtime()), ' extractContentBS'
         try:
             xpathContentFile = htmlFile.xpath(path)
             childrenValues = []
@@ -257,7 +258,7 @@ class utilities(object):
         except Exception, err:
             print err, sys.exc_info()[0]
             print traceback.print_exc()
-            return
+            return False
         
     #===========================================================================
     # EXTRACT CONTENT WITH LXML FUNCTION - NOT GOOD AS IT EXTRACTS TEXT FROM ALL CHILDREN DATA MAKING IMPOSSIBRU TO DETECT THE ACTUAL CONTENT NODES
@@ -331,7 +332,7 @@ class utilities(object):
 
         return mean(ratioList)
     
-    #@profile
+    @profile
     def calculateNormalizedRatio(self, itemChildrenTextFile, path, htmlFileBackgroundKnowledge, nodeBackgroundKnowledge):
         '''
         Character based Levenshtein Distance 
@@ -342,22 +343,23 @@ class utilities(object):
         try:
             if len(itemChildrenTextFile) > 0:
     
-                sumBkn = sum( [ htmlFileBackgroundKnowledge[key]['extractCount'] for key in htmlFileBackgroundKnowledge.keys()])
-                extractCount = htmlFileBackgroundKnowledge[path]['extractCount']
+                #===============================================================
+                # sumBkn = sum( [ htmlFileBackgroundKnowledge[key]['extractCount'] for key in htmlFileBackgroundKnowledge.keys()])
+                # extractCount = htmlFileBackgroundKnowledge[path]['extractCount']
+                #===============================================================
     
                 for itemChild in itemChildrenTextFile:
                     ratio = []
                     for itemBack in nodeBackgroundKnowledge:
+                        
                         #===========================================================
                         # print itemChild, len(itemChild), '\t', itemBack, len(itemBack),'\t', itemChildrenTextFile, len(itemChildrenTextFile)
                         #===========================================================
                         
                         distanceValue = editdistance.eval(itemChild, itemBack) * (2 / (len(itemChild)+len(itemBack))) * (1/len(itemChildrenTextFile))
-                        #=======================================================
-                        # print distanceValue
-                        #=======================================================
                         ratio.append(distanceValue)
-                    
+                        print distanceValue
+                        print strftime("%Y-%m-%d %H:%M:%S", gmtime()),'Edit distance calculation'
                     #===============================================================
                     # if extractCount > 0:
                     #     ratioList.append(median(ratio) * (extractCount / len(itemChildrenTextFile)))

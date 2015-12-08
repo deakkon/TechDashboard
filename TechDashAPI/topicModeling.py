@@ -360,7 +360,7 @@ class techDashTopicModel(object):
         #=======================================================================
         ldaModel = LdaModel.load(self.__destination+modelName+'.lda', mmap='r')
         ldaModel.update(newCorpora)
-        lda.save(self.__destination+modelName+'.lda')
+        ldaModel.save(self.__destination+modelName+'.lda')
         
         
     def getDocumentTopics(self, documentContent, documentId=''):

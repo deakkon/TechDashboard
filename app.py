@@ -19,5 +19,5 @@ if __name__ == '__main__':
     while True:
         gn.checkFeedUpdate()
         gn.printFeedItems()
-        print 'Waiting for 100 second for a new try.'
-        sleep(100)
+        print 'Waiting for 600 second for a new try.'
+        sleep(600)

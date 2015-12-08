@@ -178,7 +178,7 @@ class parseNewsFeed(object):
                 f= open(pickleFilePath+'.xml', 'wb')
                 f.write(xml)
                 f.close()
-    #@profile            
+    @profile            
     def trainArticles(self, listOfURLs, domain):
         
         for url in listOfURLs: 
@@ -190,6 +190,7 @@ class parseNewsFeed(object):
             # cet.createXPathFromXMLFile()
             #===================================================================
             cet.evaluateXPathNodeContent()
+            return True
             
     #===========================================================================
     # TRAINING ON XPATH DERIVED FROM LXML.GETPATH()
@@ -198,7 +199,7 @@ class parseNewsFeed(object):
     #    CREATE PICKLE FILE
     #===========================================================================
 
-    #@profile
+    @profile
     def printFeedItems(self, key=''):
         
         for key in self.__etags.keys():

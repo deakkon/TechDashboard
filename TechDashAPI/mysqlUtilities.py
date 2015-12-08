@@ -51,6 +51,9 @@ class connectMySQL():
         except MySQLdb.Error, e:
             print 'Error in connectDB:',e
             
+    #===========================================================================
+    # @profile
+    #===========================================================================
     def executeQuery(self, query):
         
         '''
